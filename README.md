@@ -135,6 +135,11 @@ MurphyScan reports should separate:
 Example:
 - [examples/murphyscan-report-example.md](./examples/murphyscan-report-example.md)
 
+Further reading:
+- [docs/architecture.md](./docs/architecture.md)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [docs/case-studies/README.md](./docs/case-studies/README.md)
+
 ## Recommended team rollout
 
 The cleanest team setup is:
@@ -170,4 +175,3 @@ The real bar is:
 - the reports stay concrete instead of collapsing into generic AI review noise
 
 That is why forward-testing on actual app repos matters.
-
