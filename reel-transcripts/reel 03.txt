@@ -1,0 +1,13 @@
+Reel 3
+Source: https://www.instagram.com/p/DYPXmX3AXQS/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:53.033Z
+Completed: 2026-06-17T10:48:20.929Z
+00:00
+→
+01:03
+I told you your vibe coded app has 847 dependencies and you installed maybe seven of them. The other 840 were pulled in automatically and 12 of those have known security vulnerabilities right now. Here's how you fix it. Number one, run the audit today. So open your terminal, type in NPM audit, and hit enter. That's it. Magic. It'll tell you exactly how many vulnerabilities you have, what severity they are, and which packages are causing them. Trust me, I use it myself. Most vibe coders have never run this command even once. What you see is going to surprise you, so buckle up. Now, number two, lock your versions. Your package lock file exists for one reason. It makes sure everyone running your app uses the exact same version of everything. So stop deleting it, stop ignoring it, commit it to your repo.
+01:04
+→
+01:50
+Because without it, your app installs different versions on different machines. That's a no-no. You're going to get bugs that can only happen in production that are incredibly difficult to find. The lock file, that's your insurance policy. And number three, monthly audit on your calendar. Put it there. A recurring 10-minute block. First Monday of every month. Run the audit. Update what's safe. Flag what's not. This 10 minutes a month is the difference between a very secure app and a headline about your data breach, which you don't want. This is maintenance, not heroics, folks. Your dependencies are not your problem. Well, until they are. So check them before they check you. More tips and tricks coming tomorrow.

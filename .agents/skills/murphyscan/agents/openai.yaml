@@ -1,0 +1,4 @@
+interface:
+  display_name: "MurphyScan"
+  short_description: "Launch-readiness and scaling audit"
+  default_prompt: "Use $murphyscan to scan this repo for launch readiness, blockers, and scaling gaps."

@@ -1,0 +1,13 @@
+Reel 14
+Source: https://www.instagram.com/p/DYnJUm9xKMN/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:48:12.354Z
+Completed: 2026-06-17T10:48:38.461Z
+00:00
+→
+01:01
+Layer four of 13. You've deployed login. Can user A see user B's data? If you don't know, the answer is yes. Authentication is not authorization. Login equals who are you? Permissions equal what can you do? Your app was built to answer the first question, but it was never meant to ask the second one. Every route is accessible to every logged in user unless you changed it. And every API endpoint returns data for whoever asks. So no roles based access, no row level security, no resource ownership checks, right? That's what you would have put in. So your admin panel is now accessible to regular users who just changed the URL. And your API returns any record if you know the ID. This is the layer that protects your users from each other. And right now, your users are one URL change away from each other's data, accessing all of it, right? So layer four is the difference between a login page
+01:01
+→
+01:10
+and actual security in your app. This is day four of 13, follow along for the next nine, but P taking notes.

@@ -1,0 +1,13 @@
+Reel 16
+Source: https://www.instagram.com/p/DYpc9DkghA8/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:48:16.786Z
+Completed: 2026-06-17T10:48:31.011Z
+00:00
+→
+01:02
+Layer 5 is staging. You deploy by pushing to main, no staging, no review, no rollback plan. One typo equals a white screen for every user. The AI deploys your app the simplest way possible. Push to GitHub, auto-deploy fires, done, right? But that's not a staging environment. There's no deployment preview, there's no health checks, there's no rollback strategy. Every push goes straight to production. So every change hits live users instantly. You make one typo in an environment variable, white screen for everyone, same time. You try to fix it, push again, now you have two bugs in production. Layer five isn't where you host. It's about how you deploy. Staging URLs, preview deployments, automated check before merge, one-click rollbacks. The infrastructure is totally free. Vercel gives you previews. Netlify gives you branch deploys. They're all there. The tools exist. You're just not using them. Day 5 of 13.
+01:02
+→
+01:04
+Eight more layers to go. Follow along.

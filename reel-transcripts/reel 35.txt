@@ -1,0 +1,13 @@
+Reel 35
+Source: https://www.instagram.com/p/DZFdS70R9Pv/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:20.118Z
+Completed: 2026-06-17T10:50:46.228Z
+00:00
+→
+01:03
+Two users edit the same document at the same time. One saves, then the other saves, and the first user's changes completely vanish. Congratulations, you built a data loss machine. Here are the three things you can do right now to fix it. Step one, choose your conflict resolution strategy before you write a single line of code. Last write wins is always the simplest. Timestamp on mutation, latest timestamp takes priority. It works for low collaboration apps, things like settings pages and user profiles. Unfortunately, for dynamic documents or shared state, last write wins destroys data silently. So, step two. For collaborative features, implement operational transforms or CRDTs CRDTs are conflict free replicated data types. They merge automatically without a central server Yjs is the library. It gives you the collaborative text editing shared arrays and maps
+01:07
+→
+01:53
+Plug it into a super base real-time or WebSocket server. Users see each other's changes instantly. Conflicts resolve mathematically. No human intervention needed. Step three, for structured data, use event sourcing. Do not store the current state. Store every change as an immutable event. User A changed field X to Y at timestamp T. Then user B changed field X to Z at timestamp T plus one. Your application replays events in order. So conflicts become visible, resolvable, and auditable. Last write wins for simple data, CRDTs for collaborative editing, and event sourcing for business logic. So tell me, what are you building right now that needs real-time sync? I want to hear about it in the comments.

@@ -1,0 +1,13 @@
+Reel 23
+Source: https://www.instagram.com/p/DYzc-WUAOlA/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:00.424Z
+Completed: 2026-06-17T10:50:27.929Z
+00:00
+→
+01:09
+Someone this week commented on here and said that their app keeps hitting the 10-second function timeout on Vercel's basic hobby plan, right? That's not a bug. That's your app telling you it's time for a bigger house. So here are the three things you can do right now to fix it. Step one, know the limits you're hitting. Vercel gives you 10-second timeouts and serverless-only execution. For a landing page page that's fine but the moment your app starts processing files and running background jobs you're fighting the platform instead of building your product let's get it moving forward step 2 know what the next tools in line are railway is great and it gives you persistent servers long-running background jobs cron tasks and web sockets. Render does a great job too and adds managed services like Postgres and Redis. Fly.io puts your app on servers closer to your users worldwide. These aren't harder than Vercel, they're just built for different problems and they solve them really well. Step 3, split your stack. Keep your front end on Vercel. Move your back end and your background jobs and processing to Railway or Render.
+01:10
+→
+01:30
+It would make a big difference. Your front end talks to your back end over HTTPS. They don't have to live in the same place. And that's what every production app does eventually, whether you know it or not. So Vercel isn't bad. It's just not the only tool. And knowing when to graduate is what separates a project from a product. Now you know it or not. So Vercel isn't bad, it's just not the only tool. And knowing when to graduate is what separates a project from a product. Now you know.

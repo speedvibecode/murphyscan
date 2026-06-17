@@ -1,0 +1,13 @@
+Reel 18
+Source: https://www.instagram.com/p/DYsVm3PvLih/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:48:20.937Z
+Completed: 2026-06-17T10:48:51.260Z
+00:00
+→
+01:02
+layer 6 of 13 cloud and compute verse sell hobby plan let's talk about it 10 second function time out the moment your app needs to process anything real you're stuck free tier is training wheels you gotta upgrade it might work for demos it works great for side projects but it works until it doesn't a 10 second function time out one megabit response size limit, and 100 deploys per day with no background jobs? Your app needs to process a file. Guess what? Timeout. Your app needs to send 50 emails. Timeout. Your app needs to run AI pipeline that takes 30 seconds. Timeout. Layer six is where the free tier and timeouts ends and the real architecture begins. Layer 6 is where the free tier and timeouts ends and the real architecture begins. Compute isn't expensive either. A $5 a month VPS account can run your background jobs. A $20 a month managed service handles everything the free tier can't. But you have to know it exists. And right now, you're building a business on an infrastructure designed for hobby projects.
+01:02
+→
+01:10
+It is what it is. This is where the free tier ends and the big stuff begins. Layer 7 coming tomorrow. Follow along.

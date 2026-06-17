@@ -1,0 +1,14 @@
+Reel 36
+Source: https://www.instagram.com/p/DZGYLpLPDR-/
+Transcribed via: signed Saveto API request
+Completed: 2026-06-17T11:00:49.854Z
+
+00:00
+→
+01:01
+your API key is hard-coded in your dot EMV file it has been the same key for  the last six months and if it leaks and keys leak every system that touches it  is compromised until you rotate it manually right while your app is down so  here are the three things you do right now to fix it step one move your secrets  to a dedicated manager Doppler in, Mphysical, or AWS Secrets Manager.  Not your.emv file, not your Vercel dashboard,  but a real Secrets Manager that gives you versioning, audit logs, and rotation APIs.  Your app fetches secrets at runtime instead of bundling them at deploy time.  One command swaps a key across every  environment simultaneously. Step two, implement dual key rotation. Generate a key while the old  one still works. Deploy the new key to your application, verify traffic flows on the new key,
+
+01:01
+→
+01:48
+then revoke the old key. Two keys active simultaneously during the transition  window. Zero downtime, zero failed requests, that one's a win. Step 3,  automate the rotation schedule. Set a cron job or a scheduled function. Every  30 days generate a new key, update your secrets manager, trigger redeployment,  verify a health check, and revoke  the old key. Clean automation. No human in the loop. No calendar reminder that you're going to  forget. Manual rotation means you're only one rotation away from a breach. Automated rotation  means a breach has 30-day blast radius instead of an infinite blast radius. So when did the last  time you changed your API keys? If you can't remember, it's probably time.

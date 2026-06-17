@@ -1,0 +1,13 @@
+Reel 8
+Source: https://www.instagram.com/p/DYfDSOzgC-x/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:53.037Z
+Completed: 2026-06-17T10:48:08.748Z
+00:00
+→
+01:01
+I showed you the happy path trap last week. Your app handles success perfectly. Card goes through, data saves, confetti pops. But when the card declines, blank screen, silence, customer's gone, uh-oh. Here's how you fix it in three steps. Step one, try catch every external call. Every payment, every API, every database right. Wrap it, catch it, handle it. That's a win. If the card declines, show the user what happened. Being honest always wins. Give them a retry button. Don't just freeze the UI. for every UI component. Loading state, error state, empty state, success state. All four states. Every component, no exceptions at all. Your user should never see a blank screen, ever. Step three, add retry logic with exponential back off. First retry, one second.
+01:01
+→
+01:23
+Second retry, two seconds. Third retry, four seconds. Then fail gracefully with a very clear user message. Don't hammer that server. Don't freeze the UI. Give the user feedback every step of the way. So tell me, what's the worst error state you've seen in an app? I've seen some wild ones, but drop it below in the comments.

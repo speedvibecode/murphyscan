@@ -1,0 +1,13 @@
+Reel 17
+Source: https://www.instagram.com/p/DYrvI-fAPC2/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:48:20.220Z
+Completed: 2026-06-17T10:48:50.310Z
+00:00
+→
+01:02
+So you just shipped a vibe coded app that collects user data. No privacy policy, no terms of service, no CCPA compliance. Uh-oh. Congratulations, you're one complaint away from a lawsuit. But here's how you fix it. Step one, privacy policy generator. You can use Termly, privacypolicies.com, both free, less than 10 minutes. Cover what data you collect collect how you store it how users can delete it this isn't optional folks this is table stakes you got to have it step two terms of service liability limitation user conduct rules dispute resolution use a template there's a million of them customize it for your app this this is your legal shield. You need it. Without it, every user interaction is an unlimited liability exposure. You don't want that. Step three, CCPA and GDPR basics. If you're collecting any data from California or EU residents, which you probably are, you need an opt-out mechanism and a data deletion on request.
+01:03
+→
+01:19
+Add a delete my data button to the app. It's not optional. It's not a nice to have. It's the law. And so with those three steps, one afternoon, you can go from one complaint away from a lawsuit to completely and totally legally covered. We've got you handled. Talk to you soon.

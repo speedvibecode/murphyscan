@@ -1,0 +1,13 @@
+Reel 19
+Source: https://www.instagram.com/p/DYuVqaeRi8q/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:48:21.132Z
+Completed: 2026-06-17T10:48:55.458Z
+00:00
+→
+01:03
+Last week, I showed you the one environment trap. One environment, your laptop, full production, every change goes straight to live users. Here's how you set up three environments in 30 minutes. Step one, branch strategy. Main branch equals production. Dev branch equals your playground. Never push to main directly, ever. Work in dev, test in dev, break things in dev. When it works, merge it to main. Step two, staging environments. You got to have them. Vercel and Netlify both give you this for free. Every branch gets its own URL. Dev branch equals a staging URL. Main branch equals your production URL same code same infrastructure totally different audience test was staging demo is staging let your team break staging then deploy production with total confidence step 3 deploy checklist test and staging review and diff merge in main auto
+01:03
+→
+01:24
+deploy fires that's it. No manual deploys, no FTP uploads, no editing code on the live server. The whole thing takes 30 minutes to set up and it will save you from every 2am panic for the rest of your apps life. So are you still deploying straight to production? Let's hear about it in the comments.

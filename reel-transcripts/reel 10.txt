@@ -1,0 +1,13 @@
+Reel 10
+Source: https://www.instagram.com/p/DYhc3KSA_D1/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:53.038Z
+Completed: 2026-06-17T10:48:29.361Z
+00:00
+→
+01:07
+Last week, I told you your users are doing QA for free. Six-year-old Android phones, mobile data, apostrophes in their name, whatever it was, your app broke three different ways, right? So here's how to find those bugs before your users do. Step one, device testing matrix. You don't need a lab. You need browser stack. It has a free tier. Sign up for it. Or just grab two old phones from your old drawer. Test on the worst device you can find with the slowest connection, the smallest screen, the oldest browser. If it works there, it'll work everywhere. Step 2. Edge case input testing. Put an apostrophe in every single field or put 10,000 characters in a field built for 50. Leave required fields empty and hit the submit button or paste emojis in the search bar. I'm telling you, your AI never tested these. Your users will. Step three, get five strangers to use it with zero context. Not your friends, not your co-founder, not your mom. People who have never seen your app.
+01:07
+→
+01:22
+Hand them your phone and say nothing. Watch where they tap, watch where they get stuck, watch where they give up. That's your bug report from users. So tell me, what's the dumbest bug a user ever found in your app? I got some funny ones, but comment below.

@@ -1,0 +1,13 @@
+Reel 54
+Source: https://www.instagram.com/p/DZf8_d7PpQZ/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:58.457Z
+Completed: 2026-06-17T10:52:17.057Z
+00:00
+→
+01:02
+You are building with AI, but you're testing manually, eyeballing outputs, raw-dogging it completely. That works until it doesn't. And Murphy's Law says it usually stops working at the worst possible time. So here are the three things you can do right now to fix it. Step 1. Use a model to evaluate another model's output. Cross-pollination. Send your AI's response through an evaluation prompt that scores it on your criteria. Accuracy, tone, safety, schema compliance. Then set pass-fail thresholds. Run these as part of your CI pipeline. Automated AI QA on every push, that's a win. Step two, build your test suite from your worst outputs. Every time a user reports a bad response, add that input to your test suite with the expected quality score. Over time, you'll end up building a regression suite of real-world edge cases. Not synthetic tests, real failures your users actually hit.
+01:02
+→
+01:34
+That's a win. And Step 3. Compare across models and prompt versions. Run evaluations on the same inputs across different models and prompt iterations. Now you can quantify whether a prompt change actually improved quality or it just felt like it did. Data over vibes folks, all day long. So model as a judge, failure driven test suites, and version comparison are the best practices. Then your AI quality becomes measurable. So model as a judge, failure-driven test suites, and version comparison are the best practices. Then your AI quality becomes measurable. So how are you testing your AI outputs right now? Drop it in the comments. I want to know.

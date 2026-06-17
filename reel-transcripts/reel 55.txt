@@ -1,0 +1,13 @@
+Reel 55
+Source: https://www.instagram.com/p/DZhxVg2xu-u/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:58.643Z
+Completed: 2026-06-17T10:52:21.206Z
+00:00
+→
+01:03
+Your front end is making decisions it should not be making. Pricing logic in JavaScript, role checks in React components, API keys and environment variables that ship to the browser. Just one user opens any basic dev tool and they can see anything. Here are the three things you can do right now to fix it. Step one, move every business rule to the back end. Discount calculations, feature gating permission checks if it decides what a user can see do or pay it does not belong in the client-side code the front-end asks the back-end answers that is the boundary and that is a win step 2 stop trusting client-side validation validate inputs on the front end for user experience. Validate them again on the back end for security. A disabled button is not access control. Anyone with a fetch request can skip your UI entirely. That's not a win. Step three, audit what your bundle actually exposes.
+01:03
+→
+01:29
+Run your production build, open it up, search for API routes, keys, internal endpoints, and config objects. If you can find any of those, so can anyone else. Environment variables prefixed with next, underscore public, or vite, ship to the browser. Know which ones. Your front end is a display layer, not a trust layer. The moment you treat it like a security boundary, you've already lost the battle.

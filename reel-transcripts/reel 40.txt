@@ -1,0 +1,13 @@
+Reel 40
+Source: https://www.instagram.com/p/DZLHBM9xY33/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:30.168Z
+Completed: 2026-06-17T10:50:44.361Z
+00:00
+→
+01:03
+Your mobile app exists, but when someone shares a link to your content, it opens in the browser, not the app like it was supposed to. The user hits a login wall, gets confused, and leaves. You lost them because of a missing configuration file. Here are the three things you can do right now to fix it. Number one, configure Apple Universal Links. Go create an apple.appapp site association file in your domain hosted at yourdomain.com this is a json file that tells ios which url pass should open your app no redirects the link opens directly in your app every time apple verifies this file when the user installs your app step two two, configure Android app links. Similarly, create a digital assets link file, hosted at yourdomain.com again. This JSON file tells Android which URLs open your app. Add intent filters to your Android manifest. Expo handles this with Expo linking package.
+01:03
+→
+01:44
+Same URLs work on both platforms. Step 3, handle the fallback. Not every user has your app installed on their phone. If the app is not installed, the link should go straight to your website. Your website shows the content plus a smart banner promoting the app install. Expo router handles this with a single configuration. One URL, app installed, opens in app, not installed, opens in website with install prompt. Universal links convert mobile web visitors into app users. Without them, every shared link is a dead end. Do you have any deep linking setups? What tripped you up? Tell me about it.

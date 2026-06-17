@@ -1,0 +1,14 @@
+Reel 2
+Source: https://www.instagram.com/p/DYNbDGTvGdj/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:37:38.926Z
+Completed: 2026-06-17T10:37:56.268Z
+
+00:00
+→
+01:01
+One security check, it's better than nothing, right? Five security checks, you're ahead of 90% of all vibe coders. The full production security checklist, for an enterprise, that's 47 items in most projects. And I'm about to give you the first 10 right here. So every enterprise app goes through a thorough security checklist before launch. I've been parts of hundreds of them. goes through a thorough security checklist before launch. I've been parts of hundreds of them. Auth, encryption, session handling, error boundaries, rate limiting, input validation, logging, backup, monitoring, and dependency scanning. That's just the first 10. Most vibe coders do zero of those. Not because they're lazy, but because nobody told them and they haven't worked on these projects before. But now you know. And here's the thing. You can actually do most of these yourself. You don't need a professional security team or engineers. You need a consistent system that you use every time on everything you build. That's what I've been building. A step-by-step playbook
+01:01
+→
+01:32
+that walks you through every single item on this list in plain english with the exact prompts to get your ai to help you fix each one of them 47 items one complete framework and checklist coming in june but the first 10 i'll be walking you through all those this week because the people who are already overwhelmed by what I've been sharing, you need help now and you deserve the best solution, not just the problem. That's what's going down.

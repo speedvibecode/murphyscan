@@ -1,0 +1,13 @@
+Reel 28
+Source: https://www.instagram.com/p/DY7OKr4xruV/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:00.426Z
+Completed: 2026-06-17T10:50:28.262Z
+00:00
+→
+01:04
+Here's how you set up monitoring, caching, and deployment without hiring a DevOps engineer. You need these three tools and about an hour. Step one, Sentry for error tracking. We've said it a million times. Right now when your app breaks, your users know before you do. They see a blank screen and they're out of there. Sentry catches every error in real time, tells you what line broke and how often. You get an alert, second something breaks, that's a win. Step two, Upstash for caching and rate limiting. Great package, cheap. Your app probably hits your database on every page load, even when the data hasn't changed. The AI builds it that way, not your fault. Upstash though gives you the serverless redis. Cache your most accessed data so your database only gets hit when it needs to get hit. It also gives you rate limiting. So one setup and bots can't hammer your API and run up your bill. That's a win. Step three, Railway for deployment. If your app needs background jobs,
+01:04
+→
+01:25
+scheduled tasks, or anything beyond serving just basic web pages, Railway is the way to go. It gives you persistent servers that just run. Push your code, it deploys. Set a schedule, it runs. No Docker, no Kubernetes, no YML. You don't need a DevOps team, you just need the right three tools and the knowledge that they exist.

@@ -1,0 +1,13 @@
+Reel 24
+Source: https://www.instagram.com/p/DYz-1mDxTXN/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:00.424Z
+Completed: 2026-06-17T10:50:20.113Z
+00:00
+→
+01:02
+Layer 9 of 13, Rate Limiting. This is the one that protects your wallet. So last week a user in my comments said a bot hit their API 10,000 times in an hour. Cha-ching! If your app calls OpenAI or Anthropic or any paid API and you have no rate limiting, you're just one rogue bot away from a bill that ends your project. So someone launches an app, it works great, sure, but a scraper bot finds your endpoints, and two hours later there's a four-figure invoice for calls that nobody authorized. So rate limiting means setting a cap on how many requests a user or IP can make in any given time window. If that's 50 per minute or 1,000 per hour, whatever works for your app. Your API has two audiences though, real users and everything else. Real users, they make two to five requests per minute. But bots, they can make hundreds. So rate limiting doesn't slow down your users. It stops the bots. So these are three things you can rate limit immediately.
+01:02
+→
+01:35
+Your AI endpoints, because those are the expensive ones your authentication endpoints to prevent brute-force attacks and your public data endpoints to prevent any bot scraping the tools exist Vercel has built-in rate limiting up stash gives you serverless read is for custom limits every major framework has a library for it. Rate limiting is a 5 minute setup that can save you thousands. That's layer 9. Cap it before something else does. 4 more layers to go. See you soon.

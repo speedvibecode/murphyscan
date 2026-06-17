@@ -1,0 +1,13 @@
+Reel 1
+Source: https://www.instagram.com/p/DYM1FwHARva/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:19.997Z
+Completed: 2026-06-17T10:47:37.722Z
+00:00
+→
+01:04
+So I told you your AI app costs two cents per call. Sounded like nothing. Then you get a thousand users hitting it 10 times a day, and that's 14 grand a month in API costs. Here's a few tips to control it before it controls you. So try this. Number one, cache everything. If the same question gets asked twice, don't call the model twice. Set up a semantic cache, even a simple one. Same input, same output, zero cost on the second call. Most apps can cut 30 to 40% of their API spend just by not asking the same questions over and over again, right? Number two, route smart. You don't need GPT 5.5 for everything 80% of your calls can run on a smaller cheaper model like summaries formatting classifications save the expensive stuff for the 20% edge cases that actually need it right one routing layer saves you thousands a month and your users they won't know the
+01:04
+→
+01:32
+difference trust me and number three set spend caps every api provider lets you set billing limits set a ceiling alert yourself at 70 auto kill it at 90 because the worst case scenario isn't a slow app it's waking up to a 40 000 invoice because you forgot to set boundaries. Budget the prompt bill before you ship, not after. More tips and tricks coming to you tomorrow.

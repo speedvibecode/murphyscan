@@ -1,0 +1,13 @@
+Reel 22
+Source: https://www.instagram.com/p/DYxb9K-RC7n/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:00.423Z
+Completed: 2026-06-17T10:50:15.680Z
+00:00
+→
+01:02
+layer eight of 13, security. It's the one that gets people sued. Your app has authentication, great. Users can log in, but user A can see user B's data. Right now, most of you have super-based tables that are publicly readable, whether you know it or not. Not because you chose it, because that's the default from AI production apps. You deploy it off, you added login, you thought you were done, right? But authentication and authorization are two completely different things. Authentication means you know exactly who someone is. Authorization means you control what that person can see. So row level security is how Postgres handles authorization at the database level. You create a policy that says users can only select rows where the user ID column matches their authenticated ID. Without this policy, your database is an open book. Anyone with a valid session token can query any table and get every row back.
+01:03
+→
+01:43
+So here's what you check right now. Go to your Superbase dashboard, click on authentication, then policies. If you see tables with no policies, those tables are wide open. Every table that stores user data needs at least to select a policy and insert a policy. Every table that stores sensitive data needs an update and delete policy too. This isn't optional security hardening. This is the minimum. Layer 8 is the most dangerous gap in the entire production stack because the consequences are immediate and super dangerous. One exposed table means one big lawsuit. Layer 8, secure it or shut it down.

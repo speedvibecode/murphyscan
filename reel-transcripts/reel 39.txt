@@ -1,0 +1,13 @@
+Reel 39
+Source: https://www.instagram.com/p/DZKp4rPAasV/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:28.267Z
+Completed: 2026-06-17T10:50:42.543Z
+00:00
+→
+01:02
+You push domain, the deploy runs, every user gets a new code simultaneously. If it is broken, every user is broken simultaneously. That's not a deployment, that's a dice roll. Here are the three things you do right now to fix it. Step one, deploy to 5% of the traffic first. Vercel supports gradual rollouts natively. So does Cloudflare. Vercel supports gradual rollouts natively. So does Cloudflare. Push your new version, route 5% of requests to it, make sure everything's working. The other 95% stay on the current stable version until you're ready to move them. Monitor error rates for 15 minutes. If errors spike, roll back instantly. Nobody even noticed. Step 2. Gate rollouts with feature flags. Launch darkly, flagsmith, or even a simple JSON config in your database. New feature ships to production behind a flag. You enable it for internal users first, then beta users, then 10%, then everybody. If something
+01:02
+→
+01:54
+breaks, kill the flag. The code stays deployed, but the feature disappears. No rollback needed. Step three, automate the promotion. Your CI pipeline should watch error rates after canary deployments. If error rate stays below your threshold for let's say 30 minutes, automatically promote to 100%. If it exceeds the threshold, automatically roll it back. No human watching a dashboard at midnight. That's old stuff. Just GitHub action plus your error monitoring API. 20 lines of code between you and a fully automated safe deployment. 5% canary, feature flags, and automated promotion. You never ship broken code to all your users again. So tell me, what's your scariest deploy story? Share it in the comments.

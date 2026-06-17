@@ -1,0 +1,13 @@
+Reel 59
+Source: https://www.instagram.com/p/DZk6Q0yRF7h/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:52:08.613Z
+Completed: 2026-06-17T10:52:24.143Z
+00:00
+→
+01:07
+Stop building auth from scratch. I'm serious. You got to stop. Here are the three things you need to hear right now about auth. Number one, auth is not a feature. It is infrastructure, login pages, password resets, email verification, session management, token rotation, two-factor authentication, account recovery. That's not a weekend project. Every hour you spend on auth is an hour you did not spend on account recovery. That's not a weekend project. Every hour you spend on Auth is an hour you did not spend on your product. It's not a win. Number two, the security surface is enormous. One mistake in how you store passwords and you're on the news. One mistake in how you handle sessions and every account is compromised. One mistake in how you validate tokens and your API is wide open. Auth is one of the few areas of software where a single bug can end a company. Clerk, Autho, Superbase, BetterAuth, Firebase. These dedicated software teams think about auth security all day, every day. Let's let them do it. Number three, the builders who ship the fastest
+01:07
+→
+01:29
+all have one thing in common. They did not build Auth. They plugged it in. They picked a provider, they configured it, but they moved on. They didn't hang out with it. And they spent the time that they saved building features that actually generate revenue. Auth is the foundation of your application, but the foundation is not the product or where you make money.

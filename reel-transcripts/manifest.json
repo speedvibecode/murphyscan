@@ -1,0 +1,624 @@
+[
+  {
+    "index": 1,
+    "url": "https://www.instagram.com/p/DYM1FwHARva/",
+    "status": "skipped-existing",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 01.txt"
+  },
+  {
+    "index": 2,
+    "url": "https://www.instagram.com/p/DYNbDGTvGdj/",
+    "status": "skipped-existing",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 02.txt"
+  },
+  {
+    "index": 3,
+    "url": "https://www.instagram.com/p/DYPXmX3AXQS/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1560,
+    "startedAt": "2026-06-17T10:47:53.033Z",
+    "completedAt": "2026-06-17T10:48:20.929Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 03.txt"
+  },
+  {
+    "index": 4,
+    "url": "https://www.instagram.com/p/DYR8zObgVsw/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1525,
+    "startedAt": "2026-06-17T10:47:53.034Z",
+    "completedAt": "2026-06-17T10:48:16.780Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 04.txt"
+  },
+  {
+    "index": 5,
+    "url": "https://www.instagram.com/p/DYUiLhrNY9o/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1726,
+    "startedAt": "2026-06-17T10:47:53.034Z",
+    "completedAt": "2026-06-17T10:48:21.126Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 05.txt"
+  },
+  {
+    "index": 6,
+    "url": "https://www.instagram.com/p/DYXGdH4AtnZ/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1498,
+    "startedAt": "2026-06-17T10:47:53.035Z",
+    "completedAt": "2026-06-17T10:48:29.295Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 06.txt"
+  },
+  {
+    "index": 7,
+    "url": "https://www.instagram.com/p/DYZ1EeNgGIu/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1627,
+    "startedAt": "2026-06-17T10:47:53.035Z",
+    "completedAt": "2026-06-17T10:48:12.347Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 07.txt"
+  },
+  {
+    "index": 8,
+    "url": "https://www.instagram.com/p/DYfDSOzgC-x/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1118,
+    "startedAt": "2026-06-17T10:47:53.037Z",
+    "completedAt": "2026-06-17T10:48:08.748Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 08.txt"
+  },
+  {
+    "index": 9,
+    "url": "https://www.instagram.com/p/DYfZI0qx9xF/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 989,
+    "startedAt": "2026-06-17T10:47:53.037Z",
+    "completedAt": "2026-06-17T10:48:25.348Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 09.txt"
+  },
+  {
+    "index": 10,
+    "url": "https://www.instagram.com/p/DYhc3KSA_D1/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1264,
+    "startedAt": "2026-06-17T10:47:53.038Z",
+    "completedAt": "2026-06-17T10:48:29.361Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 10.txt"
+  },
+  {
+    "index": 11,
+    "url": "https://www.instagram.com/p/DYiSfwGP2D9/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1006,
+    "startedAt": "2026-06-17T10:47:53.062Z",
+    "completedAt": "2026-06-17T10:48:12.864Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 11.txt"
+  },
+  {
+    "index": 12,
+    "url": "https://www.instagram.com/p/DYklzbex7me/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 907,
+    "startedAt": "2026-06-17T10:47:53.061Z",
+    "completedAt": "2026-06-17T10:48:20.213Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 12.txt"
+  },
+  {
+    "index": 13,
+    "url": "https://www.instagram.com/p/DYmoTKBgQjt/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1522,
+    "startedAt": "2026-06-17T10:48:08.756Z",
+    "completedAt": "2026-06-17T10:48:34.928Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 13.txt"
+  },
+  {
+    "index": 14,
+    "url": "https://www.instagram.com/p/DYnJUm9xKMN/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1034,
+    "startedAt": "2026-06-17T10:48:12.354Z",
+    "completedAt": "2026-06-17T10:48:38.461Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 14.txt"
+  },
+  {
+    "index": 15,
+    "url": "https://www.instagram.com/p/DYpNvXGg_WM/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1313,
+    "startedAt": "2026-06-17T10:48:12.869Z",
+    "completedAt": "2026-06-17T10:48:38.895Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 15.txt"
+  },
+  {
+    "index": 16,
+    "url": "https://www.instagram.com/p/DYpc9DkghA8/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 984,
+    "startedAt": "2026-06-17T10:48:16.786Z",
+    "completedAt": "2026-06-17T10:48:31.011Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 16.txt"
+  },
+  {
+    "index": 17,
+    "url": "https://www.instagram.com/p/DYrvI-fAPC2/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1245,
+    "startedAt": "2026-06-17T10:48:20.220Z",
+    "completedAt": "2026-06-17T10:48:50.310Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 17.txt"
+  },
+  {
+    "index": 18,
+    "url": "https://www.instagram.com/p/DYsVm3PvLih/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1168,
+    "startedAt": "2026-06-17T10:48:20.937Z",
+    "completedAt": "2026-06-17T10:48:51.260Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 18.txt"
+  },
+  {
+    "index": 19,
+    "url": "https://www.instagram.com/p/DYuVqaeRi8q/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1174,
+    "startedAt": "2026-06-17T10:48:21.132Z",
+    "completedAt": "2026-06-17T10:48:55.458Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 19.txt"
+  },
+  {
+    "index": 20,
+    "url": "https://www.instagram.com/p/DYuyZmkRXye/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 857,
+    "startedAt": "2026-06-17T10:48:25.353Z",
+    "completedAt": "2026-06-17T10:48:51.403Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 20.txt"
+  },
+  {
+    "index": 21,
+    "url": "https://www.instagram.com/p/DYwyDG3xBlg/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1556,
+    "startedAt": "2026-06-17T10:50:00.422Z",
+    "completedAt": "2026-06-17T10:50:15.012Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 21.txt"
+  },
+  {
+    "index": 22,
+    "url": "https://www.instagram.com/p/DYxb9K-RC7n/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1546,
+    "startedAt": "2026-06-17T10:50:00.423Z",
+    "completedAt": "2026-06-17T10:50:15.680Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 22.txt"
+  },
+  {
+    "index": 23,
+    "url": "https://www.instagram.com/p/DYzc-WUAOlA/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1651,
+    "startedAt": "2026-06-17T10:50:00.424Z",
+    "completedAt": "2026-06-17T10:50:27.929Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 23.txt"
+  },
+  {
+    "index": 24,
+    "url": "https://www.instagram.com/p/DYz-1mDxTXN/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1455,
+    "startedAt": "2026-06-17T10:50:00.424Z",
+    "completedAt": "2026-06-17T10:50:20.113Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 24.txt"
+  },
+  {
+    "index": 25,
+    "url": "https://www.instagram.com/p/DY2nroEvto_/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1437,
+    "startedAt": "2026-06-17T10:50:00.425Z",
+    "completedAt": "2026-06-17T10:50:15.680Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 25.txt"
+  },
+  {
+    "index": 26,
+    "url": "https://www.instagram.com/p/DY4jQHeR4Gb/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1507,
+    "startedAt": "2026-06-17T10:50:00.425Z",
+    "completedAt": "2026-06-17T10:50:15.844Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 26.txt"
+  },
+  {
+    "index": 27,
+    "url": "https://www.instagram.com/p/DY5KQSsRpfz/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1369,
+    "startedAt": "2026-06-17T10:50:00.425Z",
+    "completedAt": "2026-06-17T10:50:36.361Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 27.txt"
+  },
+  {
+    "index": 28,
+    "url": "https://www.instagram.com/p/DY7OKr4xruV/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1336,
+    "startedAt": "2026-06-17T10:50:00.426Z",
+    "completedAt": "2026-06-17T10:50:28.262Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 28.txt"
+  },
+  {
+    "index": 29,
+    "url": "https://www.instagram.com/p/DY7iptdRsB0/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1176,
+    "startedAt": "2026-06-17T10:50:00.426Z",
+    "completedAt": "2026-06-17T10:50:28.194Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 29.txt"
+  },
+  {
+    "index": 30,
+    "url": "https://www.instagram.com/p/DY90q5PAPHa/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1637,
+    "startedAt": "2026-06-17T10:50:00.429Z",
+    "completedAt": "2026-06-17T10:50:32.429Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 30.txt"
+  },
+  {
+    "index": 31,
+    "url": "https://www.instagram.com/p/DY-UCtORgDS/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1257,
+    "startedAt": "2026-06-17T10:50:15.020Z",
+    "completedAt": "2026-06-17T10:50:25.162Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 31.txt"
+  },
+  {
+    "index": 32,
+    "url": "https://www.instagram.com/p/DZALI2bRljh/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1635,
+    "startedAt": "2026-06-17T10:50:15.687Z",
+    "completedAt": "2026-06-17T10:50:46.309Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 32.txt"
+  },
+  {
+    "index": 33,
+    "url": "https://www.instagram.com/p/DZCzQPpRI8d/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1491,
+    "startedAt": "2026-06-17T10:50:15.704Z",
+    "completedAt": "2026-06-17T10:50:42.210Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 33.txt"
+  },
+  {
+    "index": 34,
+    "url": "https://www.instagram.com/p/DZDUWLJRpZ8/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1490,
+    "startedAt": "2026-06-17T10:50:15.849Z",
+    "completedAt": "2026-06-17T10:50:30.151Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 34.txt"
+  },
+  {
+    "index": 35,
+    "url": "https://www.instagram.com/p/DZFdS70R9Pv/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1604,
+    "startedAt": "2026-06-17T10:50:20.118Z",
+    "completedAt": "2026-06-17T10:50:46.228Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 35.txt"
+  },
+  {
+    "index": 36,
+    "url": "https://www.instagram.com/p/DZGYLpLPDR-/",
+    "attempt": 1,
+    "status": "failed",
+    "error": "You have used up your free counts today. We will reset the quota at 00:00 (UTC-0) every day.\nOk, got it!",
+    "startedAt": "2026-06-17T10:54:18.605Z",
+    "completedAt": "2026-06-17T10:54:24.689Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 36.txt"
+  },
+  {
+    "index": 37,
+    "url": "https://www.instagram.com/p/DZH8QLtxdCT/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1742,
+    "startedAt": "2026-06-17T10:50:27.933Z",
+    "completedAt": "2026-06-17T10:50:54.308Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 37.txt"
+  },
+  {
+    "index": 38,
+    "url": "https://www.instagram.com/p/DZIgAzQxSmS/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1541,
+    "startedAt": "2026-06-17T10:50:28.199Z",
+    "completedAt": "2026-06-17T10:51:02.627Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 38.txt"
+  },
+  {
+    "index": 39,
+    "url": "https://www.instagram.com/p/DZKp4rPAasV/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1657,
+    "startedAt": "2026-06-17T10:50:28.267Z",
+    "completedAt": "2026-06-17T10:50:42.543Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 39.txt"
+  },
+  {
+    "index": 40,
+    "url": "https://www.instagram.com/p/DZLHBM9xY33/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1513,
+    "startedAt": "2026-06-17T10:50:30.168Z",
+    "completedAt": "2026-06-17T10:50:44.361Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 40.txt"
+  },
+  {
+    "index": 41,
+    "url": "https://www.instagram.com/p/DZNMhyvxyha/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1706,
+    "startedAt": "2026-06-17T10:51:42.989Z",
+    "completedAt": "2026-06-17T10:51:58.451Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 41.txt"
+  },
+  {
+    "index": 42,
+    "url": "https://www.instagram.com/p/DZN3Z3IPD9a/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1659,
+    "startedAt": "2026-06-17T10:51:42.991Z",
+    "completedAt": "2026-06-17T10:52:02.461Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 42.txt"
+  },
+  {
+    "index": 43,
+    "url": "https://www.instagram.com/p/DZP2LwegIXN/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1790,
+    "startedAt": "2026-06-17T10:51:42.992Z",
+    "completedAt": "2026-06-17T10:51:58.163Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 43.txt"
+  },
+  {
+    "index": 44,
+    "url": "https://www.instagram.com/p/DZQU76-x-1G/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1875,
+    "startedAt": "2026-06-17T10:51:42.992Z",
+    "completedAt": "2026-06-17T10:52:10.890Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 44.txt"
+  },
+  {
+    "index": 45,
+    "url": "https://www.instagram.com/p/DZSYNBNxE1k/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1194,
+    "startedAt": "2026-06-17T10:51:42.993Z",
+    "completedAt": "2026-06-17T10:51:58.305Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 45.txt"
+  },
+  {
+    "index": 46,
+    "url": "https://www.instagram.com/p/DZSzeK0RgCd/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1349,
+    "startedAt": "2026-06-17T10:51:42.993Z",
+    "completedAt": "2026-06-17T10:52:02.782Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 46.txt"
+  },
+  {
+    "index": 47,
+    "url": "https://www.instagram.com/p/DZU438dxu9_/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1330,
+    "startedAt": "2026-06-17T10:51:42.994Z",
+    "completedAt": "2026-06-17T10:51:58.338Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 47.txt"
+  },
+  {
+    "index": 48,
+    "url": "https://www.instagram.com/p/DZXhEL2RVRu/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1424,
+    "startedAt": "2026-06-17T10:51:42.994Z",
+    "completedAt": "2026-06-17T10:51:58.636Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 48.txt"
+  },
+  {
+    "index": 49,
+    "url": "https://www.instagram.com/p/DZYPNahPmpz/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1450,
+    "startedAt": "2026-06-17T10:51:42.995Z",
+    "completedAt": "2026-06-17T10:52:02.890Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 49.txt"
+  },
+  {
+    "index": 50,
+    "url": "https://www.instagram.com/p/DZa1S1mAYCI/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1447,
+    "startedAt": "2026-06-17T10:51:42.995Z",
+    "completedAt": "2026-06-17T10:52:10.923Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 50.txt"
+  },
+  {
+    "index": 51,
+    "url": "https://www.instagram.com/p/DZcoN1gRCgL/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1321,
+    "startedAt": "2026-06-17T10:51:58.172Z",
+    "completedAt": "2026-06-17T10:52:08.607Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 51.txt"
+  },
+  {
+    "index": 52,
+    "url": "https://www.instagram.com/p/DZdbRXmv_lb/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1417,
+    "startedAt": "2026-06-17T10:51:58.311Z",
+    "completedAt": "2026-06-17T10:52:13.102Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 52.txt"
+  },
+  {
+    "index": 53,
+    "url": "https://www.instagram.com/p/DZfT4d5AiWg/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1325,
+    "startedAt": "2026-06-17T10:51:58.345Z",
+    "completedAt": "2026-06-17T10:52:13.230Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 53.txt"
+  },
+  {
+    "index": 54,
+    "url": "https://www.instagram.com/p/DZf8_d7PpQZ/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1571,
+    "startedAt": "2026-06-17T10:51:58.457Z",
+    "completedAt": "2026-06-17T10:52:17.057Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 54.txt"
+  },
+  {
+    "index": 55,
+    "url": "https://www.instagram.com/p/DZhxVg2xu-u/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1325,
+    "startedAt": "2026-06-17T10:51:58.643Z",
+    "completedAt": "2026-06-17T10:52:21.206Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 55.txt"
+  },
+  {
+    "index": 56,
+    "url": "https://www.instagram.com/p/DZiVwxixLrb/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1235,
+    "startedAt": "2026-06-17T10:52:02.467Z",
+    "completedAt": "2026-06-17T10:52:25.003Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 56.txt"
+  },
+  {
+    "index": 57,
+    "url": "https://www.instagram.com/p/DZisZ_9v0RW/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1539,
+    "startedAt": "2026-06-17T10:52:02.789Z",
+    "completedAt": "2026-06-17T10:52:21.339Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 57.txt"
+  },
+  {
+    "index": 58,
+    "url": "https://www.instagram.com/p/DZkd5y_xpqP/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1337,
+    "startedAt": "2026-06-17T10:52:02.897Z",
+    "completedAt": "2026-06-17T10:52:17.273Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 58.txt"
+  },
+  {
+    "index": 59,
+    "url": "https://www.instagram.com/p/DZk6Q0yRF7h/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1459,
+    "startedAt": "2026-06-17T10:52:08.613Z",
+    "completedAt": "2026-06-17T10:52:24.143Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 59.txt"
+  },
+  {
+    "index": 60,
+    "url": "https://www.instagram.com/p/DZm7yPZxxlC/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1772,
+    "startedAt": "2026-06-17T10:52:10.895Z",
+    "completedAt": "2026-06-17T10:52:41.464Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 60.txt"
+  },
+  {
+    "index": 61,
+    "url": "https://www.instagram.com/p/DZnYDewRV_h/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1670,
+    "startedAt": "2026-06-17T10:53:31.628Z",
+    "completedAt": "2026-06-17T10:53:50.152Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 61.txt"
+  },
+  {
+    "index": 62,
+    "url": "https://www.instagram.com/p/DYkAobpgwjI/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1420,
+    "startedAt": "2026-06-17T10:53:31.630Z",
+    "completedAt": "2026-06-17T10:53:46.136Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 62.txt"
+  },
+  {
+    "index": 63,
+    "url": "https://www.instagram.com/p/DXwtOTDA-gx/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1425,
+    "startedAt": "2026-06-17T10:53:31.630Z",
+    "completedAt": "2026-06-17T10:53:46.086Z",
+    "file": "C:\\Users\\totla\\Documents\\Codex\\2026-06-17\\files-mentioned-by-the-user-reconcilation\\outputs\\reel-transcripts\\reel 63.txt"
+  }
+]

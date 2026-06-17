@@ -1,0 +1,13 @@
+Reel 4
+Source: https://www.instagram.com/p/DYR8zObgVsw/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:53.034Z
+Completed: 2026-06-17T10:48:16.780Z
+00:00
+→
+01:06
+I told you your app crashes and you don't know why. You don't know when. You don't know how many users it affected. You don't even know it happened until a user told you, right? Well, here's how you fix it in 20 minutes. Number one, error tracking with Sentry. Free tier works for everybody. 15 minute setup. Every time your app throws an error, bam, you get an alert with the exact line of code. The exact user, in fact, the exact moment that it happened. You go from something's broken, I think, to I know what happened on line 47 in the checkout function that failed for three users at 2.15 in the afternoon. That's a night and day difference, right? Number two, analytics with post hog. You need to know who is using your app, what they are clicking on, and where they drop off. Without this, you're kind of building blind. You're guessing to improve instead of seeing it in action. PostHog is free, up to a million events. So there's no excuse not to have this running. I run it. It's great.
+01:06
+→
+01:41
+Number three, uptime monitoring with BetterStack. Takes three minutes to set up at most. It pings your app every 30 seconds. The moment it goes down, you get a text message or an email or your Bertha reaches out. But you know before your users do do because if they start tweeting about it before they uninstall you need to fix it while they're still giving you the benefit of the doubt if you can't see it you can't fix it make your app talk to you it's valuable more tips and tricks coming tomorrow

@@ -1,0 +1,13 @@
+Reel 41
+Source: https://www.instagram.com/p/DZNMhyvxyha/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:42.989Z
+Completed: 2026-06-17T10:51:58.451Z
+00:00
+→
+01:07
+Your app has 50 concurrent users, but your database only allows 20 concurrent connections. Users number 21 through 50 are getting a timeout error. So your app looks broken, but your database is just fine. You ran out of connections, not compute. Here are the three things you do right now to fix it. Step one, enable SupaVisor on SupaBase. SupaBase includes a built-in connection pooler called SupaVisor on SupaBase. SupaBase includes a built-in connection pooler called SupaVisor. Switch your connection string from direct port to the pooled port. Port 5432 is direct. Port 6543 is pooled. SupaVisor multiplexes hundreds of application connections into just a handful of database connections. That's a win. Step two, use transaction mode for serverless. Connection poolers have two modes, session and transaction. Session mode holds a connection for the entire client session. Transaction mode releases the connection after every query. Serverless functions spin up and down constantly. So if you use session mode
+01:07
+→
+01:54
+with serverless, you exhaust connections in minutes. Not a win. For serverless, transaction mode always. That's the win. Step three, set connection limits in your application. Your ORM or database client has a pool size setting. Prisma is connection underscore limit in your database URL. Drizzle is max in your pool config. Set it to the number of connections your database plans to allow divided by the number of server instances. So 10 connections per instance times 3 equals 30 total, right? Your database plan allows 32. The math has to work or you're gonna get timeouts under load. So tell me, what connection issues are you having? Drop it in the comments.

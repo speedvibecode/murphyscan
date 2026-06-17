@@ -1,0 +1,13 @@
+Reel 50
+Source: https://www.instagram.com/p/DZa1S1mAYCI/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:42.995Z
+Completed: 2026-06-17T10:52:10.923Z
+00:00
+→
+01:02
+Your AI agent forgets everything between calls. The user said their name, their preferences, their location, their project context. That next call, it's all gone. Bolting on memory wrong will break faster than no memory at all. So here are the three things you can do right now to fix it. Step one, implement short-term memory as a conversation buffer. Rolling context window for all current sessions. And when the context starts to get long, summarize older exchanges into compressed summaries. Keep recent turns verbatim. The model gets context without hitting token limits. That's definitely a win. Step two, add long-term memory as a persistent store. User preferences, past decisions, learned patterns, vector those into a database, Pinecone, Weeviate, PGVector, retrieve per query based on semantic relevance. The agent remembers what matters without loading everything.
+01:02
+→
+01:42
+That's a win. Step 3. Only store what changes the agents behavior. A user's deployment preferences store it. A casual aside, let it go. Do not store everything. It's not worth it. Retrieval quality matters more than storage volume. So test your agent by asking it to reference a past context. If it hallucinates memories your retrieval pipeline needs some work. Short term, always on. Long term, opt in per use case. That's the best practice. So tell me, what is your agent remembering right now that it shouldn't be? Drop it in the comments.

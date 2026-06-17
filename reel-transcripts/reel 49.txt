@@ -1,0 +1,13 @@
+Reel 49
+Source: https://www.instagram.com/p/DZYPNahPmpz/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:42.995Z
+Completed: 2026-06-17T10:52:02.890Z
+00:00
+→
+01:07
+Your AI endpoint is totally public and anyone with a URL can send it requests and every request costs you real money. One bot, one loop, and one weekend you're not paying attention could be a four-figure bill on Monday morning. Here are the three things you do right now to fix it. Step one, put an API gateway in front of every AI endpoint. Put an API gateway in front of every AI endpoint. Kong, AWS API gateway, or Cloudflare's API shield all work great for this. The gateway handles authentication before requests reach your model. No valid API key, no request processed, no tokens burned. This is not optional. This is infrastructure. That's a win. Step two, add request validation at the gateway layer. Check payload size, reject context windows over the limit, validate input schema before it touches the model. A 100K token prompt from a free tier user should never reach your Opus endpoint. Ever. The gateway blocks it, your budget
+01:07
+→
+01:46
+survives, that's a win. Step three, implement per user spend tracking. Tag every request with the user ID and log token consumption by user. Set daily and monthly caps per user tier and free users get 500 tokens per day. users get 50,000 the gateway enforces that cap not your application code so gateway validation spend caps those are three important layers between the internet and a big API bill so tell me what is protecting your AI endpoints right now drop it in the comments

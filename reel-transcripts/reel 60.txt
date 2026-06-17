@@ -1,0 +1,13 @@
+Reel 60
+Source: https://www.instagram.com/p/DZm7yPZxxlC/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:52:10.895Z
+Completed: 2026-06-17T10:52:41.464Z
+00:00
+→
+01:01
+When your users log in, a token gets created, and that token lives forever. That is not auth, folks. That is a wide open door for trouble. So here are the three things you're going to do right now to fix it. Step one, understand what a session actually is. When a user logs in, your system creates a unique token. That token proves who they are on every single request they make. Jot files, session cookies, whatever the mechanism, right? If that token never expires, anyone who steals it owns that account forever. No password change fixes it. No logout will fix it. The token is the key and you handed out a key that never stops working. That's not a win. Step 2. Set expiration and rotation. Access tokens should be short lived. 15 minutes, 30 minutes, not 30 days. Refresh tokens extend the session without asking the user to log in again.
+01:01
+→
+01:56
+So when the access token expires, the refresh token gets a brand new one. And the refresh token itself continues to rotate. So every time it is used, the old one dies and a new one is born. So if someone steals the old token, it's already dead. That's a win. So Clerk handles this automatically. Supabase handles this automatically. But if you built auth yourself, you need to handle this yourself. Step three, implement logout properly. Logout does not mean deleting the cookie from the browser. Logout means invalidating the session on the server completely. If your logout only clears the front end, the token still works. Anyone who captured it can still make authenticated requests. Anyone who captured it can still make authenticated requests. Server-side sessions invalidation is the only logout that's gonna count. So make sure you close the door behind you for no new visitors. That's a win.

@@ -1,0 +1,13 @@
+Reel 37
+Source: https://www.instagram.com/p/DZH8QLtxdCT/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:27.933Z
+Completed: 2026-06-17T10:50:54.308Z
+00:00
+→
+01:03
+Your first enterprise prospect asked you for your SOC 2 report. You don't have one, so they told you to come back when you do. Here are three things you can do right now to prepare for your SOC 2. Step 1. Deploy continuous compliance monitoring right now. Pick a platform like Vonta or Drada or SecureFrame. These tools connect to your infrastructure directly. AWS, GitHub, Google Workspace and they automatically collect evidence for you. Who has access, what is encrypted, when backups are running. The tool watches your system 24 7. When something drifts out of compliance or causes a problem, it alerts you and that's a win. Step two, automate your evidence collection. SOC 2 requires proof of everything. Proof that you reviewed access quarterly. Proof that vulnerabilities get patched within 30 days. Proof that your backups restore successfully every time. So set up automated access reviews with Vanta.
+01:03
+→
+01:51
+Schedule monthly vulnerability scans with GitHub Dependabot. Run backup restoration tests with the Cron job. The evidence generates itself. That's a win. Step three, start with SOC 2 type 1. Type 1 says your controls are designed correctly at that point in time. Type 2 says they have been operating effectively for 6 to 12 months already. So get type 1 in 60 days. in time, type 2 says they have been operating effectively for 6 to 12 months already. So get type 1 in 60 days. Then start the observation period for type 2. Most startups can be type 1 within 2 months with the right automations. SOC 2 is not a wall, it's a door. And the key is automating it, not manual spreadsheets. So if you're targeting enterprise clients, you need to know what compliance asks are coming your way. Hope this helps.

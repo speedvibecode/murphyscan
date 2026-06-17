@@ -1,0 +1,13 @@
+Reel 27
+Source: https://www.instagram.com/p/DY5KQSsRpfz/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:00.425Z
+Completed: 2026-06-17T10:50:36.361Z
+00:00
+→
+01:02
+Layer 11 of 13. Load balancing and scaling. This is the one that breaks at the worst possible moment. And here's exactly what breaks. First, your database connections max out. Postgres has a default limit of about 100 connections. And if you don't have pooling set up, every user opens a new one. And when they do, you're going to hit that limit fast, and then everyone sees an error. Not cool. Second, your serverless functions, cold start. If you're on Vercel or Netlify, your functions, they spin down at idle. When traffic spikes, though, they all spin up at once. Each one takes seconds instead of milliseconds, and that's a cold start stampede. It'll jam things up. Third, your external API rate limit kicks in. Open API, Stripe, every service has limits. 100 users triggering AI calls simultaneously means you start getting errors fast. Your app doesn't crash, it just stops working for some users and not others,
+01:02
+→
+01:30
+and you don't know which ones. And that's worse than a crash here's what you do turn on connection pooling so your database shares connections efficiently add a queue for expensive operations so ai calls don't need to happen all at once and set up auto scaling if your platform supports it layer 11 isn't about handling a million users. It's about surviving a hundred at once without falling over layer 12 drops tomorrow

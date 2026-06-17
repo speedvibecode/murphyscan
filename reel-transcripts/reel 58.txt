@@ -1,0 +1,13 @@
+Reel 58
+Source: https://www.instagram.com/p/DZkd5y_xpqP/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:52:02.897Z
+Completed: 2026-06-17T10:52:17.273Z
+00:00
+→
+01:01
+Somebody in my comments yesterday was talking about repository branching strategies. So guess what? Let's talk about it. Here are the three things you need to know right now about branching repositories. Step one, your main branch is always production. It's not a playground. It's not a testing ground. It's the version your users are running right now. Every change that touches main should be tested, reviewed, and deliberate. If your team pushes directly to main, you do not have a branching strategy. Step two, feature branches exist so you can break things without breaking users. One branch per feature, one branch per fix. Build it, test it, merge it. If the feature is not ready, main does not know it exists. GitHub Flow keeps this really simple. One main branch, short-lived feature branches, pull requests before merge, that covers 90% of all teams.
+01:01
+→
+01:32
+That's a win. Step three, the more complex you release, the more branches you need. Staging branches, release branches, hotfix branches, all of them. GitFlow was literally designed just for this. Unfortunately, most builders adopt GitFlow before they really need it. And they end up spending way more time managing branches than writing code. So start simple. Add complexity when the pain demands it, not before. Branch like you deploy, with rigor.

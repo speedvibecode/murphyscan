@@ -1,0 +1,13 @@
+Reel 42
+Source: https://www.instagram.com/p/DZN3Z3IPD9a/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:42.991Z
+Completed: 2026-06-17T10:52:02.461Z
+00:00
+→
+01:01
+The AI wrote your code, you shipped it without reading it, it's three months later, and now you have tech debt that you do not understand. Here are the three things you can do right now to fix it. Step one, add an AI reviewer to your pull request pipeline. CodeRabbit, Sorcery, or even a custom GitHub action that calls Claude. Every PR triggers an automated review. The AI checks for security vulnerabilities, performance issues, and logic errors. It posts inline comments on your PR so you can review it. You read the AI's feedback before you merge anything. That's a win. Step two, prompt your reviewer for architecture, not syntax. The default AI review catches typos and formatting. That's totally useless. Customize your prompt. Focus on business logic correctness, SQL injection vectors, unhandled edge cases, and N plus one queries. Tell it to ignore style preferences.
+01:01
+→
+01:53
+Tell it to flag anything that touches auth, payments, or data deletions. The review should catch what breaks in production, not what breaks a linter. That's a win. Step 3. Gate merges on review completion. Add a required status check in GitHub. The PR cannot merge until AI review passes. Set severity thresholds. Critical issues block the merge. Warnings are only informational. Combined with your canary deployment from yesterday's video I dropped, you now have two safety nets for your system. AI catches it before the merge. Canary catches it after the deploy. So your AI wrote the code. Your AI should also be reviewing the code, and you are the orchestrator in the middle making the final call, just like an AI directed engineer. Talk to you soon.

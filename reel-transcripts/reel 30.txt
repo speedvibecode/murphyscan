@@ -1,0 +1,13 @@
+Reel 30
+Source: https://www.instagram.com/p/DY90q5PAPHa/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:00.429Z
+Completed: 2026-06-17T10:50:32.429Z
+00:00
+→
+01:05
+Someone in my DMs told me they built an AI app that works great. People are using it and loving it, but they have no idea how to charge them for it. Well, they built the right product. Now they want to get paid for their business. Well, Stripe makes this way simpler than many people think. And here are the three things you do right now to get paid. Step one, decide what you're charging for. Are you charging a flat fee for monthly usage? Is it per API call or is it based on total user usage? Stripe supports all three. Just pick one model and get started. You can always change it later. The mistake I see all the time is people spend three months building a billing system instead of just turning on payments. Step two, use Stripe Checkout instead of building your own payment page. It's not worth it. Stripe Checkout instead of building your own payment page. It's not worth it. Stripe gives you everything you need, a hosted checkout that handles credit cards, Apple Pay, Google Pay, and all of your receipts. So you send your user to a Stripe link, they pay, you unlock access, no payment forms, no PCI compliance. That's a win. So one link, you're
+01:05
+→
+01:34
+collecting cash. Step three, use Stripe's billing portal for everything after the sale. Customers need to update their credit card, cancel their plan, switch plans, download invoices. Stripe gives you the hosted portal for all of it. One link that says manage their subscription. Zero billing code from you so you don't need a finance team to monetize your app. You just need Stripe, a pricing decision, and the confidence to charge for what you build.

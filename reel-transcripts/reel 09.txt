@@ -1,0 +1,13 @@
+Reel 9
+Source: https://www.instagram.com/p/DYfZI0qx9xF/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:53.037Z
+Completed: 2026-06-17T10:48:25.348Z
+00:00
+→
+01:05
+AI can build beautiful UI in 10 minutes. But here's what it can't do. Responsive design that doesn't break on mobile. Accessibility for screen readers. Performance optimization for slow connections. State management that doesn't leak memory. The UI is the easiest part of any build. The AI nails it. But production front end isn't a pretty page. It's a system. Error boundaries that catch crashes without taking down the whole app. Loading states that tell users what's happening instead of what's freezing. Offline handling, animation performance, bundle size optimization. the AI gives you layer one. And layer one looks perfect to everyone until you open it on a real device, on a real connection with real users. Then you're definitely going to see what's missing. This is layer one of 13 layers I'm going to be covering in the next two weeks. Your app has this layer. You're good. There's only 12 more to go and a
+01:05
+→
+01:06
+bunch of them you haven't heard about yet.

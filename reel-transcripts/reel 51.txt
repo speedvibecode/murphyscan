@@ -1,0 +1,13 @@
+Reel 51
+Source: https://www.instagram.com/p/DZcoN1gRCgL/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:58.172Z
+Completed: 2026-06-17T10:52:08.607Z
+00:00
+→
+01:01
+Supabase got you to production, but that does not mean it'll scale through production. There's a moment in every project when the all-in-one platform starts fighting you back. Here are the three signs it's time to unbundle it. Step 1. Your auth needs outgrew the built-in. You need SSO, custom claims, multi-tenant permission logic. Supabase auth handles the basics really well. But when your access control model gets complex, you need a dedicated identity layer. Auth0, Clerk, WorkOS, all work great. Let Auth be its own service. That's the win. Step two, your database needs a different engine. Supabase is Postgres. Postgres is fantastic. But if your workload is time series, graph, or edge first, you're always fighting the architecture. Try this combo. Neon for serverless Postgres that scales to zero, Terso for SQLite at the edge, and Planet Scale for
+01:01
+→
+01:33
+MySQL with zero downtime migrations. Match the engine to the workload. That's a win. Step three, your storage, functions, and database need to be scaling. When one layer is bottlenecking the other, bundled infrastructure becomes the ceiling. Separate them. Scale them independently. Connect them through APIs. Supabase is a great starting point and a lot of you use it, but knowing when to leave it is what makes you a real operator.

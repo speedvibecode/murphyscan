@@ -1,0 +1,13 @@
+Reel 52
+Source: https://www.instagram.com/p/DZdbRXmv_lb/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:58.311Z
+Completed: 2026-06-17T10:52:13.102Z
+00:00
+→
+01:01
+Oh no, your AI model is returning garbage to the users. And it will, but your users, they should never have to see it. Here are the three things you can do right now to fix it. Step one, validate every AI response before it reaches the users. Does it match your expected schema? Is it within your length and boundaries? Does it contain prohibited content of some sort? If it fails any of these checks, it does not get through to the users. Most builders are piping raw model output directly to the front end. That works until your model hallucinates a credit card number or returns a 10,000 word response to a yes or no question. That's not a win. Step 2. Retry feedback when validation fails. Do not just error out. Add the failure reason to your retry prompt. Your previous responses have exceeded 200 words, so respond in under 200 words. Give your model a chance to self-correct itself. They usually do. 2 or 3 attempts max though. That's a win.
+01:01
+→
+01:34
+For everyone. Step 3. Degrade gracefully when retries fail. Fall back to a simpler model, a cached response, or a human handoff. The user should get a usable experience when the AI fails. Never show a raw error, never show a blank screen of death. So validate, retry, degrade. Build it once, use it everywhere. That's a best practice. So what happens now when your app, when the AI response is bad? What do you do? Drop it in the comments.

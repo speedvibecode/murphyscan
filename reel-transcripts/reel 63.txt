@@ -1,0 +1,13 @@
+Reel 63
+Source: https://www.instagram.com/p/DXwtOTDA-gx/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:53:31.630Z
+Completed: 2026-06-17T10:53:46.086Z
+00:00
+→
+01:08
+10 users, everything's fine. 100 users, things are slowing down around here. 1,000 users, everything crashes to the ground. This is the scaling cliff, and vibe-coded apps hit it real hard. Here's why. AI-generated code optimizes for works, not for works at scale. That database query that takes 50 milliseconds with 100 rows takes 30 seconds with 100 rows takes 30 seconds with 100,000 rows. And that API call you can make on every page load? Fine with 10 users. Death spiral with 1,000. The code isn't wrong. It just wasn't designed to scale. And here's what production-ready scaling looks like in a vibe-coded app. Database queries with proper indexing not select from everything but targeted queries that stay fast as data grows a clear caching strategy don't compute the same thing a thousand times over compute it once cache it once serve it fast async processing for heavy operations. Don't make users wait while you send emails or
+01:08
+→
+01:40
+generate reports. Cue it up. Process it in the background. And load testing before launch. Not we'll see what happens, but actual simulated traffic. Find the cliffs before your new users do. When we finish a vibe-coded project at Faction, we stress test for scale because launch day surprises are the most expensive kind. What's the most users your app has handled at once? Was it smooth? Did it hit a cliff? Have you crashed? Maybe, maybe not. Tell me below.

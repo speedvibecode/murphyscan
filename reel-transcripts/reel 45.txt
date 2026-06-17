@@ -1,0 +1,13 @@
+Reel 45
+Source: https://www.instagram.com/p/DZSYNBNxE1k/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:42.993Z
+Completed: 2026-06-17T10:51:58.305Z
+00:00
+→
+01:02
+A user clicks export report. Your API generates a PDF. It takes 45 seconds so the request times out. The user clicks it again. So now you're. Create a job record, return a job ID immediately. Status processing. The user sees a progress indicator, the actual work happens in the background. Your API responds in 200 milliseconds every time. That's a win. Step two, process jobs with a worker. Ingest, trigger.dev, or bullmq. Ingest is the easiest for a server list. I use it the most. Define a function that runs when a job event fires. It processes at its own pace. If it fails, it retries with exponential
+01:02
+→
+01:44
+backoff. The user isn't watching a spinner. They get a notification when it's done. That's a win. Step three, implement item potency keys. The user who clicked twice, both clicks should produce one job, not two. Attach a unique key to every request. Before creating a new job, check if that key exists. If it does, return the existing job. No duplicates, immediate response times, background processing. So no timeouts, no duplicates, and no angry users. That's a win. So are you running operations synchronously that you should be running async? Let me know.

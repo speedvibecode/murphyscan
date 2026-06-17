@@ -1,0 +1,13 @@
+Reel 29
+Source: https://www.instagram.com/p/DY7iptdRsB0/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:00.426Z
+Completed: 2026-06-17T10:50:28.194Z
+00:00
+→
+01:01
+Layer 12 of 13, error tracking and logs. This is the one that tells you what's broken before your users do. So if your only debugging strategy is refreshing the page, your app isn't in production. It's just a shiny demo. So right now, most of you have no idea what's happening inside your app. Not your fault. It's the way the AI writes it. A user hits an error. They see a white screen, they leave. They don't file a bug report, they don't email you, they just leave. It's the way it works. And you'll think everything is fine because nobody is complaining. But error tracking changes all that. Tools like Sentry catch every unhandled exception in your app. We've talked about it a dozen times. Front end and back end. So when something breaks, you get the stack trace, the browser, the URL, and an alert. That's a win. You'll find out about bugs in minutes instead of weeks. The difference between a demo and a production app? It isn't the features. It's observability, what we're talking about here.
+01:01
+→
+01:10
+And if you can't see what's breaking, you can't fix it. Layer 12 is stop guessing and start watching, right? The final layer, 13, comes tomorrow.

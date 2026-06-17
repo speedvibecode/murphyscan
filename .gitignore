@@ -1,0 +1,10 @@
+Thumbs.db
+.DS_Store
+
+.claude/CLAUDE.local.md
+.claude/settings.local.json
+.claude/settings.json
+
+.opencode/state/
+.opencode/cache/
+

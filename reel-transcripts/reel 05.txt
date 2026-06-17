@@ -1,0 +1,13 @@
+Reel 5
+Source: https://www.instagram.com/p/DYUiLhrNY9o/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:53.034Z
+Completed: 2026-06-17T10:48:21.126Z
+00:00
+→
+01:06
+When you hit deploy, you refresh and it's broken. And then you hit deploy again and it works and you have no idea what has changed. That's not engineering. That's gambling. And here's how you stop praying and start shipping. Number one, preview deploys before going live. Vercel and Netlify both do this for free. Great platforms. Every time you push code, it builds a preview URL for you to check out, a live version of your app with the new changes that nobody sees but you. Super powerful. Click around, test it, make sure everything works, then push it to production. You'd test drive a car, right, before you bought it. Well, test drive your Deploy before shipping it. car right before you bought it, well, test drive your deploy before shipping it. Your customers will appreciate it. Number two, one thing at a time. Stop shipping 47 changes in one deploy because when it breaks, and it's going to break, you have no idea which of those 47 changes caused the break. Small commits, small deploys, each one does one particular thing. If it breaks, you know exactly
+01:06
+→
+01:47
+what broke, exactly how to fix it, right? This alone eliminates 80% of deployment headaches, and you don't want one. Number three, know your rollback. Before you hit deploy, know exactly how to undo it step by step. One click, under 60 seconds, full rollback. Vercel has instant rollback on the previous deploy because when your app is down and your users are leaving, you're going to want that button. And you don't want to be googling how to roll back for the first time when it's happening. So ship with confidence, not with crossed fingers. Every deploy should be totally boring in fact. More tips and tricks coming tomorrow.

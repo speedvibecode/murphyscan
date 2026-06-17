@@ -1,0 +1,13 @@
+Reel 48
+Source: https://www.instagram.com/p/DZXhEL2RVRu/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:42.994Z
+Completed: 2026-06-17T10:51:58.636Z
+00:00
+→
+01:06
+Your database credentials are completely static. Same username and password for the last six months. If they leak, every query in your system is compromised until you change them manually. Here are three things you can do right now to fix it. Step one, deploy a secrets engine that generates credentials on demand. HashiCorp's Vault or Mphysical or your cloud provider's native manager. Whatever it is, the difference from basic secrets management, dynamic secrets are created per session and auto-expire. That's a win. Your app requests those credentials, Vault generates a unique set, they live for one hour, then they die. No permanent credentials to steal. Like I said, that's a win. Step two, configure per service credential scoping. Your API server gets read-write access to the tables it needs. Your analytics service gets read-only rights. And your background worker gets access to job queue and nothing else. Least privilege enforced by the secrets engine not by trust that's a win
+01:06
+→
+01:37
+step 3 enable audit logging on every secret access who requested credentials when from which IP address for which service right when something goes wrong you have the full trail to audit not a guess a complete log dynamic secrets scoped assets audit trail so your blast radius shrinks from infinite to just that one session so how are you managing database credentials right now be honest in the comments

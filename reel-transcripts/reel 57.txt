@@ -1,0 +1,13 @@
+Reel 57
+Source: https://www.instagram.com/p/DZisZ_9v0RW/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:52:02.789Z
+Completed: 2026-06-17T10:52:21.339Z
+00:00
+→
+01:02
+Everyone is shopping for a vector database lately. Pinecone, Weeviate, Chroma, and Postgres just quietly became all of them. Here are the three things you need to know right now. Step one, PG Vector exists. One extension turns your existing Postgres database into a vector store. You do not need a second database. You do not need a new vendor and you do not need to move your data. That's a win. Your embeddings, they'll live right next to your relational data, same database, same backup, same security, and the same team that already knows how to manage it. That's a win. Step two, the dedicated vector databases are incredible at one thing, similarity search at massive scale, billions of vectors, millisecond retrievals. If you're building a product where vector search is the product, you need a specialist. But if you're adding AI search recommendations or RAG to an existing application, you probably do not need a whole new database just for embeddings.
+01:03
+→
+01:39
+PG Vector handles millions of vectors without breaking a sweat. That's a win. Step 3. The real question is operational complexity. Every database you add is another thing to back up, another thing to monitor, another connection string, another point of failure at 3 in the morning. Postgres with PG Vector is one database doing two jobs. A dedicated vector store is two databases doing two jobs. Sometimes it's the right call, but you better know why before you sign the invoice. So make sure you choose the complexity you can defend. That's a win.

@@ -1,0 +1,13 @@
+Reel 38
+Source: https://www.instagram.com/p/DZIgAzQxSmS/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:50:28.199Z
+Completed: 2026-06-17T10:51:02.627Z
+00:00
+→
+01:05
+You added GPT-5-5 to your app. Users love it, sure, but your old bill was only $50. Your new bill, $4,000. Here are the three things you do right now to fix it. Step one, implement semantic caching, right? Most users ask similar questions over and over and over. Hash the intent of the query, not the exact words. Use an embedding model to create some sort of vector, right? Before calling GPT-55, check if a semantically similar query was answered in the last 24 hours. Upstash, Vector, and Pinecone can handle this for you. Hit rate of 40 or 60% on most apps, so that's 40 to 60% fewer API calls, that's a win. Step two, route by complexity. Not every request needs 5.5. Simple questions, FAQs, status checks, formatting, send those to Haiku or GPT-40-Mini. Complex reasoning, analysis, code generation, multi-step logic, there's a lot of choices.
+01:05
+→
+01:54
+5.5.5 could be it, but that's where the expensive model lives. So build a classifier, 10 lines of code, check token count, detect question complexity, route accordingly. Your average cost per request drops 70%. That's a win. Step three, batch and debounce. If your app sends a request on every keystroke stop debounce 300 milliseconds if your app processes documents batch them 10 documents and one api call instead of separate api calls that's a win the per token cost is the same but the overhead cost per request goes way down caching routing batch routing, batching, three architectural changes, same user experience, 70% lower bill. That's the win for today.

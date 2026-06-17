@@ -1,0 +1,13 @@
+Reel 12
+Source: https://www.instagram.com/p/DYklzbex7me/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:53.061Z
+Completed: 2026-06-17T10:48:20.213Z
+00:00
+→
+01:03
+Layer 3 of 13. One table, 47 columns. That's not a database, folks. That's a spreadsheet with delusions. The AI doesn't design database. It creates tables. There's a big difference. A design database has normalized tables, proper indexes, migration files, backup strategies, and query optimization. An AI-gener generated database has something entirely different. One table per prompt, no relationships, no indexes, no migrations. So you add a column every time you need something new. Username, new column. User preferences, also a new column. User orders, another new column. Until you have 47 columns and queries that take 8 seconds to load but your users they leave after 2 seconds layer 3 is totally invisible nobody sees a well-designed database but everybody feels a really bad database and right now your database is a ticking time bomb that's layer 3 of 13 10 more
+01:03
+→
+01:05
+to go

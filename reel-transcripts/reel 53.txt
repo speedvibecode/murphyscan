@@ -1,0 +1,13 @@
+Reel 53
+Source: https://www.instagram.com/p/DZfT4d5AiWg/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:58.345Z
+Completed: 2026-06-17T10:52:13.230Z
+00:00
+→
+01:05
+Your app, it hits the database on every single request. Same query, same result, full round trip every single time. Your users feel it, your server feels it, and your bill feels it. Here are the three things you can do right now to fix it. Step one, add a response cache at the API layer. Redis or memcached, both work great. If the data has not changed in the last 60 seconds, serve it from memory. One line of middleware, instant speed improvement, most read-heavy endpoints can cache it aggressively. That's a win. Step two, put a CDN in front of your static and semi-static content. Cloudflare, Vercel Edge, AWS CloudFront. Images, scripts, and even API responses that do not change per user, that's what you put there. Edge caching means your server never sees the request. That's a win. Step three, cache your most expensive database queries. You know that analytics dashboard loading eight joins across four tables? That's the one. Cache the result, invalidate on write,
+01:05
+→
+01:20
+don't let your database do the same heavy math on every page load. Cache the result, invalidate on write, don't let your database do the same heavy math on every page load. So three layers memory, edge, and database. Stack them and your app gets faster without changing a single line of business logic and that's a win.

@@ -1,0 +1,13 @@
+Reel 11
+Source: https://www.instagram.com/p/DYiSfwGP2D9/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:53.062Z
+Completed: 2026-06-17T10:48:12.864Z
+00:00
+→
+01:02
+Your app calls the database from the front end. That's not an architecture strategy, that's a security hole with UI. Layer 2 of 13 is where your app's brain lives. Business logic, data validation, rate limiting, request authentication. Without a proper back-end, your front-end talks to the database directly and your secrets live directly in your browser. Your logic can be inspected by anyone at that point. The AI builds you a front end that calls Supabase directly, works great for a demo, but that's terrible for production. There's no input validation, there's no rate limiting, there's no business rules enforcement. A user can send a thousand requests in a second, your app is going to process all of them. A user sends malformed data, your app is just going to store it. And a user manipulates the client side code, your app trusts it. Layer 2 is not glamorous. It's the bouncer at the door and right now your door is wide open.
+01:02
+→
+01:05
+It's time to lock it up so you can ship.

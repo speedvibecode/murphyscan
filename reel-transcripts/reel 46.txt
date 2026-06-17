@@ -1,0 +1,13 @@
+Reel 46
+Source: https://www.instagram.com/p/DZSzeK0RgCd/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:42.993Z
+Completed: 2026-06-17T10:52:02.782Z
+00:00
+→
+01:01
+your app has 200 users. Your infrastructure bill, it's $900 a month. If you charge $10 a month per user, half your revenue is going to AWS. Here are three fixes you can do right now. Step one, audit your always-on resources. That database that's running 24-7 on a pro plan might be able to make changes there. So check your traffic. If you have zero requests between midnight and 6 a.m. that means you're paying for idle compute most platforms will allow you to scale to zero neon pauses after five minutes railway will scale to zero on their hobby plan so pay for compute when users are active not when they're sleeping. That's a win. Step two, set spend alerts at every layer. Vercel, Supabase, OpenAI, AWS, all of them have billing alerts. Set them at 50, then 75, then 90% of your budget. Set a hard cap anywhere possible. One misconfigured function calling Opus
+01:01
+→
+01:33
+47 in a loop can burn $300 an hour. Ask me how, I know. Step three, right size your database. Supabase Pro is $25 a month for eight gigs of RAM. But if you're only using one gig, you're overpaying. Downgrade it, monitor it, scale it when metrics demand it, not because you wanted it. Audit, alert, and right right size your margins determine everything whether your platform is going to survive or whether you're going to bleed out slowly hope this helps

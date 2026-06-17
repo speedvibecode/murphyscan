@@ -1,0 +1,13 @@
+Reel 61
+Source: https://www.instagram.com/p/DZnYDewRV_h/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:53:31.628Z
+Completed: 2026-06-17T10:53:50.152Z
+00:00
+→
+01:02
+Right now, like right now, there are bots scanning every single public GitHub repository for API keys. Every commit, every pull request, every accidentally pushed.env file. Here are the three things you're going to do right now to prevent it. Step one, check your Git history. Not your current code, your history. You might have removed the key from your file, but Git remembers everything. That API key you accidentally committed six months ago and then deleted in the next commit, guess what? Still in the repository. Anyone who clones your repo can find it. If that repo was ever public, even for five minutes, assume that key was harvested by bots. Rotate it today. That's the win. Step two, use Git secret scanning. GitHub has push protection. It scans every commit before it is pushed and blocks every known secret pattern. Git guardian does the same thing. Git
+01:02
+→
+01:59
+leaks runs locally. Trufflehog digs through your entire history. These are the tools that catch the mistakes before it becomes a breach. And don't forget, turn on push protection. It takes two minutes. It prevents the kind of incident that takes two weeks to recover from. And that's a win. Step three, scope your keys. Most API providers let you restrict what a key can do. So read-only, specific endpoints, specific IP addresses, specific domains. If your Stripe key can do everything and it leaks, everything's at risk. If your Stripe key can only create checkout sessions from one domain, that blast radius, nice and small. So scoping a key is free. Recovering from an unscoped key is not free. So the lesson is assume every key will leak and plan accordingly every day.

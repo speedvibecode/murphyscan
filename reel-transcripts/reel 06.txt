@@ -1,0 +1,13 @@
+Reel 6
+Source: https://www.instagram.com/p/DYXGdH4AtnZ/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:47:53.035Z
+Completed: 2026-06-17T10:48:29.295Z
+00:00
+→
+01:14
+You think your vibe coded app works great right until the API changes or the rate limit kicks in or that free tier you're using disappears and your entire app stops working right then. Well, here's how you're going to fix it. from your main code. Wrap it in a function, one place, one file. When the API changes, like Murphy's Law, inevitably it will, you update it once, not 40 times. If you have open AI calls scattered across your whole app, that's a problem. You're only one breaking change away from rewriting the whole thing. So one wrapper, one source of truth, that's the power move. So one wrapper, one source of truth, that's the power move. Number two, build a fallback plan. What happens when the API is down? If the answer is my whole app breaks, you don't have an app. You have a wrapper around someone else's app that you cannot control. So you need to build a graceful fallback, a cast response of some sort, a queue that retries, even a message that says back in 60 seconds. Anything is better than a blank screen and silence, and you know it. Number three,
+01:14
+→
+01:39
+own your data layer. Your database should be yours, not theirs. If you're storing everything inside a third-party API and they shut down tomorrow, you lost everything for you and your customers. Keep a copy of everything that matters in a database you can control. APIs are only rentals. Your database, that's your ownership. You got to know the difference. More tips and tricks coming tomorrow.

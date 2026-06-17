@@ -1,0 +1,13 @@
+Reel 47
+Source: https://www.instagram.com/p/DZU438dxu9_/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-06-17T10:51:42.994Z
+Completed: 2026-06-17T10:51:58.338Z
+00:00
+→
+01:08
+Your app runs every AI prompt through the same model. Customer support, code generation, data extraction, all hitting your most expensive endpoints. That is not an AI strategy, folks. That is a billing problem. Here are three things you can do right now to fix it. Step one, build a complexity classifier. Score incoming requests on token count, task type, and reasoning depth. 10 lines of code. Simple classification goes to your lightweight model, haiku class. Moderate tasks go for mid-tier, sonic class. And complex multi-step reasoning goes to your heavy model, opus class. That's a win. Step two. Route at the API gateway layer. Your application sends every API request to one endpoint. The gateway scores complexity and routes to the right model automatically. The user never knows which model answered. They just know it was fast and correct. That's a win. Step three, measure output quality per tier. Run your evaluation suite
+01:08
+→
+01:32
+against each model every week. If your lightweight model handles 85% of the requests at the same quality score as your expensive model, you just saved 85% of your budget. One builder in this community reported 80% savings with a three-tier Anthic setup. So, zero quality drop, that's a win. What is your monthly API spend strategy right now? Drop it in the comments.
