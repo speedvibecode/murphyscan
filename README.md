@@ -27,6 +27,54 @@ The repo contains:
 - a Claude Code-compatible skill path at `.claude/skills/murphyscan`
 - an OpenCode slash command at `.opencode/commands/murphyscan.md`
 
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/speedvibecode/murphyscan.git
+cd murphyscan
+```
+
+### 2. Choose how you want to use it
+
+#### Option A: Use this repo directly as the shared MurphyScan rule repo
+
+This is the simplest setup for a team.
+
+- Keep this repository as the source of truth.
+- Open it in Codex, Claude Code, or OpenCode when you want to work on MurphyScan itself.
+- Copy the portable skill folders into app repos when you want the slash command available inside those projects.
+
+#### Option B: Install MurphyScan into another project
+
+From this repo, copy the portable agent paths into the target project root:
+
+```text
+.agents/skills/murphyscan/
+.claude/skills/murphyscan/
+.opencode/commands/murphyscan.md
+```
+
+If you also want the full rule vault available inside the target project, copy:
+
+```text
+00-Start/
+01-Layers/
+02-Concepts/
+04-MurphyScan/
+```
+
+### 3. Invoke the command
+
+- Codex: `/murphyscan`
+- Claude Code: `/murphyscan`
+- OpenCode: `/murphyscan`
+
+### 4. Recommended team rollout
+
+For a team setup, keep this repository as the canonical MurphyScan repo and distribute updates from here into app repos. That avoids each project inventing its own version of launch-readiness criteria.
+
 ## Repository layout
 
 - `00-Start/`
