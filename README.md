@@ -2,32 +2,54 @@
 
 MurphyScan is a portable launch-readiness and scaling-readiness audit system for software projects.
 
-It is designed to answer one practical question:
+It is built to answer one operational question:
 
 `What is still missing before this app is actually safe to launch, and what should be improved to keep it healthy as it scales?`
 
-## Credit
+## What it is
 
-MurphyScan is heavily inspired by the Instagram reel content of [`@mattmurphyai`](https://www.instagram.com/mattmurphyai/), who is, in plain terms, the messiah of vibe coders on Instagram.
+MurphyScan is not a code generator and not a generic prompt wrapper.
 
-The production-readiness themes in this repo were shaped by that reel series: launch discipline, auth and RLS, secrets, deploy safety, monitoring, cost controls, and scaling risks.
+It is a reusable verification framework that:
+- scans a project for launch blockers
+- identifies missing launch controls
+- separates current launch risk from future scale risk
+- produces a decision-oriented report with evidence
 
-## Source note
+The rule system is organized into 13 production layers:
+- frontend
+- APIs and backend logic
+- database and storage
+- auth and permissions
+- hosting and deployment
+- cloud and compute
+- CI/CD and version control
+- security and RLS
+- rate limiting
+- caching and CDN
+- load balancing and scaling
+- error tracking and logs
+- availability and recovery
 
-This repository contains:
-- original vault structure, grouping, synthesis, agent-facing organization, and cross-tool wrappers created for MurphyScan
-- source-derived summaries and notes that were built from transcripts of Matt Murphy's reel content
+## Why this repo exists
 
-Original source content remains attributable to its creator. MurphyScan should be understood as an agent-ready audit framework built from those ideas, not as a claim of authorship over the original reel material.
+Most vibe-coded apps fail in the same predictable ways:
+- auth exists but authorization does not
+- secrets leak into frontend code or git history
+- deploys go straight to production with no rollback plan
+- monitoring is missing or decorative
+- paid AI endpoints have no cost controls
+- scaling assumptions are never tested
 
-The repo contains:
-- a Murphy rule vault organized into 13 production layers
-- consolidated concept notes for repeated risks like auth, RLS, secrets, deploy safety, AI evals, caching, and scaling
-- a Codex-compatible skill at `.agents/skills/murphyscan`
-- a Claude Code-compatible skill path at `.claude/skills/murphyscan`
-- an OpenCode slash command at `.opencode/commands/murphyscan.md`
+MurphyScan turns those repeated failure modes into a shared audit system that can be used by agents and teams.
 
-## Installation
+## Supported agent surfaces
+
+- Codex via `.agents/skills/murphyscan/`
+- Claude Code via `.claude/skills/murphyscan/`
+- OpenCode via `.opencode/commands/murphyscan.md`
+
+## Quickstart
 
 ### 1. Clone the repository
 
@@ -36,19 +58,15 @@ git clone https://github.com/speedvibecode/murphyscan.git
 cd murphyscan
 ```
 
-### 2. Choose how you want to use it
+### 2. Use it in one of two ways
 
-#### Option A: Use this repo directly as the shared MurphyScan rule repo
+#### Option A: Keep this repo as the canonical MurphyScan rule repo
 
-This is the simplest setup for a team.
-
-- Keep this repository as the source of truth.
-- Open it in Codex, Claude Code, or OpenCode when you want to work on MurphyScan itself.
-- Copy the portable skill folders into app repos when you want the slash command available inside those projects.
+Use this when your team wants one shared source of truth for launch-readiness criteria.
 
 #### Option B: Install MurphyScan into another project
 
-From this repo, copy the portable agent paths into the target project root:
+Copy these into the target project root:
 
 ```text
 .agents/skills/murphyscan/
@@ -56,100 +74,53 @@ From this repo, copy the portable agent paths into the target project root:
 .opencode/commands/murphyscan.md
 ```
 
-If you also want the full rule vault available inside the target project, copy:
+If you also want the full MurphyScan vault inside the target project, copy:
 
 ```text
 00-Start/
 01-Layers/
 02-Concepts/
 04-MurphyScan/
+reel-transcripts/
 ```
 
-### 3. Invoke the command
+### 3. Invoke it
 
 - Codex: `/murphyscan`
 - Claude Code: `/murphyscan`
 - OpenCode: `/murphyscan`
 
-### 4. Recommended team rollout
-
-For a team setup, keep this repository as the canonical MurphyScan repo and distribute updates from here into app repos. That avoids each project inventing its own version of launch-readiness criteria.
-
-## Repository layout
+## What the repo contains
 
 - `00-Start/`
-  Entry points, layer map, concept index, and agent knowledge map
+  Entry points, routing, and agent knowledge maps.
 - `01-Layers/`
-  The 13 production-readiness layers
+  The 13 production-readiness layer hubs.
 - `02-Concepts/`
-  Reusable verification concepts
+  Consolidated verification concepts such as RLS, secrets, deploy safety, AI evals, and scaling cliffs.
 - `04-MurphyScan/`
-  Skill brief and scan-rule backlog
-- `reel-transcripts/cleaned/`
-  Source-backed reel summaries that fed the vault
-
-## Usage
-
-### Codex
-
-Project-local skill path:
-- `.agents/skills/murphyscan/SKILL.md`
-
-Invoke:
-- `/murphyscan`
-
-### Claude Code
-
-Claude Code reads project-local skills from:
-- `.claude/skills/murphyscan/SKILL.md`
-
-Project guidance also lives at:
-- `CLAUDE.md`
-
-Invoke:
-- `/murphyscan`
-
-Official Claude Code docs for project directories and skills:
-- [Explore the .claude directory](https://code.claude.com/docs/en/claude-directory)
-
-### OpenCode
-
-OpenCode can load project-local skills from `.agents/skills/` or `.claude/skills/`, and custom commands from `.opencode/commands/`.
-
-Command path:
-- `.opencode/commands/murphyscan.md`
-
-Invoke:
-- `/murphyscan`
-
-Official OpenCode docs:
-- [Agent Skills](https://opencode.ai/docs/skills/)
-- [Commands](https://opencode.ai/docs/commands/)
-- [Rules via AGENTS.md](https://opencode.ai/docs/rules/)
-
-## Copy into another project
-
-Minimum portable set:
+  Skill brief and prioritized scan backlog.
 - `.agents/skills/murphyscan/`
+  Codex-compatible skill.
 - `.claude/skills/murphyscan/`
+  Claude Code-compatible skill path.
 - `.opencode/commands/murphyscan.md`
+  OpenCode slash command wrapper.
+- `reel-transcripts/`
+  The source corpus: raw transcripts, cleaned summaries, and source manifest.
 
-If you want the full Murphy rule system in the target project too, also copy:
-- `00-Start/`
-- `01-Layers/`
-- `02-Concepts/`
-- `04-MurphyScan/`
+## Why the transcript corpus is in the repo
 
-## Rights and reuse
+The transcript corpus is not clutter. It is part of the value.
 
-This repo is public so teammates and collaborators can inspect and use it, but the source-derived reel material is not the same thing as original code you wrote from scratch.
+It gives MurphyScan:
+- source traceability
+- a reusable research base for future scan rules
+- a way to verify that the framework is grounded in a consistent production-readiness philosophy
+- a path for future agents to refine the rules instead of treating them as unexplained doctrine
 
-If you want to open-source MurphyScan cleanly, the safer shape is:
-- keep the original framework, layer model, skill wrappers, and scan logic as your own reusable work
-- keep clear attribution to `@mattmurphyai`
-- avoid pretending the transcript-derived material is fully yours to relicense without permission
-
-Until rights are clarified, do not assume a permissive open-source license is the right move for the full repository.
+Start here for corpus structure:
+- [reel-transcripts/README.md](./reel-transcripts/README.md)
 
 ## Output shape
 
@@ -160,3 +131,43 @@ MurphyScan reports should separate:
 4. scaling and resilience gaps
 5. highest-leverage next actions
 6. evidence references
+
+Example:
+- [examples/murphyscan-report-example.md](./examples/murphyscan-report-example.md)
+
+## Recommended team rollout
+
+The cleanest team setup is:
+- keep this repository as the canonical MurphyScan repo
+- version and improve the rule system here
+- copy the portable skill folders into app repos where you want `/murphyscan` available
+- run forward tests against real app repos before treating a new rule as stable
+
+That keeps the audit logic centralized instead of letting each project drift into its own definition of “launch ready”.
+
+## Attribution
+
+MurphyScan is heavily inspired by the Instagram reel content of [`@mattmurphyai`](https://www.instagram.com/mattmurphyai/), whose posts on launch discipline, auth and RLS, secrets, deploy safety, monitoring, cost controls, and scaling risks strongly shaped the system.
+
+The repo includes source-derived summaries built from transcripts of that reel corpus, along with the original MurphyScan vault structure, grouping, synthesis, and cross-agent wrappers.
+
+## Rights and reuse
+
+This repository is public so teams can inspect and use it, but the source-derived reel material should not be confused with fully original-from-scratch code or documentation.
+
+Practical interpretation:
+- the MurphyScan framework, grouping, wrappers, and verification structure are reusable
+- the reel-derived source material remains attributable to its original creator
+- do not assume a permissive open-source license is the right move for the full repository unless rights are clarified
+
+## Status
+
+MurphyScan is usable now, but the right maturity bar for a team is not “the slash command exists.”
+
+The real bar is:
+- it catches real launch blockers on real repos
+- different team members get roughly the same judgment from the same project
+- the reports stay concrete instead of collapsing into generic AI review noise
+
+That is why forward-testing on actual app repos matters.
+
