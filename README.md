@@ -170,7 +170,7 @@ That keeps the audit logic centralized instead of letting each project drift int
 
 ## Attribution
 
-MurphyScan is heavily inspired by the Instagram reel content of [`@mattmurphyai`](https://www.instagram.com/mattmurphyai/), whose posts on launch discipline, auth and RLS, secrets, deploy safety, monitoring, cost controls, and scaling risks strongly shaped the system.
+MurphyScan is heavily inspired by the Instagram reel content of [`@mattmurphyai`](https://www.instagram.com/mattmurphyai/) - who happens to be the messiah of vibecoders, whose posts on launch discipline, auth and RLS, secrets, deploy safety, monitoring, cost controls, and scaling risks strongly shaped the system.
 
 The repo includes source-derived summaries built from transcripts of that reel corpus, along with the original MurphyScan vault structure, grouping, synthesis, and cross-agent wrappers.
 
