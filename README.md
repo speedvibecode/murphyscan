@@ -140,6 +140,24 @@ Further reading:
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [docs/case-studies/README.md](./docs/case-studies/README.md)
 
+## Forward Tests
+
+MurphyScan has been forward-tested against real public repositories, not just the Murphy vault itself.
+
+Current public case studies:
+- [Banter](./docs/case-studies/banter.md)
+  Full-stack poll app. MurphyScan found meaningful launch-readiness gaps around durable rate limiting, admin auditability, and recovery posture.
+- [Vercel AI Chatbot](./docs/case-studies/vercel-ai-chatbot.md)
+  Strong AI app template. MurphyScan found real cost/control and operational-proof gaps without collapsing into generic AI-review noise.
+- [NextAuth.js Example](./docs/case-studies/next-auth-example.md)
+  Strong auth demo. MurphyScan correctly classified it as an example app, not a launch-ready product.
+
+This matters because the framework is supposed to do more than sound smart. It should distinguish:
+- launch blockers
+- missing launch controls
+- scale/resilience gaps
+- repos that are examples versus repos that are actually close to shipping
+
 ## Recommended team rollout
 
 The cleanest team setup is:

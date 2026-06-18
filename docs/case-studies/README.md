@@ -6,3 +6,5 @@ They show what the framework caught on real application repos, not just what the
 
 Current case studies:
 - [Banter](./banter.md)
+- [Vercel AI Chatbot](./vercel-ai-chatbot.md)
+- [NextAuth.js Example](./next-auth-example.md)
