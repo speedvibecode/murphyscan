@@ -1,5 +1,7 @@
 # MurphyScan
 
+Version: `0.1.0`
+
 MurphyScan is a portable launch-readiness and scaling-readiness audit system for software projects.
 
 It is built to answer one operational question:
@@ -139,6 +141,8 @@ Further reading:
 - [docs/architecture.md](./docs/architecture.md)
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [docs/case-studies/README.md](./docs/case-studies/README.md)
+- [docs/source-corpus-maintenance.md](./docs/source-corpus-maintenance.md)
+- [CHANGELOG.md](./CHANGELOG.md)
 
 ## Forward Tests
 
@@ -157,6 +161,37 @@ This matters because the framework is supposed to do more than sound smart. It s
 - missing launch controls
 - scale/resilience gaps
 - repos that are examples versus repos that are actually close to shipping
+
+## Keeping It Growing
+
+Yes, MurphyScan is set up to keep growing, but now it also has an explicit intake loop instead of relying on ad hoc vault edits.
+
+Corpus maintenance surfaces:
+- [reel-transcripts/manifest.json](./reel-transcripts/manifest.json)
+- [reel-transcripts/INBOX.md](./reel-transcripts/INBOX.md)
+- [docs/source-corpus-maintenance.md](./docs/source-corpus-maintenance.md)
+
+That gives the repo a controlled path for:
+- tracking newly posted reels
+- preserving raw source material
+- producing cleaned source notes
+- updating the correct layer and concept notes
+- validating material rule changes against real repos
+
+## Versioning
+
+MurphyScan now has explicit skill/repo versioning.
+
+Current version:
+- `0.1.0`
+
+Version surfaces:
+- [VERSION](./VERSION)
+- [CHANGELOG.md](./CHANGELOG.md)
+
+Practical rule:
+- reel additions that materially improve MurphyScan behavior should land with a changelog entry
+- pure cleanup or wording-only changes do not need to pretend they are major rule upgrades
 
 ## Recommended team rollout
 

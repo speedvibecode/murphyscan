@@ -1,5 +1,7 @@
 # MurphyScan Repository
 
+Version: `0.1.0`
+
 This repository packages MurphyScan as a reusable launch-readiness and scaling-readiness audit system.
 
 ## What is here
@@ -25,4 +27,4 @@ This repository packages MurphyScan as a reusable launch-readiness and scaling-r
 - Prefer updating existing concept notes over creating near-duplicate notes.
 - Keep the `.agents` and `.claude` MurphyScan skill bodies aligned.
 - Keep the OpenCode command thin; the reusable logic belongs in the skill and vault.
-
+- Record meaningful MurphyScan behavior changes in `CHANGELOG.md`.

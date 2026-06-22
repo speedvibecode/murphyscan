@@ -1,5 +1,7 @@
 # MurphyScan Repository
 
+Version: `0.1.0`
+
 This repository contains a reusable launch-readiness and scaling-readiness audit system for AI coding agents.
 
 ## Project structure
@@ -20,4 +22,4 @@ This repository contains a reusable launch-readiness and scaling-readiness audit
 - Separate launch blockers from scale/readiness improvements.
 - Prefer evidence over assumptions.
 - Do not add note sprawl when a concept belongs in an existing note.
-
+- Track meaningful MurphyScan behavior changes in `CHANGELOG.md`.
