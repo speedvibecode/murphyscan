@@ -4,6 +4,12 @@ description: Run MurphyScan launch-readiness and scaling audit
 
 Load and use the `murphyscan` skill from the project if it is available in `.agents/skills/murphyscan` or `.claude/skills/murphyscan`.
 
+If this repo is the MurphyScan vault itself and `reel-transcripts/next-batch.txt` contains URLs, treat a request about a new reel batch as a corpus-update run:
+- read `docs/source-corpus-maintenance.md`
+- read `docs/weekly-ingest-mode.md`
+- run the full intake, cleaning, synthesis, and archive flow
+- otherwise fall back to the normal launch-readiness scan behavior
+
 Run a standard MurphyScan audit against the current project unless I provide narrower scope in `$ARGUMENTS`.
 
 Scan for:

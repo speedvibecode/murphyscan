@@ -7,6 +7,18 @@ The versioning intent is simple:
 - increment minor for meaningful MurphyScan rule growth, new source-backed verification coverage, or improved agent behavior
 - increment major only if MurphyScan changes its report shape or operating model in a way that breaks expected use
 
+## 0.2.2 - 2026-07-01
+
+Weekly ingest pipeline hardening.
+
+Included in `0.2.2`:
+- replaced the ad hoc URL-drop flow with a fixed batch file at `reel-transcripts/next-batch.txt`
+- added `reel-transcripts/archive/` plus an archive-and-clear script for processed batches
+- updated the transcript runner to auto-detect the next reel number from the manifest
+- added `docs/weekly-ingest-mode.md` as the one-file, one-prompt operating path
+- updated repo instructions so a fresh Codex chat can auto-discover and run the full reel pipeline from the fixed batch file
+- refreshed maintenance docs and README to describe the new single-batch operator model
+
 ## 0.2.1 - 2026-07-01
 
 Public surface and example refresh.

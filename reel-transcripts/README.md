@@ -44,12 +44,23 @@ The corpus is meant to keep growing.
 Use:
 - [docs/source-corpus-maintenance.md](../docs/source-corpus-maintenance.md)
 - [INBOX.md](./INBOX.md)
-- `npm run transcribe:reels -- --reel-start <next reel number> --count <number of URLs>`
+- `npm run transcribe:next-batch`
+- `npm run archive:next-batch`
 
 The maintenance rule is simple:
 - preserve source traceability
 - update existing synthesis notes by default
 - only create new concept notes when the new reel changes verification behavior
+
+## Fixed intake flow
+
+The active batch file is:
+
+- `reel-transcripts/next-batch.txt`
+
+Processed batches are archived in:
+
+- `reel-transcripts/archive/`
 
 ## Attribution
 

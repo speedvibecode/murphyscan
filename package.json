@@ -2,7 +2,9 @@
   "name": "murphyscan",
   "private": true,
   "scripts": {
-    "transcribe:reels": "node scripts/transcribe-instagram-reels.mjs"
+    "transcribe:reels": "node scripts/transcribe-instagram-reels.mjs",
+    "transcribe:next-batch": "node scripts/transcribe-instagram-reels.mjs",
+    "archive:next-batch": "node scripts/archive-next-batch.mjs"
   },
   "devDependencies": {
     "playwright": "^1.61.0"

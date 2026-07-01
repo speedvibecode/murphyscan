@@ -208,6 +208,8 @@ MurphyScan has an explicit intake and synthesis loop rather than ad hoc vault ed
 Corpus maintenance surfaces:
 - [reel-transcripts/manifest.json](./reel-transcripts/manifest.json)
 - [reel-transcripts/INBOX.md](./reel-transcripts/INBOX.md)
+- [reel-transcripts/next-batch.txt](./reel-transcripts/next-batch.txt)
+- [docs/weekly-ingest-mode.md](./docs/weekly-ingest-mode.md)
 - [docs/source-corpus-maintenance.md](./docs/source-corpus-maintenance.md)
 
 That gives the repo a controlled path for:
@@ -217,12 +219,18 @@ That gives the repo a controlled path for:
 - updating the correct layer and concept notes
 - validating material rule changes against real repos
 
+Weekly operator model:
+- paste URLs into `reel-transcripts/next-batch.txt`
+- open a new chat in the repo
+- tell the agent the next reel batch was added
+- let it run import, cleaning, synthesis, archive, and repo finalization end to end
+
 ## Versioning
 
 MurphyScan uses explicit skill and repo versioning.
 
 Current version:
-- `0.2.1`
+- `0.2.2`
 
 Version surfaces:
 - [VERSION](./VERSION)

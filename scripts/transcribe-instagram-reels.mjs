@@ -7,9 +7,9 @@ const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const sourceFile = path.join(repoRoot, "new reels that need to be added.txt");
 const outputDir = path.join(repoRoot, "reel-transcripts");
 const manifestFile = path.join(outputDir, "manifest.json");
+const defaultSourceFile = path.join(outputDir, "next-batch.txt");
 const transcriptUrl = "https://saveto.ai/instagram-transcript-generator/";
 
 const args = new Map();
@@ -17,7 +17,8 @@ for (let i = 2; i < process.argv.length; i += 2) {
   args.set(process.argv[i], process.argv[i + 1]);
 }
 
-const reelStart = Number(args.get("--reel-start") || 65);
+const sourceFile = path.resolve(args.get("--source-file") || defaultSourceFile);
+const reelStartArg = args.has("--reel-start") ? Number(args.get("--reel-start")) : null;
 const listStart = Number(args.get("--list-start") || 1);
 const count = args.has("--count") ? Number(args.get("--count")) : Infinity;
 const concurrency = Number(args.get("--concurrency") || 4);
@@ -217,6 +218,19 @@ async function readManifest() {
   }
 }
 
+function batchLines(text) {
+  return normalizeLines(text)
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line && !line.startsWith("#"));
+}
+
+async function nextReelIndex() {
+  const manifest = await readManifest();
+  if (!manifest.length) return 1;
+  return Math.max(...manifest.map((item) => Number(item.index) || 0)) + 1;
+}
+
 async function writeManifest(results) {
   const prior = await readManifest();
   const byIndex = new Map(prior.map((result) => [result.index, result]));
@@ -228,10 +242,12 @@ async function writeManifest(results) {
 
 async function main() {
   await fs.mkdir(outputDir, { recursive: true });
-  const urls = normalizeLines(await fs.readFile(sourceFile, "utf8"))
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean);
+  const urls = batchLines(await fs.readFile(sourceFile, "utf8"));
+  if (!urls.length) {
+    throw new Error(`No reel URLs found in ${sourceFile}`);
+  }
+
+  const reelStart = reelStartArg ?? (await nextReelIndex());
 
   const selected = urls.slice(
     listStart - 1,

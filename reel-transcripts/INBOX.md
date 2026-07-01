@@ -45,6 +45,9 @@ As of July 1, 2026:
 - reels `65` through `104` have been transcribed into `reel-transcripts/`
 - cleaned notes now exist in `reel-transcripts/cleaned/`
 - the layer and concept surfaces have been updated from this batch
-- the intake batch was sourced from `new reels that need to be added.txt`
+- the next active intake surface is `reel-transcripts/next-batch.txt`
 
-For the next wave, use the local runner first and then move back into this inbox for cleaning and synthesis.
+For the next wave:
+1. paste URLs into `reel-transcripts/next-batch.txt`
+2. run the full batch pipeline
+3. archive the processed batch into `reel-transcripts/archive/`

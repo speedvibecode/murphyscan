@@ -41,14 +41,32 @@ The repo now carries its own transcript intake runner:
 
 ```bash
 npm install
-npm run transcribe:reels -- --reel-start 65 --count 40
+npm run transcribe:next-batch
 ```
 
 Practical notes:
-- keep `new reels that need to be added.txt` as the source URL list for the active batch
-- `--reel-start` should be the next raw reel number you want to assign
+- use `reel-transcripts/next-batch.txt` as the fixed URL drop zone
+- the runner auto-detects the next raw reel number from `reel-transcripts/manifest.json`
 - the runner writes raw transcript files into `reel-transcripts/` and updates `reel-transcripts/manifest.json`
 - after transcription, move into cleaning and synthesis through `reel-transcripts/INBOX.md`
+
+After a completed batch:
+
+```bash
+npm run archive:next-batch
+```
+
+That moves the processed URL list into `reel-transcripts/archive/` and clears the active batch file.
+
+## Auto-discovery rule
+
+If `reel-transcripts/next-batch.txt` contains URLs, treat that as the active intake surface for the next MurphyScan corpus update.
+
+The intended operator flow is:
+- paste URLs into `reel-transcripts/next-batch.txt`
+- open a new Codex chat in this repo
+- tell the agent the next reel batch was added
+- let the agent run the full intake, cleaning, synthesis, archive, and repo-update flow
 
 ## Decision rule
 

@@ -31,6 +31,12 @@ If the workspace contains the Murphy vault, use these notes first:
 
 Read only the relevant concept notes after repo discovery. Do not load the whole vault if a smaller subset answers the question.
 
+If the workspace is this Murphy repo and `reel-transcripts/next-batch.txt` contains URLs, treat a user message about a new reel batch as a corpus-update request rather than a launch-readiness scan. In that mode:
+- read `docs/source-corpus-maintenance.md`
+- read `docs/weekly-ingest-mode.md`
+- run the full intake, cleaning, synthesis, and archive flow
+- return to normal MurphyScan repo behavior once the batch is complete
+
 ### 2. Map findings to the 13 layers
 
 Evaluate the project against the production layers in `01-Layers/`. Use the matching concept notes in `02-Concepts/` to avoid repeating or diluting checks.
