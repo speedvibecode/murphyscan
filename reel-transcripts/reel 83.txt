@@ -1,0 +1,13 @@
+Reel 83
+Source: https://www.instagram.com/p/DZ521pHjp1q/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:00:49.758Z
+Completed: 2026-07-01T14:01:08.148Z
+00:00
+→
+01:01
+Your enterprise app works and your first enterprise customer is calling you up. The first question they ask you is for your SOC 2 report and you don't have one. Here are the three things you're facing right now with that customer. Number one, SOC 2 is not a product feature. It's a trust document. It tells your customer that an independent auditor reviewed your security controls and found them sufficient. Without it, enterprise deals stall out. Procurement teams stop returning emails. Trust me. The product is ready, but the business is not. So second, the audit itself takes three to six months, but the preparation takes years. Access controls, logging, incident response procedures, vendor management. These are not things you bolt on a week before an auditor arrives. They are architectural decisions that compound over a long time. Start building the evidence trail before you need it. If you're building for enterprise, prepare for this from day one.
+01:02
+→
+01:19
+And the third thing, SOC 2 is not a wall, it's a filter. It separates builders who ship projects from builders who ship businesses. Your competitor has already started. The question is not whether you need it. The question is whether you can afford to wait while you build it correctly. And that's what you need to be working towards.

@@ -1,6 +1,6 @@
 # MurphyScan
 
-Version: `0.1.0`
+Version: `0.2.0`
 
 MurphyScan is a portable launch-readiness and scaling-readiness audit system for software projects.
 
@@ -44,6 +44,12 @@ Most vibe-coded apps fail in the same predictable ways:
 - scaling assumptions are never tested
 
 MurphyScan turns those repeated failure modes into a shared audit system that can be used by agents and teams.
+
+Current corpus and rule state:
+- 104 cleaned source-backed reel notes
+- 13 layer hubs aligned to the production stack image
+- concept notes expanded with API contract review and AI supply-chain trust
+- portable `/murphyscan` wrappers for Codex, Claude Code, and OpenCode
 
 ## Supported agent surfaces
 
@@ -121,6 +127,9 @@ It gives MurphyScan:
 - a way to verify that the framework is grounded in a consistent production-readiness philosophy
 - a path for future agents to refine the rules instead of treating them as unexplained doctrine
 
+Current corpus size:
+- 104 cleaned source-backed reel notes
+
 Start here for corpus structure:
 - [reel-transcripts/README.md](./reel-transcripts/README.md)
 
@@ -183,7 +192,7 @@ That gives the repo a controlled path for:
 MurphyScan now has explicit skill/repo versioning.
 
 Current version:
-- `0.1.0`
+- `0.2.0`
 
 Version surfaces:
 - [VERSION](./VERSION)

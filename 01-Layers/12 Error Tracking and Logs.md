@@ -2,7 +2,7 @@
 layer: 12
 image_label: "ERROR TRACKING & LOGS"
 tags: [murphyscan, layer, logs, observability]
-source_reels: [reel-04, reel-29, reel-31, reel-37, reel-44, reel-54]
+source_reels: [reel-04, reel-29, reel-31, reel-37, reel-44, reel-54, reel-83, reel-85, reel-91, reel-92]
 ---
 # 12 Error Tracking and Logs
 
@@ -23,6 +23,10 @@ The observability layer verifies that failures become visible quickly, with enou
 - [[reel-37]] - compliance evidence and automated proof.
 - [[reel-44]] - continuous security scanning.
 - [[reel-54]] - AI evals as measurable quality logs.
+- [[reel-83]] - enterprise evidence asks for durable control logs, not only dashboards.
+- [[reel-85]] - health checks and external uptime monitoring find outages faster.
+- [[reel-91]] - structured logging and correlation IDs turn logs into traceable evidence.
+- [[reel-92]] - operational docs and failure-mode notes matter when systems break.
 
 ## What MurphyScan Should Verify
 - Frontend and backend errors are captured with stack traces.
@@ -30,7 +34,7 @@ The observability layer verifies that failures become visible quickly, with enou
 - Uptime alerts notify before users become the monitoring system.
 - Key flows have analytics or event traces.
 - AI and security checks produce reviewable evidence.
+- Logs are structured enough to trace one request across multiple services.
 
 ## Repetition Notes
 Monitoring is not just tools. It needs alert routing, useful context, and enough retained evidence to debug.
-

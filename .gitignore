@@ -1,5 +1,6 @@
 Thumbs.db
 .DS_Store
+node_modules/
 
 .claude/CLAUDE.local.md
 .claude/settings.local.json
@@ -7,4 +8,3 @@ Thumbs.db
 
 .opencode/state/
 .opencode/cache/
-

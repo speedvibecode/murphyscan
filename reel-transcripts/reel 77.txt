@@ -1,0 +1,13 @@
+Reel 77
+Source: https://www.instagram.com/p/DZ0ck8DvVKa/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:00:31.388Z
+Completed: 2026-07-01T14:00:45.731Z
+00:00
+→
+01:04
+There is an open source auth library that is picking up some serious momentum. It's called BetterAuth. I hear about it from a lot of you. Here are the three things you need to know right now all about it. Step one, BetterAuth is self-hosted. Your auth data lives in your database, not someone else's cloud, your users, your sessions, your full control. This is for builders who watched Otho change pricing or clerk add usage limits nobody expected. Self-hosted auth is not a philosophy anymore. It is risk management. It's a way to do things. Step 2. The trade-off? Well it's real. Clerk gives you a beautiful UI in 10 minutes. Otho gives you enterprise compliance right out of the box. Better off gives you neither. You build the UI, you own the uptime. More control means more responsibility. If your team can handle it, you get the freedom. If your team cannot, you get an outage. And owning off versus launching your product, it's a tough one. Step three, the market's splitting. Managed off for builders who
+01:04
+→
+01:20
+want to move fast. Self-hosted auth for builders who want to just own everything. Neither is wrong, but switching auth providers after launch is one of the most painful migrations in the whole software business. So pick once, pick deliberately, own the decision. That's the way to go with auth.

@@ -1,0 +1,13 @@
+Reel 66
+Source: https://www.instagram.com/p/DZphyuUgS1A/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T13:59:35.703Z
+Completed: 2026-07-01T13:59:58.103Z
+00:00
+→
+01:06
+You built a multi-tenant auth. Users log in, tenants are fully separated. But your isolation strategy was never really a strategy. It was whatever your ORM defaulted to. So here are the three things you need to reckon with right now. lives in the same tables the database enforces who sees what this works until one tenant generates 80% of your traffic and every other tenant feels it shared schema means shared resources so you got to pay attention when one tenant scales everyone pays for it step 2 schema per tenant each tenant gets their own schema inside of the database migrations multiply by the number of tenants. 100 tenants means 100 migration runs. But performance isolation, it improves it dramatically. So one tenant's traffic stays in their lane. That's a win. Step three, database per tenant. Complete isolation, separate connection streams, separate backup plans, separate scaling plans.
+01:06
+→
+01:27
+This is where regulated industries always end up. Healthcare, finance, government. Anything that touches PII or compliance. Not because it's elegant, but because the compliance requires the walls to be real. Your isolation model, it's not a technical decision. It's a business decision. So you need to match the walls to the contract that pays.

@@ -1,0 +1,13 @@
+Reel 95
+Source: https://www.instagram.com/p/DaGFCCNFf7m/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:01:56.054Z
+Completed: 2026-07-01T14:02:10.198Z
+00:00
+→
+01:02
+Your privacy policy says you do not sell user data, but your analytics send it to four different third-party services that do. A regulator will know the difference. Here are the three things you reconcile right now to protect yourself. Step one, know exactly what you collect. Most applications collect more than the team ever realizes. IP addresses and logs, device fingerprints and analytics, location data from API calls. If you cannot list every piece of personal data in your application touches, your privacy policy is fiction. Audit the data, map where it goes, that's the win. Step two, consent is not a checkbox. A banner that says we use cookies and a button that says accept is not informed consent. Users should understand what they're agreeing to, in plain language, before the data moves anywhere. The regulation is not about the checkbox. It is about whether the user understood the deal altogether.
+01:08
+→
+01:28
+the deal altogether. Step three, data retention. Your user deleted their account. Their data still lives in your database, in all of your backups, in your analytics, and in your logs. Deletion is not a button click. It is an architectural decision. Know where user data lives. Build the deletion pipeline before someone asks about it. Privacy is not a legal page. It is a system. Build it to keep yourself from getting sued.

@@ -12,11 +12,12 @@ tags: [murphyscan, agent-map, synthesis]
 | --- | --- | --- |
 | Launch readiness | [[Layer Map]] | [[Scan Rule Backlog]], [[Source Reel Index]] |
 | Auth or data exposure | [[04 Auth and Permissions]] | [[Authorization and Row-Level Security]], [[Managed Auth and Session Security]], [[Secrets and Credential Rotation]] |
-| Backend/API hardening | [[02 APIs and Backend Logic]] | [[Rate Limiting and API Gateways]], [[Async Jobs and Idempotency]], [[Client Trust Boundary]] |
+| Backend/API hardening | [[02 APIs and Backend Logic]] | [[Backend Boundary and API Wrappers]], [[API Contracts and Versioning]], [[Rate Limiting and API Gateways]], [[Async Jobs and Idempotency]], [[Client Trust Boundary]] |
 | Database architecture | [[03 Database and Storage]] | [[Database Design and Indexing]], [[Multi-Tenancy and Tenant Isolation]], [[Database Scaling and Connection Pooling]] |
 | Deployment safety | [[05 Hosting and Deployment]] | [[Deployment Safety and Rollbacks]], [[Staging Environments and Branching]], [[CI Gates and AI Review]] |
 | AI app controls | [[AI Cost Controls and Model Routing]] | [[AI Output Validation and Evals]], [[Agent Memory and Vector Storage]], [[AI Endpoint Protection]] |
 | Scaling and reliability | [[11 Load Balancing and Scaling]] | [[Load Testing and Scaling Cliffs]], [[Caching Strategy]], [[Observability and Incident Response]] |
+| Agent or skill trust review | [[08 Security and RLS]] | [[AI Supply Chain Trust]], [[Security Scanning and Pen Test Lite]], [[Secrets and Credential Rotation]] |
 
 ## Knowledge-Density Tiers
 - **Layer notes** answer where a risk belongs in the production stack.
@@ -26,4 +27,3 @@ tags: [murphyscan, agent-map, synthesis]
 
 ## Anti-Bloat Rule
 Only create a new note when it changes routing, verification behavior, or source interpretation. Otherwise update the closest existing layer or concept note.
-

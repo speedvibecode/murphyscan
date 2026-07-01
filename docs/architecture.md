@@ -34,6 +34,10 @@ It exists for three reasons:
 - rule traceability
 - future rule refinement
 
+Current state:
+- `104` cleaned source-backed reel notes
+- repeatable local intake workflow via `scripts/transcribe-instagram-reels.mjs`
+
 The cleaned summaries in `reel-transcripts/cleaned/` are the fastest source surface for agents. The raw transcript files and `manifest.json` preserve grounding and source mapping.
 
 ## 3. Agent wrappers
@@ -92,4 +96,3 @@ The cleanest path forward is:
 - improve scan rules through real repo case studies
 - tighten the wrappers only when multiple agents need the same clarification
 - split a fully original `murphyscan-core` later if licensing or redistribution needs require it
-

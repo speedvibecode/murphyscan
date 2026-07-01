@@ -1,0 +1,13 @@
+Reel 88
+Source: https://www.instagram.com/p/DZ-pcdzFqfu/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:01:17.965Z
+Completed: 2026-07-01T14:01:47.954Z
+00:00
+→
+01:04
+Self-hosted or managed? Every builder hits this decision at some point. One costs money, the other costs you time. Here are the three things that you're going to weigh right now before you decide. Step one, manage services, buy you time. Someone else handles the updates, the security patches, the backups, the 3 a.m. incidentals. That's on them. 3am incidentals. That's on them. For early stage products and small teams, that time is more valuable than cost savings or doing it yourself. You're not paying for a database, you're paying for sleep, right? Step two, self-hosted gives you full control. Your data lives where you decide it lives. Your costs scale the way you design them to. No vendor pricing changes at renewal, no rate limits you didn't agree to. But that control comes with a job title. You're now the infrastructure team 24-7-365. Patches are your responsibility. Uptime is your reputation. Step three. Most builders start managed and migrate later when the economics justify it. The mistake is over-investing in
+01:04
+→
+01:20
+infrastructure before you have the traffic to justify it. Or under-investing in reliability when your users depend on you. So self-hosted or managed is not a technical decision. It's a time and money decision. Know which one you have less of.

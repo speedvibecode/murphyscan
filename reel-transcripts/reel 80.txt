@@ -1,0 +1,13 @@
+Reel 80
+Source: https://www.instagram.com/p/DZ3G-nTPl9F/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:00:35.632Z
+Completed: 2026-07-01T14:00:49.752Z
+00:00
+→
+01:01
+Convex is blowing up right now. Builders are loving it. It's real-time by default, no SQL, no migrations, feels like magic, until it doesn't. Here are the three things you need to think about right now before you migrate. Step 1. Convex is a reactive database. Your data changes, your UI updates automatically. No web sockets to manage, no polling to deal with, no state sync headaches. Seems like a win. And for dashboards that are collaborative tools and real-time apps, this is a massive advantage. Postgres, it does real-time, but you're building it yourself. Not sure if that's a win. Step two, Postgres, it's the most battle-tested database on the planet. 40 years in production, ton of engineers, every hosting platform supports it, every ORM speaks it. If your data model has 15 tables with relationships, Postgres is not boring. It is reliable and it scales every time for the win.
+01:01
+→
+01:28
+Step three, the real question is the lock-in, right? Convex is a platform. Your data lives in their system. Your queries? In their language. So if you leave, you're rebuilding from scratch. Postgres? Fully portable. Neon, Supabase, Railway. Your own server, same SQL everywhere. That portability? That's not a feature, that's insurance. So pick the trade-off that you can live with between these databases.

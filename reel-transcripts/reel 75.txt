@@ -1,0 +1,13 @@
+Reel 75
+Source: https://www.instagram.com/p/DZyEXA6vDXs/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:00:13.039Z
+Completed: 2026-07-01T14:00:35.626Z
+00:00
+→
+01:05
+The first time I ran OWASP ZAP against one of my own applications, I found 11 vulnerabilities. 11 in an app that I thought was totally ready to ship. So here are the three things you can do right now to fix it. Step one, you got to know what OWASP ZAP even is. It's a free open source security scanner. You point it at your app, it crawls every page, tests every form, probes every API endpoint, and it tells you exactly where you're exposed. Cross-site scripting, SQL injections, missing security headers, open redirects. Things you did not know to look for and your vibe-coded app didn't tell you about them either. And these are things that your users will never report. And these are things that your users will never report. Things an attacker will find in minutes. Step two, run it before launch, never after. Not when a customer asks if you've done a security audit. Not when an investor asks about SOC 2. But before the first user signs up. Because the vulnerability Zap finds are the same ones every automated bot scanner on the internet finds.
+01:08
+→
+01:42
+The only question is whether you're going to find them first. Step three, do not try to fix everything at once. ZAP will give you a report. The report will be long. Start with the highs and the criticals. Injection flaws, authentication bypasses, sensitive data exposures. Those are the ones that end companies. The mediums and lows, they're real, but they're not emergencies. You triage the list the same you would triage your set of bugs, right? Severity first, velocity second. The lesson today is, scan yourself before someone else does. Security first.

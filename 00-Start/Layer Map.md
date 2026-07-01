@@ -25,12 +25,13 @@ The vault is organized around the 13 production layers shown in the reference im
 ## Cross-Layer Concepts
 - [[Managed Auth and Session Security]]
 - [[Authorization and Row-Level Security]]
+- [[API Contracts and Versioning]]
 - [[Secrets and Credential Rotation]]
 - [[Deployment Safety and Rollbacks]]
 - [[AI Cost Controls and Model Routing]]
+- [[AI Supply Chain Trust]]
 - [[Caching Strategy]]
 - [[Database Scaling and Connection Pooling]]
 - [[Observability and Incident Response]]
 - [[AI Output Validation and Evals]]
 - [[Load Testing and Scaling Cliffs]]
-

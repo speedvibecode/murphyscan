@@ -2,7 +2,7 @@
 layer: 02
 image_label: "APIS & BACKEND LOGIC"
 tags: [murphyscan, layer, backend, api]
-source_reels: [reel-06, reel-11, reel-23, reel-45, reel-49, reel-52, reel-55]
+source_reels: [reel-06, reel-11, reel-23, reel-45, reel-49, reel-52, reel-55, reel-68, reel-89, reel-97]
 ---
 # 02 APIs and Backend Logic
 
@@ -13,6 +13,7 @@ The backend layer is the enforcement point for business rules, validation, exter
 
 ## Core Concepts
 - [[Backend Boundary and API Wrappers]]
+- [[API Contracts and Versioning]]
 - [[Async Jobs and Idempotency]]
 - [[Rate Limiting and API Gateways]]
 - [[AI Output Validation and Evals]]
@@ -26,6 +27,9 @@ The backend layer is the enforcement point for business rules, validation, exter
 - [[reel-49]] - AI endpoints need gateway protection.
 - [[reel-52]] - validate AI output before users see it.
 - [[reel-55]] - business rules belong server-side.
+- [[reel-68]] - payment systems trust verified events, not optimistic button clicks.
+- [[reel-89]] - internal services need deliberate machine identity.
+- [[reel-97]] - APIs need contracts, versioning, and changelog discipline.
 
 ## What MurphyScan Should Verify
 - API calls to providers are centralized and failure-aware.
@@ -33,7 +37,8 @@ The backend layer is the enforcement point for business rules, validation, exter
 - Long-running actions use jobs, status, retries, and idempotency keys.
 - Expensive endpoints are authenticated, schema-validated, and capped.
 - The frontend is treated as untrusted input.
+- External webhook handlers verify signatures and reject duplicate side effects.
+- Public or cross-service APIs have defined contracts and versioning expectations.
 
 ## Repetition Notes
 This layer overlaps heavily with [[09 Rate Limiting]] and [[08 Security and RLS]]. Keep enforcement mechanics here; keep policy and abuse controls in their dedicated layers.
-

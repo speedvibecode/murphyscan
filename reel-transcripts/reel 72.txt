@@ -1,0 +1,13 @@
+Reel 72
+Source: https://www.instagram.com/p/DZu8mdaR7A4/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:00:02.290Z
+Completed: 2026-07-01T14:00:20.686Z
+00:00
+→
+01:01
+Clerk or Auth0, not sure which one to pick. They are two of the biggest names in authentication, and they're solving completely different problems for their users. Here are the three things you should think about right now before you deploy them. First, Auth0 was built for big enterprises. SAML, LDAP, Active Directory. If your customers are companies that need single sign-on and compliance is not an option, AuthO was designed for this use case and those customers. It's been in production for over a decade, tons of engineering experience, cool tool. Next, Clerk was built for modern SaaS. Beautiful components out of the box, drop in a sign-up page, drop in an organization management plan, 10 minutes and you're off. Looks like it was designed by a team of 12. Powerful stuff. For indie builders and small teams shipping fast, clerk removes the part of auth that has nothing to do with your product. And that's a win. Thirdly, the real question is not features, right? It is trajectory of the business.
+01:05
+→
+01:22
+Building a product for developers and small teams? Clerk for the win all day long. Building a product for Fortune 500 companies that require SOC 2 reports and SAML before they even sign the contract? That's auth O territory all day. Both are excellent. They serve different futures. So the key is to match the auth platform to the right customer at the right time.

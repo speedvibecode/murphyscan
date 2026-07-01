@@ -1,0 +1,13 @@
+Reel 86
+Source: https://www.instagram.com/p/DZ8txA_mRAp/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:01:07.568Z
+Completed: 2026-07-01T14:01:37.764Z
+00:00
+→
+01:05
+Your deployment takes 45 minutes and your team they only deploy once a week because it takes so long So bugs they sit in staging for days and features. They're always waiting in line Here are the three things you can do right now to fix it step one Your pipeline is doing way too much every deployment runs every test every lint check every integration suite The whole thing is running sequentially. So one step finishes before the next one can start. What I would do, break deploys into parallel lanes whenever you can. Split unit tests from integration tests, run linting alongside both. A 45-minute pipeline is usually a 5-minute pipeline running 9 steps in a row. Step 2. Your builds are not cached. Every deployment installs every dependency from scratch. The node modules folder downloads fresh every single time. Caching dependencies between builds cuts minutes immediately. Your dependencies did not change since yesterday, so stop rebuilding them from scratch every time. That's a win. Step three,
+01:03
+→
+01:29
+So stop rebuilding them from scratch every time. That's a win. Step three, your deployment is all or nothing. One artifact, one environment, one prayer. Canary deployments released to a small percentage of traffic first. It's a best practice. So if something breaks, 5% of users notice instead of 100% of your users. So always deploy small, deploy often, deploy with a rollback plan. Speed is not recklessness, but slowness sure is.

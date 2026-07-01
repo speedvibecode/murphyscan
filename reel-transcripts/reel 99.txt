@@ -1,0 +1,13 @@
+Reel 99
+Source: https://www.instagram.com/p/DaJQlPhFeqw/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:02:14.901Z
+Completed: 2026-07-01T14:02:29.097Z
+00:00
+→
+01:05
+So your API key is sitting in your repository again. You committed it three months ago, rotated it maybe last week. However, the old key is still in your Git history, and Git history never goes away. Here are the three things you can check right now to see if you're safe. Step one, scan your history. Every commit you have ever made is totally searchable. A secret you committed and deleted in the next commit still exists in the diff. Tools scan your entire git history for patterns that look like keys, tokens, and credentials all day long. Run one today. The results will absolutely surprise you. Step 2. Environment variables are not secrets management. A.env file works locally. In production, it becomes a total liability. Environment variables live in plain text. Anyone with server access can read them. So a secrets manager encrypts at rest, controls access by role, and logs every read. The difference between a variable and a managed secret is an audit trail. That's the win. Step three, rotate on schedule. Not after a breach,
+01:05
+→
+01:19
+but before one. If your key has not changed in 6 months, you're betting that nobody found it. Rotation is not paranoia, it's policy and trust me, somebody found it. Your secrets are only secret if you treat them that way. So you gotta get in front of them.

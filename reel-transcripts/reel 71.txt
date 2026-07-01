@@ -1,0 +1,13 @@
+Reel 71
+Source: https://www.instagram.com/p/DZs5JDxPOrW/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T13:59:58.238Z
+Completed: 2026-07-01T14:00:12.727Z
+00:00
+→
+01:02
+Your app has users. Some of them are admins. Some of them are not. And right now, you're checking it with an if statement. Here are the three things you do right now to fix that. Step one, understand what RBAC actually is. Role-based access control. Every user gets a role. Every role gets permissions. Admin can delete. Editor can update, viewer can read. Those are the basics. Roles are enforced at the API layer, not the UI layer. The UI hides things for convenience. The API blocks things for security. That's the win. Step two, start with three roles always. Admin, member, viewer. That covers 90% of SaaS application use cases at launch. Do not build custom permission matrix. Well, not before you have your first paying customer. Ship three roles. Add complexity when the business demands it.
+01:02
+→
+01:32
+That's the win. And step three, enforce it everywhere. Every API route checks the role. Every server action validates the user. If your front end hides the delete button, but your API still accepts the delete request, you do not have access control. You have a suggestion and suggestions do not survive a curious user with browser console, right? suggestions, do not survive a curious user with browser console, right? You must enforce permission or it does not exist. That's the win.

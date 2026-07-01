@@ -1,0 +1,9 @@
+Reel 94
+Source: https://www.instagram.com/p/DaEXXLvEf6L/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:01:52.795Z
+Completed: 2026-07-01T14:02:14.896Z
+00:00
+→
+01:24
+Your database is answering the same question 1,000 times a day. But only 10 of those answers are ever different. The other 990 return the exact same data. It never changed. So, here are three things you can reckon with right now to optimize it. Step 1. Identify any repeat offenders. Your dashboard is querying the database every page load, and the data only changes once an hour at best. 3,500 identical queries for one hour of unchanged data? That's a lot of horsepower. Find the queries that run the most and change the least. Those are your caching candidates, and that's a win. Step 2. Cache at the right layer. Application memory is fast, but lives on one server. A shared cache serves every server but adds a network hop. A CDN caches at the edge but invalidation gets complicated. The mistake is caching everything at the same layer with the same lifetime. That's not a win. Step three, measure after you cache. Caching without measurement is just hoping. Cache hit rate tells you whether it's working or it isn't. Database query count tells you whether the load has dropped or if it hasn't. So if the numbers did not change, the cache is not doing what you think it's doing. Caching is not a setting, it's a system. Build the system right the first time.

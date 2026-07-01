@@ -1,0 +1,13 @@
+Reel 98
+Source: https://www.instagram.com/p/DaI4bPSlUBj/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:02:10.203Z
+Completed: 2026-07-01T14:02:24.265Z
+00:00
+→
+01:05
+Your database has a backup, but you've never run a full restore. That's not a backup plan. That's a hope plan with a prayer attached, not a win. Here are the three things you're going to verify right now to make sure that backup runs. Step one, test the restore. A backup that cannot be restored is not a backup. It's a file that makes you feel safe that doesn't exist. Download it. Spin up a fresh instance, load that data, and verify those tables. Do this quarterly, not just after an incident. The time to learn your restore process is not when production just dropped. That's not the win. Step two, know your recovery point. How much data can you afford to lose? If your backup runs daily, you can lose 23 hours of data, right? For some applications, that's just fine. For others, totally catastrophic. Match the frequency to the cost of the lost data, not to the default settings. And step three, know your recovery time. How long does it take to get a backup up and running again? 10 minutes or 10 hours? Your customers do not care about your
+01:05
+→
+01:19
+backup strategy, not even a little bit. Your customers do not care about your backup strategy, not even a little bit. They do care how long they can't access your product. So recovery time is a business metric, not a technical one. And backups, they're not a feature, they're a promise that you gotta keep.

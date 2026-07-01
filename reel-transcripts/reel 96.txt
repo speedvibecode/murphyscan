@@ -1,0 +1,13 @@
+Reel 96
+Source: https://www.instagram.com/p/DaGcgHaiq3i/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:01:59.637Z
+Completed: 2026-07-01T14:02:17.821Z
+00:00
+→
+01:02
+R-B-A-C, role-based access control. Everyone says they have it. Most people have a Boolean called underscore admin. Here are the three things you decide before you build it. Step one, roles versus permissions. A role is a label, admin, editor, viewer. A permission is an action, can create, can delete, can export. Most applications assign roles and hard code what those roles can do. When the customer asks for a custom role, the whole system breaks. Build permissions first, let roles be collections of those permissions, and that's the win. Step two, where enforcement happens. Your front end hides the button. Your API still accepts the request. That is not access control, folks. That's a suggestion and a security problem. Enforcement must happen at the API layer. Every route, every endpoint. The front end controls that experience. The back end controls all the access. Step three, scope.
+01:03
+→
+01:30
+Can this user edit any document or only documents they created? Can this admin manage all teams or only their team? RBAC without scope is completely binary. You either have access or you do not. So RBAC with scope is granular. You have access to what belongs to you. The difference between a feature and architecture is whether it scales. So build the architecture right the first time.

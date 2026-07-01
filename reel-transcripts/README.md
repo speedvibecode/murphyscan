@@ -44,6 +44,7 @@ The corpus is meant to keep growing.
 Use:
 - [docs/source-corpus-maintenance.md](../docs/source-corpus-maintenance.md)
 - [INBOX.md](./INBOX.md)
+- `npm run transcribe:reels -- --reel-start <next reel number> --count <number of URLs>`
 
 The maintenance rule is simple:
 - preserve source traceability

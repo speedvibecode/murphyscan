@@ -1,0 +1,13 @@
+Reel 84
+Source: https://www.instagram.com/p/DZ71CFgmeVk/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:00:59.781Z
+Completed: 2026-07-01T14:01:17.959Z
+00:00
+→
+01:07
+Jot, you know, the token standard that runs most modern authentication. There is a vulnerability in it that has existed since day one. Here are the three things you check right now to see if you have it. Step one, algorithm none. Some Jot libraries accept a token with the algorithm set to none. That means no signature, no verification, and anyone can forge a token and your server will trust it. This is not theoretical. This has been exploited in production systems for years. Check your library. Verify it rejects algorithm. None explicitly. Step 2. Algorithm Confusion Your server expects RSA. An attacker sends a token signed with HMAC using your public key as the secret. If your library does not enforce the expected algorithm, it verifies the forged token is valid. The fix is one line. Specify the algorithm. Do not let the token decide. Step three, token expiration. A jot with no expiration lives forever. A stolen token with no expiration is a permanent access key.
+01:07
+→
+01:17
+Set short lifetimes. Use refreshed tokens for continuity. Your authentication is only as strong as the assumptions you never validated. So, get out there and validate them.

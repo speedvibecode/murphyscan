@@ -1,0 +1,13 @@
+Reel 78
+Source: https://www.instagram.com/p/DZ2Z8uKRMw8/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:00:34.913Z
+Completed: 2026-07-01T14:01:01.143Z
+00:00
+→
+01:01
+Your browser is protecting your users right now, and you probably have no idea how. Here are the three things you need to understand right now about browser protection. Step one, CORS, cross-origin resource sharing. When your front end calls your API on a different domain, the browser blocks it by default. That is not a bug. That is a security feature in your favor. Without CORS, any website can make requests to your API using your user's cookies. When you set CORS to allow everything, you told the browser, you trust everyone. I don't trust everyone. That's not a configuration. That is surrender, not the win. Step 2. CSP, Content Security Policies. This tells the browser what is allowed to run on your page. Without CSP, an injected script tag can load anything from anywhere. With CSP, even if they inject the tag, the browser blocks the execution completely. CSP does not prevent an attack. It prevents the damage. And that's a win.
+01:01
+→
+01:20
+Step three, set both. Most builders skip security headers because the app works without them. And it does work. It also works for attackers. Five minutes of configuration between your users and your entire category of attacks will change. Configure the headers. Trust the browser. That's the only way to rock.

@@ -1,0 +1,13 @@
+Reel 69
+Source: https://www.instagram.com/p/DZsJytJxv2d/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T13:59:58.119Z
+Completed: 2026-07-01T14:00:13.007Z
+00:00
+→
+01:01
+You need a serverless database. Neon or PlanetScale are on the table. Both are excellent. Both will confuse you if you do not understand what they actually solve. Here are three things you do right now to deploy them correctly. Step 1. Know the engine difference, right? Neon is serverless Postgres. Full Postgres. PlanetScale is serverless with MySQL built on Vitesse. The same technology that runs YouTube. Super powerful. If your team knows Postgres, run Neon. If your team knows MySQL, run PlanetScale. Do not switch database engines for marketing reasons. That's a win. Step 2. Think about branching strategies. Both platforms let you branch your database like you branch your code. Create a copy, test your migration, merge it back. This is how you stop breaking production with schema changes. If you've ever run a migration on a Friday and regretted it by Saturday, branching is
+01:01
+→
+01:27
+the fix. That's a win. Step 3. Pric pricing changes. Planet scale has removed their free tier and Neon still has one and that matters if you're testing prototype ideas right but do not pick a production database based on the free tier pick it based on what happens at 10,000 users the free tier is the lobby for everyone production is the whole building so choose the engine you know

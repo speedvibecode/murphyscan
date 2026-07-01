@@ -2,7 +2,7 @@
 concept: "database-design-indexing"
 tags: [murphyscan, concept, database, indexes]
 layers: ["03 Database and Storage"]
-source_reels: [reel-12, reel-26, reel-32, reel-63]
+source_reels: [reel-12, reel-26, reel-32, reel-63, reel-67, reel-74, reel-79, reel-98, reel-104]
 ---
 # Database Design and Indexing
 
@@ -14,6 +14,11 @@ source_reels: [reel-12, reel-26, reel-32, reel-63]
 - [[reel-26]] - index for actual tenant and access patterns.
 - [[reel-32]] - match database choice to data shape.
 - [[reel-63]] - unindexed queries create scaling cliffs.
+- [[reel-67]] - query plans and query-frequency data reveal the real bottlenecks.
+- [[reel-74]] - blobs belong in object storage, not in relational tables.
+- [[reel-79]] - ORM choice changes how much query intent stays visible.
+- [[reel-98]] - backup plans only count if restores are exercised.
+- [[reel-104]] - workload shape should influence database choice.
 
 ## Why It Matters
 Schema mistakes often stay invisible during demos and become painful once data grows. Good data design prevents slow queries, data leaks, and brittle migrations.
@@ -23,7 +28,8 @@ Schema mistakes often stay invisible during demos and become painful once data g
 - Do common queries have indexes on tenant, owner, status, date, or foreign keys?
 - Are migrations tracked and reversible?
 - Is the database engine appropriate for the data shape?
+- Are large files kept out of primary transactional tables?
+- Is restoreability tested rather than inferred from backup presence?
 
 ## Agent Notes
 Do not recommend exotic storage before checking schema, indexes, and query plans.
-

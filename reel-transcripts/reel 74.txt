@@ -1,0 +1,13 @@
+Reel 74
+Source: https://www.instagram.com/p/DZxfOW9xsFD/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:00:13.015Z
+Completed: 2026-07-01T14:00:31.382Z
+00:00
+→
+01:01
+Your users are uploading images. You store them in the database. Your database is now doing two jobs it was never designed to do at the exact same time. Here are the three things you're going to do to your database right now to fix it. Step one, move files out of the database. Images, PDFs, videos, none of these belong in a database column. They belong in object storage. Object storage is built for these files specifically. Databases are built for rows. Mixing them is how a $200 a month database becomes an $800 a month database. No reason at all. Step 2. Serve files from a CDN. When someone loads a profile picture, that request should never hit your origin server. It should hit the CDN node closest to your end user. Faster delivery, lower bandwidth costs, the user gets the file in milliseconds instead of seconds. You know what? That's a win. Step three, separate your data model completely.
+01:02
+→
+01:25
+Your database stores a URL that points to the file, not the file itself. A string column instead of a blob column holding 10 megabytes? This is not optimization. This is the standard and the way you should be building. Every production system separates storage from data. The ones that don't just haven't hit the wall yet. So make sure you store smart for the win every time.

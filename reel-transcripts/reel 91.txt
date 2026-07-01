@@ -1,0 +1,13 @@
+Reel 91
+Source: https://www.instagram.com/p/DaCLbB1khUp/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:01:37.770Z
+Completed: 2026-07-01T14:01:56.048Z
+00:00
+→
+01:06
+Your logs definitely say everything, but they're telling you nothing. 200,000 lines of unstructured text. So, here are the three things you're going to do right now to understand them better. Step one, structured logging. Instead of writing a sentence to the log, write an object. A timestamp of severity level, a request ID, a user ID. The action taken. And every log entry becomes searchable, filterable, and queryable. When the incident happens, you do not grep through sentences. You query a database of events. That's a win. Step two, correlation IDs. One user request touches six services. Without a correlation ID, those six separate log streams have no connection. With a correlation ID, one search shows you every step that request took from start to finish. The debugging session that takes two hours becomes a two-minute query, and that is definitely a win. Step three, log levels with discipline. Everything is not an error, and everything is not info, right?
+01:06
+→
+01:27
+When every log is marked as critical, nothing is critical. You got to debug for development, info for business events, warn for recoverable problems, and error for total failures. When your pager goes off at 2 a.m., the log level tells you whether you need to panic or it can wait till morning. Structure, folks, is not overhead. Structure is clarity, and it's good to have.

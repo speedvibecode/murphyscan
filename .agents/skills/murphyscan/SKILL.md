@@ -17,11 +17,12 @@ Start with the highest-signal surfaces that exist:
 - application code
 - auth and permission code paths
 - API routes and external provider wrappers
+- public API schemas, webhook handlers, and changelog/version surfaces when they exist
 - database schema, migrations, policies, and connection config
 - deployment config and environment handling
 - CI/CD workflows, branch protections when visible, and test gates
 - monitoring, logging, uptime, backup, and restore surfaces
-- AI-specific routing, eval, validation, and spend controls when the app uses AI
+- AI-specific routing, eval, validation, spend controls, and instruction/skill trust surfaces when the app uses AI
 
 If the workspace contains the Murphy vault, use these notes first:
 - `00-Start/Layer Map.md`
@@ -100,7 +101,9 @@ When the user asks for a deeper pass, add:
 - dependency and secret scanning
 - bundle/client exposure review
 - database and query-path inspection
+- API contract, webhook, and versioning review
 - AI eval and output-validation review
+- AI prompt, skill, and automation trust review where relevant
 - load-test or scaling-surface review if local evidence exists
 
 ## Working rules
@@ -115,4 +118,3 @@ When the user asks for a deeper pass, add:
 
 - Scan matrix: `references/scan-matrix.md`
 - Report shape: `references/report-format.md`
-

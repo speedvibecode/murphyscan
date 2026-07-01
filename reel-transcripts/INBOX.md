@@ -41,4 +41,10 @@ Add new items here using this shape:
 
 ## Current note
 
-As of June 22, 2026, the repo has a strong corpus and synthesis structure, but this inbox is the intended control surface for the next wave of reels.
+As of July 1, 2026:
+- reels `65` through `104` have been transcribed into `reel-transcripts/`
+- cleaned notes now exist in `reel-transcripts/cleaned/`
+- the layer and concept surfaces have been updated from this batch
+- the intake batch was sourced from `new reels that need to be added.txt`
+
+For the next wave, use the local runner first and then move back into this inbox for cleaning and synthesis.

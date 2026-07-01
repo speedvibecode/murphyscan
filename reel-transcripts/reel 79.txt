@@ -1,0 +1,13 @@
+Reel 79
+Source: https://www.instagram.com/p/DZ20J4SRMkE/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:00:35.138Z
+Completed: 2026-07-01T14:00:49.372Z
+00:00
+→
+01:07
+Prisma or Drizzle, two arms that every builder is evaluating right now. Same problem, completely different philosophies. Here are the three things you should be thinking about before you pick one. Step one, Prisma was built for safety. A schema file defines your entire data model. Migrations, generated automatically. Type safety is enforced end to end. For teams that want guardrails and predictability, Prisma removes an entire category of database mistakes before they reach production. That safety has a cost. The generated client adds weight, cold starts are real. Step two, Drizzle was built for control. Your queries look like SQL because they are SQL. No abstraction layer guessing what you meant. Lighter run times, faster cold starts. For builders who understand their database and want to stay close to it, Drizzle gets out of the way. That control has a cost. You own every optimization and every mistake. Not sure if it's a win. Step 3. Prisma protects teams from the database.
+01:07
+→
+01:22
+Drizzle trusts teams with the database. Both produce production applications all day every day. One is not better than the other at all. They serve different engineering cultures. Match the ORM to the engineering team's best practices.

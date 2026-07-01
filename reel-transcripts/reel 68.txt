@@ -1,0 +1,13 @@
+Reel 68
+Source: https://www.instagram.com/p/DZqZW3svYY_/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T13:59:35.706Z
+Completed: 2026-07-01T13:59:58.196Z
+00:00
+→
+01:04
+Your payment gateway is not your payment system. Stripe already solved the hard part for you. Your job is everything that happens after that. So here are the three things you do right now to protect yourself. Step one, trust the event, not the button. Stripe handles PCI, tokenization, and encryption. The entire checkout surface is on them. But the confirmation your app receives is a webhook. And if you trust a webhook without verifying it, you're trusting a stranger at your front door. Always verify the source, validate the signature, then act. That's a win. Step two, prevent the double charge. Every webhook can fire more than once. Network hiccup, timeout, retries. If your system processes the same event twice, you just charge someone twice. Item potency is not a feature, it is a policy to live by. One event, one action, every single time, that's the win. Step three, update the business, not just the database.
+01:04
+→
+01:28
+A successful charge should trigger a chain. Mark the invoice paid, activate the subscription, grant tenant access, send the receipt, update CRM. A charge that clears but does not trigger the workflow is a support ticket just waiting to happen. So never trust the click, verify the event, then run the business. That is the game and that's a win.

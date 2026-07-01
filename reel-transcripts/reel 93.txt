@@ -1,0 +1,13 @@
+Reel 93
+Source: https://www.instagram.com/p/DaDuf2DFSP-/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:01:47.959Z
+Completed: 2026-07-01T14:02:02.081Z
+00:00
+→
+01:01
+There are two hard problems in computer science. Cache invalidation and naming things. The naming part, that's a joke. The cache part, not a joke. Here are three things you can do about it right now. Step one, stale data. Your user updates their profile. The cache still holds the old version. For 30 seconds or 30 minutes, every request returns yesterday's data. The user sees the old name, the old photo, the old permissions. Caching is not a performance feature. It's a consistency decision. Know what you are willing to show stale and for how long. That's the win. Step two, invalidation strategy. Time-based expiration is simple. Set a lifetime. When it expires, fetch fresh every time. Event-based invalidation is precise. Data changes. Cache clears immediately. Most applications need both. Static content gets time-based. User data gets event-based. The mistake is treating all cache data the exact same way.
+01:02
+→
+01:24
+Step three, cache stampede. Your cache expires. 1,000 requests hit the database at the same way. Step 3. Cache Stampede. Your cache expires. 1,000 requests hit the database at the same instant. That one request should refresh the cache, but the other 999, they're going to wait. Without protection, your database sees a spike every time a popular key expires. Caching solves one problem, but it creates three. Solve all four.

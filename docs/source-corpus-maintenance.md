@@ -35,6 +35,21 @@ When new reels are posted, process them in this order:
    - the relevant concept note(s)
    - optionally the skill references if report behavior changes
 
+## Local intake command
+
+The repo now carries its own transcript intake runner:
+
+```bash
+npm install
+npm run transcribe:reels -- --reel-start 65 --count 40
+```
+
+Practical notes:
+- keep `new reels that need to be added.txt` as the source URL list for the active batch
+- `--reel-start` should be the next raw reel number you want to assign
+- the runner writes raw transcript files into `reel-transcripts/` and updates `reel-transcripts/manifest.json`
+- after transcription, move into cleaning and synthesis through `reel-transcripts/INBOX.md`
+
 ## Decision rule
 
 Most new reels should not create new top-level notes.

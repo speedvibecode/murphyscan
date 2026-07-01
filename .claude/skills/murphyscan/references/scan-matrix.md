@@ -7,7 +7,12 @@ Use this matrix to decide what to inspect and how to classify findings.
 ### Auth and permissions
 - Concepts: `Managed Auth and Session Security.md`, `Authorization and Row-Level Security.md`
 - Inspect: auth provider setup, protected routes, session expiry, logout behavior, role checks, RLS or ownership enforcement
-- Block when: user A can access user B data, sessions never expire, logout is client-only, or auth is custom and clearly underprotected
+- Block when: user A can access user B data, sessions never expire, logout is client-only, service-role paths bypass ownership controls, or auth is custom and clearly underprotected
+
+### API contracts and billing events
+- Concepts: `API Contracts and Versioning.md`, `Billing and Usage Events.md`
+- Inspect: API schemas, versioning, changelogs, webhook verification, idempotency, billing event handling
+- Block when: production-facing APIs change without a stable contract, or payment/webhook flows can create duplicate or unauthenticated side effects
 
 ### Secrets and credential hygiene
 - Concepts: `Secrets and Credential Rotation.md`, `Client Trust Boundary.md`
@@ -40,6 +45,11 @@ Use this matrix to decide what to inspect and how to classify findings.
 - Concepts: `Cloud Cost Discipline.md`
 - Inspect: provider alerts, hard caps, overprovisioned resources, idle always-on services
 - Flag when: one bad loop or moderate traffic can create uncontrolled spend
+
+### AI supply chain trust
+- Concepts: `AI Supply Chain Trust.md`
+- Inspect: downloaded skill files, copied prompts, shared system instructions, automation trust boundaries
+- Flag when: unreviewed external AI artifacts influence production-critical code or deploy paths
 
 ## Priority 2 - Scale and quality
 
@@ -76,4 +86,3 @@ Use this matrix to decide what to inspect and how to classify findings.
 ### Legal and compliance basics
 - Concepts: `Legal and Compliance Basics.md`
 - Inspect: privacy policy, terms, deletion path, enterprise evidence if relevant
-

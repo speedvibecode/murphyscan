@@ -2,7 +2,7 @@
 layer: 08
 image_label: "SECURITY & RLS"
 tags: [murphyscan, layer, security, rls]
-source_reels: [reel-02, reel-13, reel-14, reel-15, reel-22, reel-36, reel-37, reel-44, reel-48, reel-55, reel-59, reel-60, reel-61, reel-64]
+source_reels: [reel-02, reel-13, reel-14, reel-15, reel-22, reel-36, reel-37, reel-44, reel-48, reel-55, reel-59, reel-60, reel-61, reel-64, reel-65, reel-70, reel-73, reel-75, reel-78, reel-83, reel-84, reel-89, reel-95, reel-99, reel-100, reel-103]
 ---
 # 08 Security and RLS
 
@@ -15,6 +15,7 @@ The security layer verifies that the app has baseline security controls, active 
 - [[Authorization and Row-Level Security]]
 - [[Secrets and Credential Rotation]]
 - [[Security Scanning and Pen Test Lite]]
+- [[AI Supply Chain Trust]]
 - [[Managed Auth and Session Security]]
 - [[Legal and Compliance Basics]]
 
@@ -33,6 +34,18 @@ The security layer verifies that the app has baseline security controls, active 
 - [[reel-60]] - session expiry and logout.
 - [[reel-61]] - secret scanning and push protection.
 - [[reel-64]] - auth foundation.
+- [[reel-65]] - ZAP first, Burp later, with security scanning staged by risk.
+- [[reel-70]] - RLS belongs at the database layer.
+- [[reel-73]] - dependencies are supply-chain trust, not just convenience.
+- [[reel-75]] - scan before attackers do.
+- [[reel-78]] - browser protection depends on CORS and CSP being set intentionally.
+- [[reel-83]] - enterprise trust evidence takes time to build.
+- [[reel-84]] - JWT validation assumptions are exploitable if left implicit.
+- [[reel-89]] - service-to-service identity needs stronger controls than copied API keys.
+- [[reel-95]] - privacy systems must match actual data movement and deletion behavior.
+- [[reel-99]] - git history and env files are both secret exposure surfaces.
+- [[reel-100]] - service-role routes can nullify RLS entirely.
+- [[reel-103]] - AI prompts, skills, and shared instructions now belong in the supply-chain review.
 
 ## What MurphyScan Should Verify
 - No known secret exposure in code, bundles, or git history.
@@ -40,7 +53,8 @@ The security layer verifies that the app has baseline security controls, active 
 - Dependency, code, and secret scanning run in CI or documented local gates.
 - Auth/session controls are managed or deeply reviewed.
 - Compliance evidence exists when user data or enterprise sales require it.
+- Browser security headers and token validation defaults are reviewed explicitly on web-facing apps.
+- Untrusted AI instructions or automation artifacts do not influence production blindly.
 
 ## Repetition Notes
 This is the highest-density layer. Do not split every security item into tiny notes; use the consolidated concept notes to route checks.
-

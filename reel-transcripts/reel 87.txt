@@ -1,0 +1,13 @@
+Reel 87
+Source: https://www.instagram.com/p/DZ-KjLZEcwV/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-01T14:01:08.154Z
+Completed: 2026-07-01T14:01:26.260Z
+00:00
+→
+01:06
+Your cloud bill doubled last month. You're not exactly sure which service is causing it. And you're not alone. So here are the three things you're going to check right now to figure it out. Step one, check your idle resources. That staging environment you spun up three months ago? It's still running. Or the database replica you created for a load test that's still accepting connections? Uh-oh. What about the storage bucket from a feature you never shipped still accruing charges daily? I'm telling you, cloud providers, they do not remind you. They bill you forever. So audit what is running, kill what is not. That's the win. Step two, right-size it. Your production server runs on an instance built for traffic you don't have yet. Over-provisioning, yeah, it feels safe, but it's also really expensive. Most applications run at about 15% utilization on hardware sized for the full 100%. So make sure you match the resources to the actual load, not the load you hope to have. Step three, data going into the cloud is free, but data coming out is not.
+01:06
+→
+01:26
+Egress fees. So every API response, every image served, every web hook payload. If your architecture moves data between regions or between providers, the bill is growing quietly. So you have to know where your data travels, folks. Your cloud bill is not a mystery. It is a mirror of your architecture decisions.

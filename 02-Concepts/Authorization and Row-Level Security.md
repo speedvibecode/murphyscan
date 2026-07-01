@@ -2,7 +2,7 @@
 concept: "authorization-row-level-security"
 tags: [murphyscan, concept, authorization, rls]
 layers: ["04 Auth and Permissions", "08 Security and RLS", "03 Database and Storage"]
-source_reels: [reel-13, reel-14, reel-22, reel-26, reel-64]
+source_reels: [reel-13, reel-14, reel-22, reel-26, reel-64, reel-70, reel-71, reel-96, reel-100]
 ---
 # Authorization and Row-Level Security
 
@@ -17,6 +17,10 @@ source_reels: [reel-13, reel-14, reel-22, reel-26, reel-64]
 - [[reel-22]] - Supabase tables without policies are dangerous.
 - [[reel-26]] - enforce tenant isolation in the database.
 - [[reel-64]] - every query must filter by user or equivalent policy.
+- [[reel-70]] - RLS is a database firewall, not an application filter.
+- [[reel-71]] - role checks only count where the API enforces them.
+- [[reel-96]] - permissions, scopes, and roles should not collapse to `is_admin`.
+- [[reel-100]] - service-role database access can bypass every RLS policy.
 
 ## Why It Matters
 The most dangerous failure is authenticated cross-user or cross-tenant access. It often passes basic login tests while still exposing private data.
@@ -26,7 +30,8 @@ The most dangerous failure is authenticated cross-user or cross-tenant access. I
 - Are RLS policies enabled for every table with user data?
 - Are select, insert, update, and delete policies aligned with real ownership rules?
 - Do admin routes and endpoints enforce role checks server-side?
+- Are permissions modeled with scope, not only broad role labels?
+- Do any backend routes use service-role or bypass credentials for user-facing data paths?
 
 ## Agent Notes
 Use active boundary tests. Reading config is not enough.
-

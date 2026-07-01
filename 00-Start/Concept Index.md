@@ -14,6 +14,7 @@ This index groups repeated reel ideas into durable concept notes. Use it when a 
 
 ## APIs and Backend
 - [[Backend Boundary and API Wrappers]]
+- [[API Contracts and Versioning]]
 - [[Async Jobs and Idempotency]]
 - [[Rate Limiting and API Gateways]]
 - [[AI Endpoint Protection]]
@@ -30,6 +31,7 @@ This index groups repeated reel ideas into durable concept notes. Use it when a 
 - [[Authorization and Row-Level Security]]
 - [[Secrets and Credential Rotation]]
 - [[Security Scanning and Pen Test Lite]]
+- [[AI Supply Chain Trust]]
 - [[Legal and Compliance Basics]]
 
 ## Deployment and Operations
@@ -53,4 +55,3 @@ This index groups repeated reel ideas into durable concept notes. Use it when a 
 ## Product Edge
 - [[Billing and Usage Events]]
 - [[Mobile Deep Links and App Links]]
-
