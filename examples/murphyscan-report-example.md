@@ -1,59 +1,65 @@
 # MurphyScan Report Example
 
-## Verdict
+This example reflects a MurphyScan `0.2.x` style report generated from the Banter case-study evidence in `docs/case-studies/banter.md`.
 
-`Launch blocked by critical controls`
+## 1. Verdict
 
-The app is not ready for public launch because user-data isolation and recovery controls are incomplete.
+`Not launch ready`
 
-## Blockers
+The app is structurally solid and buildable, but it is missing enough abuse-resistance and recovery controls that a serious public rollout would still be premature.
 
-### 1. Auth and permissions
+## 2. Blockers
 
-- Issue: API routes trust client-provided user IDs without enforcing ownership server-side.
-- Why it matters: a logged-in user can potentially access another user's records.
-- Evidence: protected route reads `userId` from request payload instead of deriving it from session context.
-- Minimum fix: enforce server-side ownership checks and row-level security for user-owned tables.
+### Layer: 09 Rate Limiting
 
-### 2. Secrets and credential hygiene
+- Issue: auth and sensitive write paths do not have durable, shared-instance rate limiting.
+- Why it matters: brute-force and abuse controls are weak when limits live only in memory and reset per instance or restart.
+- Evidence: `lib/rateLimit.ts` uses an in-memory `Map`; signup and login flows were not covered by the same durable protection surface in the case-study evidence.
+- Minimum fix: move rate limiting to a shared store or edge-safe control surface and extend it to auth plus other sensitive mutation routes.
 
-- Issue: a public environment variable exposes a third-party API key in the frontend bundle.
-- Why it matters: anyone opening the app can extract and abuse the key.
-- Evidence: production bundle references `NEXT_PUBLIC_*` key for provider access.
-- Minimum fix: move the integration behind a server-side route and rotate the exposed key.
+### Layer: 13 Availability and Recovery
 
-### 3. Availability and recovery
+- Issue: recovery posture is under-specified for production database mistakes or incidents.
+- Why it matters: a live app with accounts, votes, and moderation needs proven restore and rollback behavior, not just assumptions that backups exist.
+- Evidence: the Banter case-study found no restore-tested backup path or operational runbook evidence in the reviewed repo surfaces.
+- Minimum fix: define backup ownership, run one full restore drill, and document an operator-facing recovery checklist.
 
-- Issue: no restore-tested backup path or incident runbook is documented.
-- Why it matters: a bad deploy or data incident has no proven recovery path.
-- Evidence: no restore procedure, no runbook note, and no backup validation evidence.
-- Minimum fix: enable backups, perform one restore test, and add a one-page incident checklist.
+## 3. Missing launch controls
 
-## Missing launch controls
+### Auth, moderation, and trust
 
-- No preview or staging deploy flow before production merges.
-- No uptime alerting or actionable error tracking evidence.
-- No rate limits on paid AI endpoints.
+- Admin moderation actions exist, but explicit auditability for who changed what and when is thin.
+- Production auth and session behavior need a clearer release-proof surface, not only code-level confidence.
 
-## Scaling and resilience gaps
+### Deployment and verification
 
-- Expensive AI requests are uncached and all use the highest-cost model tier.
-- Database connections are not pooled for bursty traffic.
-- No first-traffic load test evidence exists.
+- Build and lint passed, but the repo did not show a strong production preflight surface around database connectivity and required runtime variables.
+- There was no stronger launch gate showing the app is safe beyond "the build passed."
 
-## Highest-leverage next actions
+### Monitoring and incident visibility
 
-1. Lock down authorization and RLS first.
-2. Remove and rotate exposed secrets.
-3. Add monitoring, uptime alerts, and a recovery runbook.
-4. Add rate limits, AI routing, and basic caching before public traffic.
-5. Run one load test and fix the first real bottleneck it reveals.
+- The case-study evidence did not show enough uptime, alerting, or operational monitoring proof for a public app.
 
-## Evidence references
+## 4. Scaling and resilience gaps
 
-- API route ownership checks
-- environment configuration and frontend bundle references
-- deployment workflow files
-- database policy and migration files
-- monitoring and backup configuration surfaces
+- In-memory rate limiting will degrade further under horizontal or ephemeral execution.
+- Recovery posture around database mistakes becomes more painful as real user data accumulates.
+- The app has real architecture, but the operational controls are still behind the product maturity.
 
+## 5. Highest-leverage next actions
+
+1. Replace in-memory rate limiting with a durable shared control and extend it to auth flows.
+2. Add moderation audit logs and durable admin action traceability.
+3. Prove the backup and restore path with one real recovery drill.
+4. Add a release preflight for required environment variables and database readiness.
+5. Add visible uptime and incident-detection surfaces before a wider public rollout.
+
+## 6. Evidence references
+
+- `docs/case-studies/banter.md`
+- `lib/rateLimit.ts`
+- `app/api/auth/signup/route.ts`
+- `app/api/polls/create/route.ts`
+- `app/api/polls/vote/route.ts`
+- `app/api/report/route.ts`
+- `app/api/admin/reports/route.ts`

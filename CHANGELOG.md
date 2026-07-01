@@ -7,6 +7,15 @@ The versioning intent is simple:
 - increment minor for meaningful MurphyScan rule growth, new source-backed verification coverage, or improved agent behavior
 - increment major only if MurphyScan changes its report shape or operating model in a way that breaks expected use
 
+## 0.2.1 - 2026-07-01
+
+Public surface and example refresh.
+
+Included in `0.2.1`:
+- removed the temporary intake list file from the repo root
+- refreshed the example MurphyScan report to match the current `0.2.x` report shape
+- upgraded the README to describe MurphyScan as a tool system with stronger coverage, capability, and use-case framing
+
 ## 0.2.0 - 2026-07-01
 
 Second public baseline.
