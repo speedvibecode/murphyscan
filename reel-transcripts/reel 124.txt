@@ -1,0 +1,13 @@
+Reel 124
+Source: https://www.instagram.com/p/DaYKQ7-E6KB/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T09:04:12.100Z
+Completed: 2026-07-09T09:04:26.615Z
+00:00
+→
+01:06
+If you haven't heard, GitHub Copilot just had a remote code execution vulnerability. CVSS score 9.6 out of 10. That's critical, folks. So here's what happened. Someone put a hidden prompt injection in a PRD. Not in the code, in the description of the code. Copilot read the description as context. The injection triggered code execution on the developer's machine without them even knowing it. Remote code execution from a normal pull request through an AI coding assistant. Let that sink in, vibe coders. That's a death spiral. The tool you trust the most to help you write code just became the attack vector. Not the code it generated, the AI itself. This has been patched, but the pattern has not. We're going to see a lot more of it. Every AI tool that reads context from external sources is a potential injection surface. Your AI assistant reads your repo, your comments, your issues, your PRs. If any of those inputs can be poisoned, your AI can be weaponized against your app.
+01:07
+→
+01:22
+This is why we teach security as the entire layer in the AI-directed engineering stack, because the threat model has changed and it will keep changing. And most builders do not know it yet, especially vibe coders, using AI assistance this exact same way.

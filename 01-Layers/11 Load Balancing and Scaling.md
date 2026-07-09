@@ -2,7 +2,7 @@
 layer: 11
 image_label: "LOAD BALANCING & SCALING"
 tags: [murphyscan, layer, scaling, load-testing]
-source_reels: [reel-26, reel-27, reel-33, reel-34, reel-41, reel-53, reel-62, reel-63, reel-66, reel-67, reel-69, reel-76, reel-80, reel-93, reel-94, reel-104]
+source_reels: [reel-26, reel-27, reel-33, reel-34, reel-41, reel-53, reel-62, reel-63, reel-66, reel-67, reel-69, reel-76, reel-80, reel-93, reel-94, reel-104, reel-115, reel-117, reel-120, reel-127]
 ---
 # 11 Load Balancing and Scaling
 
@@ -34,6 +34,10 @@ The scaling layer verifies that the app can handle real concurrency, growing dat
 - [[reel-93]] - cache consistency mistakes also create load and support churn.
 - [[reel-94]] - repeated read patterns should be measured before scaling blindly.
 - [[reel-104]] - read-heavy and write-heavy paths may need different scaling strategies.
+- [[reel-115]] - diagnose connections, query cost, and read/write shape before scaling blindly.
+- [[reel-117]] - provider plan ceilings can become the first launch-day scaling cliff.
+- [[reel-120]] - platform concurrency, timeout, payload, and bandwidth limits must match real features.
+- [[reel-127]] - cache stampedes can turn an expiration event into a traffic spike.
 
 ## What MurphyScan Should Verify
 - Database connections are pooled and sized for instances.
@@ -42,6 +46,8 @@ The scaling layer verifies that the app can handle real concurrency, growing dat
 - Expensive operations are queued or cached.
 - Multi-region reads or CDN delivery exist when user geography requires it.
 - Scaling recommendations are grounded in measured workload shape, not platform branding.
+- Provider plan limits are included in load-test assumptions.
+- Cache-expiry and hot-key behavior are tested when cached data protects the database.
 
 ## Repetition Notes
 This layer should be evidence-driven. Do not recommend sharding unless monitoring or load tests show the need.

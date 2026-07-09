@@ -2,7 +2,7 @@
 concept: "platform-fit-background-jobs"
 tags: [murphyscan, concept, platform, compute]
 layers: ["05 Hosting and Deployment", "06 Cloud and Compute"]
-source_reels: [reel-18, reel-23, reel-28, reel-51, reel-69, reel-74, reel-80, reel-81, reel-88, reel-102, reel-104]
+source_reels: [reel-18, reel-23, reel-28, reel-51, reel-69, reel-74, reel-80, reel-81, reel-88, reel-102, reel-104, reel-117, reel-120]
 ---
 # Platform Fit and Background Jobs
 
@@ -22,6 +22,8 @@ source_reels: [reel-18, reel-23, reel-28, reel-51, reel-69, reel-74, reel-80, re
 - [[reel-88]] - managed versus self-hosted is a time-versus-money decision.
 - [[reel-102]] - graduating from a bundled platform means choosing a new ceiling.
 - [[reel-104]] - database platform choice follows workload shape and portability goals.
+- [[reel-117]] - serverless plan ceilings can break launch-day concurrency, runtime, bandwidth, and deploy size.
+- [[reel-120]] - platform limits for concurrency, timeout, payload, and bandwidth must match feature behavior.
 
 ## Why It Matters
 Hosting that is perfect for a landing page may fail for file processing, AI pipelines, cron jobs, websockets, or persistent workers.
@@ -32,6 +34,8 @@ Hosting that is perfect for a landing page may fail for file processing, AI pipe
 - Can frontend and backend be deployed separately?
 - Does each platform choice map to a workload need?
 - Are media storage, databases, and compute each deployed on infrastructure suited to their job?
+- Are plan-specific limits known for concurrency, execution time, payload size, bandwidth, and function size?
+- Do slow AI, upload, export, or checkout flows move to background jobs when platform timeouts are lower than feature runtime?
 
 ## Agent Notes
 Do not call Vercel or Supabase "bad"; identify fit and limits.

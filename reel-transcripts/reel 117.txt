@@ -1,0 +1,13 @@
+Reel 117
+Source: https://www.instagram.com/p/DaSxssyiLWe/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T09:03:34.357Z
+Completed: 2026-07-09T09:03:49.565Z
+00:00
+→
+01:04
+You deployed to Vercel serverless functions that scale automatically, except when they don't. And that's usually on launch day when traffic spikes and your functions all start queuing up. Vercel's hobby plan, that allows, what, 10 concurrent executions? So your 11th gets a cold start, your 20th gets a timeout, and your 50th, error page out of here. You're not hitting your codes limits. You're hitting your platforms limits. The marketing page said serverless scales automatically. And it does. It scales automatically within the boundaries of the plan. And the plan has boundaries that you never read. Execution time limits, 10 seconds on Hobby, 60 seconds on Pro. So your AI feature needs 15 to 20 seconds. Says a lot. What about bandwidth caps? 100 gigabytes sounds like a lot until your image-heavy app burns through it in a week. Or function size limits. Your bundled serverless function exceeds the 50 megabyte ceiling and the deploy fails silently.
+01:05
+→
+01:23
+Netlify has different walls. AWS Lambda has different walls. Cloudflare Workers has different walls. Every platform markets infinite scale, but every platform also has a ceiling. And you, you're about to find yours on the worst possible day ever.

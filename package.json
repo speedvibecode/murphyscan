@@ -2,6 +2,7 @@
   "name": "murphyscan",
   "private": true,
   "scripts": {
+    "discover:instagram": "node scripts/discover-instagram-reels.mjs --write-next-batch",
     "transcribe:reels": "node scripts/transcribe-instagram-reels.mjs",
     "transcribe:next-batch": "node scripts/transcribe-instagram-reels.mjs",
     "archive:next-batch": "node scripts/archive-next-batch.mjs"

@@ -1,0 +1,13 @@
+Reel 120
+Source: https://www.instagram.com/p/DaVWiw4l_JY/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T09:03:53.596Z
+Completed: 2026-07-09T09:04:12.092Z
+00:00
+→
+01:07
+Your platform has limits that you never checked. Here are three things you verify right now to check them. Step one, concurrent execution ceiling. Your serverless platform allows a fixed number of functions running at the exact same time. On AWS Lambda, the default is a thousand per region. Sounds generous until three functions per request means 300 concurrent users maxes it out completely. On Vercel, the number depends on your plan and it is lower than you expect. Trust me. Request a concurrency increase before launch day, not during. You'll thank me for that later. That's a win. Step two, execution time versus feature runtime. Your AI feature takes 12 seconds to respond, but your platform times out serverless at 10 seconds. It does not throw a useful error. It just silently dies. The user sees a spinner that never stops spinning. So match your function runtime to your platform's execution ceiling. If the feature takes longer, move it to a background job with a webhook callback.
+01:07
+→
+01:40
+That's your win. Step 3. Payload and bandwidth limits. Your file upload endpoint accepts 50MB files. Your platform caps request payloads at 4.5MB. The upload fails, the error is cryptic, the user retries 5 times. Not a win. The lesson is read the limits of every page of every platform you deploy to. Not the marketing page, not the tutorial, the limits page. That's where the real truth lives when you press deploy.

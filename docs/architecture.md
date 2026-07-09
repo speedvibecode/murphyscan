@@ -35,10 +35,12 @@ It exists for three reasons:
 - future rule refinement
 
 Current state:
-- `104` cleaned source-backed reel notes
+- `128` cleaned source-backed reel notes
+- `2` filtered low-signal source records tracked raw and manifest-only
 - repeatable local intake workflow via `scripts/transcribe-instagram-reels.mjs`
+- date-verified scheduled discovery via `scripts/discover-instagram-reels.mjs`
 
-The cleaned summaries in `reel-transcripts/cleaned/` are the fastest source surface for agents. The raw transcript files and `manifest.json` preserve grounding and source mapping.
+The cleaned summaries in `reel-transcripts/cleaned/` are the fastest source surface for agents. The raw transcript files and `manifest.json` preserve grounding and source mapping. Filtered entries are source-accounted edge cases, not evidence notes for scan behavior.
 
 ## 3. Agent wrappers
 
@@ -82,6 +84,15 @@ MurphyScan reasoning should flow like this:
 4. classify the issue as blocker, missing launch control, or scale/resilience gap
 5. return a decision-oriented report with evidence
 
+Corpus-growth reasoning should flow like this:
+
+1. verify that a reel URL is not already represented in `manifest.json`
+2. verify discovered post dates before trusting profile order
+3. classify the transcript as usable, filtered, skipped-existing, or retryable failure
+4. create cleaned notes only for usable MurphyScan-relevant source material
+5. route new ideas into an existing layer or concept by default
+6. create a new concept only when the reel introduces reusable verification behavior that does not fit the current concept map
+
 ## Design rules
 
 - Keep launch blockers separate from scale improvements.
@@ -89,10 +100,14 @@ MurphyScan reasoning should flow like this:
 - Prefer updating concept notes over spawning new note sprawl.
 - Keep wrappers thin and vault-centered.
 - Treat the corpus as grounding, not as accidental baggage.
+- Keep filtered source records out of layer and concept synthesis unless the filter behavior itself changes.
+- Update stale navigation surfaces in the same change as material corpus, automation, or skill behavior updates.
 
 ## Future evolution
 
 The cleanest path forward is:
 - improve scan rules through real repo case studies
+- keep the three-times-weekly ingest automation aligned with `docs/scheduled-ingest-pipeline.md`
+- add verified provider adapters under the `docs/transcription-fallbacks.md` status contract if Saveto becomes unavailable
 - tighten the wrappers only when multiple agents need the same clarification
 - split a fully original `murphyscan-core` later if licensing or redistribution needs require it

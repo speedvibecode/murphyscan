@@ -3,14 +3,12 @@ import path from "node:path";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 
-const require = createRequire(import.meta.url);
-const { chromium } = require("playwright");
-
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputDir = path.join(repoRoot, "reel-transcripts");
 const manifestFile = path.join(outputDir, "manifest.json");
 const defaultSourceFile = path.join(outputDir, "next-batch.txt");
 const transcriptUrl = "https://saveto.ai/instagram-transcript-generator/";
+const transcriptProviderName = "Saveto Instagram Transcript Generator";
 
 const args = new Map();
 for (let i = 2; i < process.argv.length; i += 2) {
@@ -24,9 +22,33 @@ const count = args.has("--count") ? Number(args.get("--count")) : Infinity;
 const concurrency = Number(args.get("--concurrency") || 4);
 const retryCount = Number(args.get("--retries") || 2);
 const overwrite = args.get("--overwrite") === "true";
+const minTranscriptWords = Number(args.get("--min-transcript-words") || 20);
+const shortTranscriptDomainWordFloor = Number(args.get("--short-transcript-domain-word-floor") || 2);
+const shortTranscriptWordCeiling = Number(args.get("--short-transcript-word-ceiling") || 90);
+
+const domainSignalPattern =
+  /\b(ai|api|app|apps|auth|authorization|backup|billing|cache|caching|checkout|ci|code|concurrency|customer|data|database|deploy|deployment|devops|endpoint|error|function|github|infra|infrastructure|launch|logs|monitoring|payment|platform|production|rate|restore|security|server|serverless|stripe|tenant|test|tests|user|users|vercel|webhook|workflow)\b/i;
 
 function normalizeLines(text) {
   return text.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+}
+
+function canonicalUrl(value) {
+  const trimmed = String(value || "").trim();
+  try {
+    const parsed = new URL(trimmed);
+    if (/^(www\.)?instagram\.com$/i.test(parsed.hostname)) {
+      const match = parsed.pathname.match(/^\/(?:p|reel)\/([^/]+)/i);
+      if (match) return `instagram:${match[1]}`;
+    }
+    parsed.hash = "";
+    parsed.search = "";
+    parsed.hostname = parsed.hostname.toLowerCase().replace(/^www\./, "");
+    parsed.pathname = parsed.pathname.replace(/\/+$/g, "");
+    return parsed.toString().replace(/\/$/g, "");
+  } catch {
+    return trimmed.replace(/\/+$/g, "");
+  }
 }
 
 function reelFile(index) {
@@ -57,19 +79,90 @@ function extractTranscriptFromText(bodyText) {
   return text;
 }
 
-function visibleError(bodyText) {
+function transcriptSignal(transcript) {
+  const words = normalizeLines(transcript)
+    .replace(/\d{2}:\d{2}/g, " ")
+    .replace(/[^\p{L}\p{N}'-]+/gu, " ")
+    .trim()
+    .split(/\s+/)
+    .filter((word) => /[\p{L}\p{N}]/u.test(word));
+
+  if (words.length < minTranscriptWords) {
+    return {
+      usable: false,
+      reason: "low_substantive_transcript",
+      wordCount: words.length,
+    };
+  }
+
+  const domainWordCount = words.filter((word) => domainSignalPattern.test(word)).length;
+  if (
+    words.length <= shortTranscriptWordCeiling &&
+    domainWordCount < shortTranscriptDomainWordFloor
+  ) {
+    return {
+      usable: false,
+      reason: "low_domain_signal_transcript",
+      wordCount: words.length,
+      domainWordCount,
+    };
+  }
+
+  return {
+    usable: true,
+    reason: "usable_transcript",
+    wordCount: words.length,
+    domainWordCount,
+  };
+}
+
+function visibleOutcome(bodyText) {
   const patterns = [
-    /You have used up[\s\S]{0,300}/i,
-    /No content detected[\s\S]{0,300}/i,
-    /Transcription failed[\s\S]{0,300}/i,
-    /network error[\s\S]{0,300}/i,
-    /Please input[\s\S]{0,300}/i,
-    /try again later[\s\S]{0,300}/i,
+    {
+      status: "failed",
+      pattern: /You have used up[\s\S]{0,300}/i,
+      reason: "transcript_service_quota",
+    },
+    {
+      status: "filtered",
+      pattern: /No content detected[\s\S]{0,300}/i,
+      reason: "no_transcript_detected",
+    },
+    {
+      status: "filtered",
+      pattern: /No transcript[\s\S]{0,300}/i,
+      reason: "no_transcript_detected",
+    },
+    {
+      status: "filtered",
+      pattern: /No subtitles[\s\S]{0,300}/i,
+      reason: "no_subtitles_detected",
+    },
+    {
+      status: "failed",
+      pattern: /Transcription failed[\s\S]{0,300}/i,
+      reason: "transcription_failed",
+    },
+    {
+      status: "failed",
+      pattern: /network error[\s\S]{0,300}/i,
+      reason: "network_error",
+    },
+    {
+      status: "failed",
+      pattern: /Please input[\s\S]{0,300}/i,
+      reason: "invalid_input",
+    },
+    {
+      status: "failed",
+      pattern: /try again later[\s\S]{0,300}/i,
+      reason: "transcript_service_unavailable",
+    },
   ];
 
-  for (const pattern of patterns) {
+  for (const { status, pattern, reason } of patterns) {
     const match = bodyText.match(pattern);
-    if (match) return match[0].trim();
+    if (match) return { status, reason, message: match[0].trim() };
   }
   return null;
 }
@@ -79,7 +172,7 @@ async function fileLooksOk(index, url) {
 
   try {
     const text = await fs.readFile(reelFile(index), "utf8");
-    return text.includes(url) && text.length > 200;
+    return text.includes(url) && text.length > 200 && !/\bSTATUS:\s*(FAILED|ERROR)\b/i.test(text);
   } catch {
     return false;
   }
@@ -89,7 +182,8 @@ async function writeResultFile(result) {
   const header = [
     `Reel ${result.index}`,
     `Source: ${result.url}`,
-    `Transcribed via: ${transcriptUrl}`,
+    `Transcribed via: ${transcriptProviderName}`,
+    `Provider URL: ${transcriptUrl}`,
     `Started: ${result.startedAt}`,
     `Completed: ${result.completedAt}`,
     "",
@@ -100,12 +194,15 @@ async function writeResultFile(result) {
       ? `${result.transcript.replace(/\n/g, "\r\n")}\r\n`
       : [
           `STATUS: ${result.status.toUpperCase()}`,
+          result.reason ? `REASON: ${result.reason}` : null,
           result.error || "Unknown error",
           "",
           "LAST PAGE TEXT EXCERPT:",
           normalizeLines(result.lastText || "").slice(0, 4000).replace(/\n/g, "\r\n"),
           "",
-        ].join("\r\n");
+        ]
+          .filter((line) => line !== null)
+          .join("\r\n");
 
   const file = reelFile(result.index);
   await fs.writeFile(file, header + body, "utf8");
@@ -137,24 +234,46 @@ async function transcribeOnce(browser, item, attempt) {
 
       const transcript = extractTranscriptFromText(lastText);
       if (transcript) {
+        const signal = transcriptSignal(transcript);
+        if (!signal.usable) {
+          return {
+            ...item,
+            attempt,
+            status: "filtered",
+            reason: signal.reason,
+            wordCount: signal.wordCount,
+            domainWordCount: signal.domainWordCount,
+            error:
+              signal.reason === "low_domain_signal_transcript"
+                ? `Short transcript did not meet the ${shortTranscriptDomainWordFloor}-domain-word signal floor.`
+                : `Transcript did not meet the ${minTranscriptWords}-word signal floor.`,
+            lastText,
+            startedAt,
+            completedAt: new Date().toISOString(),
+          };
+        }
+
         return {
           ...item,
           attempt,
           status: "ok",
           chars: transcript.length,
+          wordCount: signal.wordCount,
+          domainWordCount: signal.domainWordCount,
           transcript,
           startedAt,
           completedAt: new Date().toISOString(),
         };
       }
 
-      const error = visibleError(lastText);
-      if (error) {
+      const outcome = visibleOutcome(lastText);
+      if (outcome) {
         return {
           ...item,
           attempt,
-          status: "failed",
-          error,
+          status: outcome.status,
+          reason: outcome.reason,
+          error: outcome.message,
           lastText,
           startedAt,
           completedAt: new Date().toISOString(),
@@ -212,7 +331,7 @@ async function transcribeWithRetries(browser, item) {
 
 async function readManifest() {
   try {
-    return JSON.parse(await fs.readFile(manifestFile, "utf8"));
+    return JSON.parse((await fs.readFile(manifestFile, "utf8")).replace(/^\uFEFF/, ""));
   } catch {
     return [];
   }
@@ -234,22 +353,74 @@ async function nextReelIndex() {
 async function writeManifest(results) {
   const prior = await readManifest();
   const byIndex = new Map(prior.map((result) => [result.index, result]));
-  for (const result of results) byIndex.set(result.index, result);
+  for (const result of results.filter(isManifestAccounted)) byIndex.set(result.index, result);
   const manifest = [...byIndex.values()].sort((a, b) => a.index - b.index);
-  await fs.writeFile(manifestFile, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  const tmpFile = `${manifestFile}.${process.pid}.${Date.now()}.tmp`;
+  await fs.writeFile(tmpFile, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  await fs.rename(tmpFile, manifestFile);
   return manifest;
+}
+
+function isManifestAccounted(result) {
+  return ["ok", "filtered", "skipped-existing"].includes(result.status);
+}
+
+let manifestWriteQueue = Promise.resolve();
+
+function enqueueManifestWrite(results) {
+  const snapshot = results.map((result) => ({ ...result }));
+  manifestWriteQueue = manifestWriteQueue.catch(() => {}).then(() => writeManifest(snapshot));
+  return manifestWriteQueue;
 }
 
 async function main() {
   await fs.mkdir(outputDir, { recursive: true });
   const urls = batchLines(await fs.readFile(sourceFile, "utf8"));
   if (!urls.length) {
-    throw new Error(`No reel URLs found in ${sourceFile}`);
+    console.log(JSON.stringify({ processedThisRun: 0, status: "empty", sourceFile }, null, 2));
+    return;
+  }
+
+  const manifestBeforeRun = await readManifest();
+  const indexedUrls = new Set(manifestBeforeRun.map((item) => canonicalUrl(item.url)));
+  const seenInBatch = new Set();
+  const pendingUrls = [];
+  let skippedAlreadyIndexed = 0;
+  let skippedDuplicateInBatch = 0;
+
+  for (const url of urls) {
+    const key = canonicalUrl(url);
+    if (indexedUrls.has(key)) {
+      skippedAlreadyIndexed += 1;
+      continue;
+    }
+    if (seenInBatch.has(key)) {
+      skippedDuplicateInBatch += 1;
+      continue;
+    }
+    seenInBatch.add(key);
+    pendingUrls.push(url);
+  }
+
+  if (!pendingUrls.length) {
+    console.log(
+      JSON.stringify(
+        {
+          processedThisRun: 0,
+          status: "no-new-urls",
+          skippedAlreadyIndexed,
+          skippedDuplicateInBatch,
+        },
+        null,
+        2,
+      ),
+    );
+    return;
   }
 
   const reelStart = reelStartArg ?? (await nextReelIndex());
 
-  const selected = urls.slice(
+  const selected = pendingUrls.slice(
     listStart - 1,
     Number.isFinite(count) ? listStart - 1 + count : undefined,
   );
@@ -259,6 +430,8 @@ async function main() {
     url,
   }));
 
+  const require = createRequire(import.meta.url);
+  const { chromium } = require("playwright");
   const browser = await chromium.launch({ headless: true });
   const results = new Array(items.length);
   let cursor = 0;
@@ -273,7 +446,7 @@ async function main() {
       console.log(
         `[${new Date().toISOString()}] reel ${String(item.index).padStart(2, "0")} ${result.status}`,
       );
-      await writeManifest(results.filter(Boolean));
+      await enqueueManifestWrite(results.filter(Boolean));
     }
   }
 
@@ -285,13 +458,26 @@ async function main() {
     await browser.close().catch(() => {});
   }
 
-  const manifest = await writeManifest(results);
-  const summary = manifest.reduce((acc, result) => {
+  await enqueueManifestWrite(results);
+  const summary = results.reduce((acc, result) => {
     acc[result.status] = (acc[result.status] || 0) + 1;
     return acc;
   }, {});
+  const retryableFailures = results.filter((result) => !isManifestAccounted(result)).length;
 
-  console.log(JSON.stringify({ processedThisRun: items.length, summary }, null, 2));
+  console.log(
+    JSON.stringify(
+      {
+        processedThisRun: items.length,
+        skippedAlreadyIndexed,
+        skippedDuplicateInBatch,
+        retryableFailures,
+        summary,
+      },
+      null,
+      2,
+    ),
+  );
 }
 
 main().catch((error) => {

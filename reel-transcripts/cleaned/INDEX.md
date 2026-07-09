@@ -1,7 +1,7 @@
 ---
 title: "Cleaned Reel Summaries"
 source_folder: "reel-transcripts"
-note_count: 104
+note_count: 128
 tags: [murphyscan, index, production-readiness]
 ---
 # Cleaned Reel Summaries
@@ -14,12 +14,12 @@ This folder contains cleaned, source-traceable Markdown summaries for the reel t
 - Strongest clusters: auth, secrets, RLS, deployment safety, observability, cost controls, caching, scaling, CI/CD, and AI evaluation.
 
 ## Theme Map
-- **Security and auth:** [[reel-02]], [[reel-13]], [[reel-14]], [[reel-15]], [[reel-17]], [[reel-22]], [[reel-36]], [[reel-37]], [[reel-44]], [[reel-48]], [[reel-55]], [[reel-59]], [[reel-60]], [[reel-61]], [[reel-64]], [[reel-65]], [[reel-70]], [[reel-71]], [[reel-72]], [[reel-73]], [[reel-75]], [[reel-77]], [[reel-78]], [[reel-84]], [[reel-89]], [[reel-95]], [[reel-96]], [[reel-99]], [[reel-100]], [[reel-103]]
-- **Deployment and operations:** [[reel-04]], [[reel-05]], [[reel-16]], [[reel-19]], [[reel-20]], [[reel-23]], [[reel-28]], [[reel-29]], [[reel-31]], [[reel-39]], [[reel-42]], [[reel-58]], [[reel-81]], [[reel-83]], [[reel-85]], [[reel-86]], [[reel-87]], [[reel-88]], [[reel-90]], [[reel-91]], [[reel-92]], [[reel-98]], [[reel-101]]
-- **Data and backend architecture:** [[reel-06]], [[reel-11]], [[reel-12]], [[reel-26]], [[reel-32]], [[reel-33]], [[reel-34]], [[reel-35]], [[reel-41]], [[reel-51]], [[reel-57]], [[reel-66]], [[reel-67]], [[reel-69]], [[reel-74]], [[reel-79]], [[reel-80]], [[reel-97]], [[reel-102]], [[reel-104]]
-- **AI product controls:** [[reel-01]], [[reel-24]], [[reel-25]], [[reel-38]], [[reel-47]], [[reel-49]], [[reel-50]], [[reel-52]], [[reel-54]], [[reel-56]]
-- **QA, productization, and scaling:** [[reel-07]], [[reel-08]], [[reel-09]], [[reel-10]], [[reel-18]], [[reel-21]], [[reel-27]], [[reel-45]], [[reel-46]], [[reel-53]], [[reel-62]], [[reel-63]], [[reel-76]], [[reel-82]], [[reel-93]], [[reel-94]]
-- **Billing and mobile product edges:** [[reel-30]], [[reel-40]], [[reel-43]], [[reel-68]]
+- **Security and auth:** [[reel-02]], [[reel-13]], [[reel-14]], [[reel-15]], [[reel-17]], [[reel-22]], [[reel-36]], [[reel-37]], [[reel-44]], [[reel-48]], [[reel-55]], [[reel-59]], [[reel-60]], [[reel-61]], [[reel-64]], [[reel-65]], [[reel-70]], [[reel-71]], [[reel-72]], [[reel-73]], [[reel-75]], [[reel-77]], [[reel-78]], [[reel-84]], [[reel-89]], [[reel-95]], [[reel-96]], [[reel-99]], [[reel-100]], [[reel-103]], [[reel-113]], [[reel-123]], [[reel-124]]
+- **Deployment and operations:** [[reel-04]], [[reel-05]], [[reel-16]], [[reel-19]], [[reel-20]], [[reel-23]], [[reel-28]], [[reel-29]], [[reel-31]], [[reel-39]], [[reel-42]], [[reel-58]], [[reel-81]], [[reel-83]], [[reel-85]], [[reel-86]], [[reel-87]], [[reel-88]], [[reel-90]], [[reel-91]], [[reel-92]], [[reel-98]], [[reel-101]], [[reel-108]], [[reel-109]], [[reel-112]], [[reel-114]], [[reel-116]], [[reel-118]], [[reel-119]], [[reel-126]], [[reel-130]]
+- **Data and backend architecture:** [[reel-06]], [[reel-11]], [[reel-12]], [[reel-26]], [[reel-32]], [[reel-33]], [[reel-34]], [[reel-35]], [[reel-41]], [[reel-51]], [[reel-57]], [[reel-66]], [[reel-67]], [[reel-69]], [[reel-74]], [[reel-79]], [[reel-80]], [[reel-97]], [[reel-102]], [[reel-104]], [[reel-105]], [[reel-106]], [[reel-111]], [[reel-115]], [[reel-120]], [[reel-122]], [[reel-125]], [[reel-127]]
+- **AI product controls:** [[reel-01]], [[reel-24]], [[reel-25]], [[reel-38]], [[reel-47]], [[reel-49]], [[reel-50]], [[reel-52]], [[reel-54]], [[reel-56]], [[reel-113]], [[reel-123]], [[reel-124]]
+- **QA, productization, and scaling:** [[reel-07]], [[reel-08]], [[reel-09]], [[reel-10]], [[reel-18]], [[reel-21]], [[reel-27]], [[reel-45]], [[reel-46]], [[reel-53]], [[reel-62]], [[reel-63]], [[reel-76]], [[reel-82]], [[reel-93]], [[reel-94]], [[reel-107]], [[reel-110]], [[reel-117]], [[reel-121]], [[reel-130]]
+- **Billing and mobile product edges:** [[reel-30]], [[reel-40]], [[reel-43]], [[reel-68]], [[reel-111]], [[reel-114]], [[reel-121]]
 
 ## Note Index
 | Reel | Topic | Scan Area |
@@ -128,3 +128,27 @@ This folder contains cleaned, source-traceable Markdown summaries for the reel t
 | [[reel-102]] | Outgrowing Supabase Means Choosing a New Ceiling | post-supabase-platform-fit |
 | [[reel-103]] | AI Supply Chain Trust Is Now a Real Attack Surface | ai-supply-chain-trust |
 | [[reel-104]] | Choose the Database by Workload, Not Brand | database-workload-fit |
+| [[reel-105]] | Validate Every API Request | api-input-validation |
+| [[reel-106]] | Tenant Isolation Is a Business Boundary | tenant-isolation-monitoring |
+| [[reel-107]] | Protect the Business Before Launch | business-liability-policy-fit |
+| [[reel-108]] | Watch the Failed Session | session-replay-observability |
+| [[reel-109]] | Monitor Business Failures | business-failure-monitoring |
+| [[reel-110]] | Domain Requirements Change the Build | industry-specific-requirements |
+| [[reel-111]] | Queue Work After Checkout | async-checkout-jobs |
+| [[reel-112]] | Keep CI From Surprising the Team | ci-cost-controls |
+| [[reel-113]] | AI Code Still Needs Engineering | ai-generated-code-trust-gap |
+| [[reel-114]] | Green Dashboards Can Miss Revenue Failure | business-metric-alerting |
+| [[reel-115]] | Scale in the Right Order | database-scaling-decision-tree |
+| [[reel-116]] | Monitor the Outcome, Not the 200 | synthetic-business-monitoring |
+| [[reel-117]] | Platform Plans Have Launch Ceilings | platform-plan-limits |
+| [[reel-118]] | Monitoring Is a System That Calls You | correlated-observability-slo |
+| [[reel-119]] | Catch Swallowed Webhook Failures | dead-letter-webhook-outcomes |
+| [[reel-120]] | Read the Platform Limits Page | platform-runtime-limits |
+| [[reel-121]] | Rate Limits Are Pricing Architecture | tiered-adaptive-rate-limits |
+| [[reel-122]] | Backups Are User Protection | data-backup-strategy |
+| [[reel-123]] | AI Code Needs Security Audits | ai-code-security-audit |
+| [[reel-124]] | AI Assistant Context Is an Attack Surface | ai-assistant-prompt-injection |
+| [[reel-125]] | Backups Must Survive and Restore | backup-restore-pitr |
+| [[reel-126]] | CI Free Tiers Have Trapdoors | ci-free-tier-ceilings |
+| [[reel-127]] | Caching Decides How Wrong Data Can Be | cache-staleness-policy |
+| [[reel-130]] | First 48 Hours Decide Retention | product-activation-retention |

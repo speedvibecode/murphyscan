@@ -1,0 +1,13 @@
+Reel 110
+Source: https://www.instagram.com/reel/DadSreribrB/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T08:33:24.508Z
+Completed: 2026-07-09T08:33:39.037Z
+00:00
+â†’
+01:00
+I'm excited to share this one. But we had so many conversations with builders around the world asking how to build products for their specific industry that we did something about it. Today, I'm opening the industry inside of our faction community. Completely free. And we're starting with education. The number one request across all of our channels we received from our global community was how do I build an educational platform using AI safely and securely. So we built seven courses specifically for builders working on education platforms. How to architect a learning management system, how to handle student data with privacy and the right privacy controls for parents and students and teachers, how to build enrollment and credentialing systems that meet real institutional requirements, all through the lens of AI-directed engineering, all designed for builders who are orchestrating their AI to build these platforms, not writing code by hand. And this is the first industry module of many. Starting in August,
+01:01
+â†’
+01:22
+additional industries will be dropping every week, Healthcare, government, real estate, finance, e-commerce. But education came first because the builders around the world told us this is what they need the most. Free tier, no paywall, AI education for the people. This is exactly what the faction community is built for.

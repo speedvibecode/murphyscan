@@ -1,0 +1,13 @@
+Reel 114
+Source: https://www.instagram.com/p/DaQKiPRk6KN/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T09:03:34.353Z
+Completed: 2026-07-09T09:03:49.567Z
+00:00
+→
+01:01
+Your revenue dropped 40% last Tuesday. Sentry showed zero new errors. PostHog showed normal user behavior. And every dashboard in your stack said it was bright green. I can tell you what really happened. Your Stripe account, the webhook endpoint, started returning a 200 on every single request. Even when the charge failed. So your server received the event, processed it, hit an error in the payment logic, caught the error, returned a 200 anyway. But Stripe, it saw a successful delivery, so it didn't retry. It moved right on to the next one. So six hours of failed payments that nobody caught because there isn't a tool in your stack designed to catch them. You see, Sentry, it tracks errors your code throws, but your code, it didn't throw an error. And PostHog, it tracks user behavior, but your users, they were still browsing, still adding to cart, still clicking at checkout. They just couldn't pay. And your app, well, it said thank you anyway.
+01:02
+→
+01:19
+Sometimes the failure that costs you the most is the one you're monitoring was never built to detect. So your dashboards they might be green but your revenue it's not gonna be and nothing in your stack knows the difference today.

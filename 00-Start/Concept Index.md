@@ -9,6 +9,7 @@ This index groups repeated reel ideas into durable concept notes. Use it when a 
 ## Frontend and UX
 - [[Frontend Production Quality]]
 - [[UX States and Real-Device QA]]
+- [[Product Activation and Retention]]
 - [[Client Trust Boundary]]
 - [[Mobile Deep Links and App Links]]
 
@@ -53,5 +54,6 @@ This index groups repeated reel ideas into durable concept notes. Use it when a 
 - [[Load Testing and Scaling Cliffs]]
 
 ## Product Edge
+- [[Product Activation and Retention]]
 - [[Billing and Usage Events]]
 - [[Mobile Deep Links and App Links]]

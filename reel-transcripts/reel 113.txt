@@ -1,0 +1,13 @@
+Reel 113
+Source: https://www.instagram.com/reel/DabL4W6DEHs/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T08:33:39.045Z
+Completed: 2026-07-09T08:33:57.174Z
+00:00
+â†’
+01:01
+So Cursor just hit $2 billion in annual recurring revenue from $1 billion just three months ago. The vibe coding tool market is exploding. And at the same time, 46% of all new code is AI generated. But only 29% of developers trust it. 2.74 times more security vulnerabilities in AI generated code than human written code altogether. The tools, they're printing money. The code they produce, it's getting a little less trusted. And that's not a contradiction. That's the gap in the space. And the gaps, well, they create industries. The gap between building with AI and trusting what AI built is an entire thesis behind the whole AI-directed engineering certification. We do not teach people how to use Cursor. We teach people what to do after Cursor writes the code. That is the discipline that does not exist yet. It's called AI-directed engineering. You guys are going to get it soon enough.
+01:01
+â†’
+01:10
+The tools, they're going to keep changing, but the discipline, that is going to survive. AI is going to write the code. Engineering is going to get it into prod.

@@ -2,7 +2,7 @@
 layer: 09
 image_label: "RATE LIMITING"
 tags: [murphyscan, layer, rate-limiting]
-source_reels: [reel-11, reel-24, reel-28, reel-49, reel-62]
+source_reels: [reel-11, reel-24, reel-28, reel-49, reel-62, reel-105, reel-121]
 ---
 # 09 Rate Limiting
 
@@ -22,6 +22,8 @@ The rate limiting layer verifies that bots, brute-force attempts, scrapers, and 
 - [[reel-28]] - Upstash for caching and rate limits.
 - [[reel-49]] - gateway-level authentication, validation, and spend caps.
 - [[reel-62]] - connection and cache stress before first traffic.
+- [[reel-105]] - rate limiting should pair with request validation and abuse-pattern tracking.
+- [[reel-121]] - hard limits, adaptive limits, and tiered limits serve different system and business purposes.
 
 ## What MurphyScan Should Verify
 - Paid AI endpoints have per-user and per-IP caps.
@@ -29,7 +31,8 @@ The rate limiting layer verifies that bots, brute-force attempts, scrapers, and 
 - Public read endpoints have scraping limits.
 - Payload and context sizes are rejected before expensive model calls.
 - Rate-limit storage is appropriate for the deployment model.
+- Limits map to product tiers without letting free use consume paid capacity.
+- Limits can tighten under load without making normal usage feel broken.
 
 ## Repetition Notes
 Rate limiting is both security and cost control. Keep endpoint-specific enforcement here and billing impact in [[AI Cost Controls and Model Routing]].
-

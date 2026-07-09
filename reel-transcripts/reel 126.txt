@@ -1,0 +1,13 @@
+Reel 126
+Source: https://www.instagram.com/p/DaaYDrMkbpW/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T09:04:18.790Z
+Completed: 2026-07-09T09:04:37.167Z
+00:00
+→
+01:01
+You use the free tier of GitHub Actions on CI CD. 2,000 minutes a month, automatic builds on every push. Your solo project uses 80 minutes, no problem, it's got you covered. You add a team member, the minutes double. You add integration testing, the minutes triple. You add a staging and deployment step, quadruple. On day 19 of the month, guess what? 2,000 minutes, totally gone. And now your pipeline has stopped running. Your team is pushing code without tests, without linting, and without checks. A bug ships to production because the safety net ran out of minutes. And so you upgrade to pay as you go, which is like $4 per additional minute on macOS. go, which is like $4 per additional minute on Mac OS. So your 300 minute overrun cost you $1,200 for a CI tool that was free 19 days ago. The free tier was designed to get you started. The pricing was designed to capture you when it mattered the most. And it captured you on the day
+01:01
+→
+01:18
+your team needed a pipeline the most. So, every CI platform has a free tier. Also, every CI platform has a trapdoor underneath it. You do not plan for the day that your team outgrows that ceiling. And that day always arrives during a sprint and not in between them.

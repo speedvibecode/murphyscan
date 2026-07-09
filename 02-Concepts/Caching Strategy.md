@@ -2,7 +2,7 @@
 concept: "caching-strategy"
 tags: [murphyscan, concept, caching, cdn]
 layers: ["10 Caching and CDN", "11 Load Balancing and Scaling"]
-source_reels: [reel-01, reel-25, reel-28, reel-33, reel-38, reel-53, reel-62, reel-63, reel-74, reel-76, reel-93, reel-94]
+source_reels: [reel-01, reel-25, reel-28, reel-33, reel-38, reel-53, reel-62, reel-63, reel-74, reel-76, reel-93, reel-94, reel-127]
 ---
 # Caching Strategy
 
@@ -23,6 +23,7 @@ source_reels: [reel-01, reel-25, reel-28, reel-33, reel-38, reel-53, reel-62, re
 - [[reel-76]] - invalidation and cache stampede controls matter as much as the cache itself.
 - [[reel-93]] - stale data and invalidation strategy are consistency decisions.
 - [[reel-94]] - cache only the repeat offenders and measure actual hit rate.
+- [[reel-127]] - cache staleness is a business decision about how wrong data may be and for how long.
 
 ## Why It Matters
 Caching reduces latency, database load, and paid API spend. Bad caching can also leak data or serve stale business-critical state.
@@ -34,6 +35,8 @@ Caching reduces latency, database load, and paid API spend. Bad caching can also
 - Is cache hit rate measurable?
 - Are media assets separated into object storage and CDN delivery instead of bloating the primary database?
 - Is there stampede protection for hot keys?
+- Which data classes are never allowed to be stale, such as pricing, permissions, inventory, or account status?
+- Who owns cache invalidation when the underlying data changes?
 
 ## Agent Notes
 Always pair cache recommendations with invalidation and data-isolation notes.

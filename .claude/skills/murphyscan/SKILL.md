@@ -34,6 +34,12 @@ Read only the relevant concept notes after repo discovery. Do not load the whole
 If the workspace is this Murphy repo and `reel-transcripts/next-batch.txt` contains URLs, treat a user message about a new reel batch as a corpus-update request rather than a launch-readiness scan. In that mode:
 - read `docs/source-corpus-maintenance.md`
 - read `docs/weekly-ingest-mode.md`
+- read `docs/scheduled-ingest-pipeline.md` for unattended or recurring runs
+- read `docs/transcription-fallbacks.md` when a transcript is low-signal, missing, or the provider fails
+- trust auto-discovered URLs only after `npm run discover:instagram` verifies fresh post dates
+- ask for manual links when Instagram hides a date window from anonymous discovery or discovery reports a likely full visible window
+- keep low-signal, music-only, no-subtitle, and no-transcript reels as filtered raw plus manifest entries instead of cleaned notes
+- leave provider, quota, network, and script failures retryable rather than treating them as safely indexed
 - run the full intake, cleaning, synthesis, and archive flow
 - return to normal MurphyScan repo behavior once the batch is complete
 
@@ -89,28 +95,26 @@ Default output shape:
 
 Keep the report compact. Group by production layer or control family, not by file inventory.
 
-## Default scan behavior
+## Scan tiers
 
-When the user only says `/murphyscan`, run a standard scan:
-- auth and authorization
-- secrets and env handling
-- deploy and rollback safety
-- monitoring and incident recovery
-- rate limits and expensive endpoint controls
-- database safety and ownership boundaries
-- CI/CD and test gates
-- scaling risks that are already visible from architecture
+When the user only says `/murphyscan`, run Basic MurphyScan:
+- inspect the highest-signal repo surfaces first
+- cover all 13 layers at the level supported by local evidence
+- prioritize Priority 0 launch blockers and Priority 1 cost or abuse controls
+- include visible Priority 2 and Priority 3 risks without turning the scan into a full forensic review
+- keep the report compact and decision-oriented
 
-When the user asks for a faster pass, bias toward Priority 0 and Priority 1 checks.
+When the user asks for a faster pass, bias Basic MurphyScan toward Priority 0 and Priority 1 checks.
 
-When the user asks for a deeper pass, add:
-- dependency and secret scanning
-- bundle/client exposure review
-- database and query-path inspection
-- API contract, webhook, and versioning review
-- AI eval and output-validation review
-- AI prompt, skill, and automation trust review where relevant
-- load-test or scaling-surface review if local evidence exists
+When the user asks for advanced, exhaustive, super-deep, adversarial, token-burner, or every-last-nuance review, run Advanced MurphyScan:
+- inspect every relevant layer, concept, route, schema, workflow, dependency, prompt, skill, and automation boundary available locally
+- add active testing when the project can be run safely
+- run or request dependency, secret-history, and client-exposure checks where available
+- review database query paths, migrations, policies, ownership boundaries, and scaling cliffs
+- review API contracts, webhooks, idempotency, versioning, and changelog discipline
+- review AI evals, output validation, model routing, spend controls, prompt trust, skill trust, and automation trust
+- review load-test, backup, restore, incident, and rollback evidence if local proof exists
+- separate confirmed findings from suspicions and call out unavailable runtime, provider, database, or production evidence
 
 ## Working rules
 

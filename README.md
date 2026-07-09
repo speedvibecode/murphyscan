@@ -1,6 +1,6 @@
 # MurphyScan
 
-Version: `0.2.1`
+Version: `0.3.0`
 
 MurphyScan is a portable launch-readiness and scaling-readiness audit system for software projects.
 
@@ -64,6 +64,22 @@ Within those layers, it is especially strong on:
 - webhook integrity, billing events, and API contract safety
 - AI supply-chain trust for shared prompts, skills, and automation artifacts
 
+## Scan tiers
+
+MurphyScan has two primary operating tiers.
+
+**Basic MurphyScan** is the default `/murphyscan` mode:
+- covers all 13 layers at the level supported by local evidence
+- leads with Priority 0 launch blockers and Priority 1 cost or abuse controls
+- includes visible scaling and resilience gaps without turning the scan into a forensic audit
+- produces a compact decision-oriented report
+
+**Advanced MurphyScan** is the token-burner mode:
+- use it when the request says advanced, exhaustive, super-deep, adversarial, or every-last-nuance
+- inspects every relevant route, schema, workflow, dependency, prompt, skill, and automation boundary available locally
+- adds active tests, dependency and secret-history scans, bundle/client exposure review, API and webhook contract review, AI eval review, load/scaling review, backup/restore review, and trust-boundary review where applicable
+- separates confirmed findings from suspicions and from unavailable production evidence
+
 ## Why teams use it
 
 MurphyScan helps teams:
@@ -82,10 +98,11 @@ It is useful for:
 ## Current rule base
 
 Current corpus and rule state:
-- 104 cleaned source-backed reel notes
+- 128 cleaned source-backed reel notes
+- 2 filtered low-signal source records tracked in the manifest
 - 13 layer hubs aligned to the production stack image
 - consolidated concept notes for repeated risk patterns
-- expanded coverage for API contracts/versioning and AI supply-chain trust
+- expanded coverage for API contracts/versioning, AI supply-chain trust, and product activation/retention
 - portable `/murphyscan` wrappers for Codex, Claude Code, and OpenCode
 
 ## Supported agent surfaces
@@ -165,7 +182,8 @@ It gives MurphyScan:
 - a path for future agents to strengthen rules instead of treating them as unexplained doctrine
 
 Current corpus size:
-- 104 cleaned source-backed reel notes
+- 128 cleaned source-backed reel notes
+- 2 filtered low-signal source records kept raw and manifest-only
 
 Start here for corpus structure:
 - [reel-transcripts/README.md](./reel-transcripts/README.md)
@@ -210,7 +228,9 @@ Corpus maintenance surfaces:
 - [reel-transcripts/INBOX.md](./reel-transcripts/INBOX.md)
 - [reel-transcripts/next-batch.txt](./reel-transcripts/next-batch.txt)
 - [docs/weekly-ingest-mode.md](./docs/weekly-ingest-mode.md)
+- [docs/scheduled-ingest-pipeline.md](./docs/scheduled-ingest-pipeline.md)
 - [docs/source-corpus-maintenance.md](./docs/source-corpus-maintenance.md)
+- [docs/transcription-fallbacks.md](./docs/transcription-fallbacks.md)
 
 That gives the repo a controlled path for:
 - tracking newly posted reels
@@ -225,12 +245,24 @@ Weekly operator model:
 - tell the agent the next reel batch was added
 - let it run import, cleaning, synthesis, archive, and repo finalization end to end
 
+Scheduled operator model:
+- run Monday, Wednesday, and Friday at 7:00 AM local Codex automation time
+- discover visible public profile reels with `npm run discover:instagram`
+- add discovered reels only after their post dates are verified inside the freshness window
+- warn for manual links when the visible profile window appears full
+- use `reel-transcripts/next-batch.txt` as the only active intake file
+- process only URLs missing from `reel-transcripts/manifest.json`
+- no-op on empty batches, skip already-indexed URLs without creating duplicate reel numbers, and filter low-signal reels without creating cleaned notes
+- leave provider, network, quota, and script failures retryable instead of treating them as safely indexed
+- archive and clear accounted-for batches after transcription, cleaning, and synthesis
+- commit and push material successful scheduled runs to `origin/main`
+
 ## Versioning
 
 MurphyScan uses explicit skill and repo versioning.
 
 Current version:
-- `0.2.2`
+- `0.3.0`
 
 Version surfaces:
 - [VERSION](./VERSION)

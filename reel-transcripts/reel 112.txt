@@ -1,0 +1,13 @@
+Reel 112
+Source: https://www.instagram.com/reel/DabfLrfF-OA/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T08:33:34.810Z
+Completed: 2026-07-09T08:33:49.140Z
+00:00
+â†’
+01:06
+Your CI CD pipeline just exceeded the free tier mid sprint. Here are three things you're going to change right now to fix it. Step one, self-hosted runners. GitHub Actions lets you bring your own compute. It's a $20 per month server and it runs unlimited minutes. So that same pipeline that cost $1,200 in overrun charges now runs for $20 on your own machine. Yeah, you manage the server and you manage the runner software and you manage the updates, but for teams that are burning through CI minutes, the math takes five seconds to figure out. It's a win. Step 2, conditional pipelines. Not every commit needs every single test. A change to your readme does not need integration tests. A change to your marketing page does not need your backend build. Path-based triggers run only the stages that match the changed files. Fewer stages, fewer minutes, same safety. Most teams run the full suite on every push. That's not thorough. That's wasteful. Step three, monitor
+01:06
+â†’
+01:31
+your usage before it surprises you. GitHub shows you your minute consumption in settings. Check it weekly. Set a team alert at 75% of your monthly allocation. When the alert fires, you have time to optimize and fix. When the pipeline stops, you have no time for anything. So the CI that scales is not the one with the most features. It's the one that does not surprise you on day 19 in the middle of that sprint.

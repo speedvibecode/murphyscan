@@ -1,0 +1,13 @@
+Reel 123
+Source: https://www.instagram.com/p/DaX0eVMjoVf/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T09:04:04.374Z
+Completed: 2026-07-09T09:04:22.798Z
+00:00
+→
+01:02
+It's the 4th of July and you're a vibe coder. So all your DevOps friends are definitely going to roast you at that barbecue this afternoon. Here are three things you're going to say back to them. Keep your dignity intact. Number one, when they say what happens when your app breaks at 3 a.m., just laugh it off and say, I have structured logging, alerting, and a runbook. My system calls me before any customer even knows it. Then ask them how that Jenkins migration is going. Laugh and they'll change the subject fast. That's a win. Number two, when they say you're not a real engineer, you say 46% of all new code on the planet is AI generated right now. And in fact, the company that they work at is using it too. They just haven't told the DevOps team yet. That one, that one's a win. And number three, number three. They say AI generated code is full of security holes. Nod your head yes. Say I know, 2.74 times more vulnerabilities
+01:02
+→
+01:20
+than human written code. That is exactly why I run security audits on every single build. Watch their face when that vibe coder drops the stats before they can even think of it. Guess what? Happy 4th everybody! Go burn some tokens tomorrow, but today, save some tokens, enjoy a hamburger, and laugh at your friends.

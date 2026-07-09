@@ -1,0 +1,13 @@
+Reel 125
+Source: https://www.instagram.com/p/DaYW16Ojg1C/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T09:04:16.205Z
+Completed: 2026-07-09T09:04:34.489Z
+00:00
+→
+01:07
+Your app has no backup strategy, and that means that your users have no protection. So here are the three things you need to decide right now to fix it. Step one, frequency. Your database changes every time a user does anything. A daily backup means you accept losing up to 24 hours of their data. If your app processes payments, that's 24 hours of revenue you can't recover. So point in time recovery captures every transaction continuously. And almost every managed database supports it. It's a setting, turn it on, that's a win. Step two, location. Your backup lives on the same server as your database. When the server dies, the backup dies with it. That's not a win. That is not even a backup. That is a second copy of the exact same risk. So cross-region or off-site backup is the backup that must survive things that kill your primary server. Step three, test the restore. And for the people in the back, test the restore.
+01:08
+→
+01:34
+Your backup has been running for months. You've never restored it. A backup you've never tested is not a safety net. It's not even a backup. It's a guess. So restore to a test environment once a month minimum. Verify that data. Verify the app runs runs because the worst time to find out your backup is broken is during the outage you need a backup so decide before your users decide for you

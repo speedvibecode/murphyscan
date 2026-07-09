@@ -2,7 +2,7 @@
 layer: 13
 image_label: "AVAILABILITY & RECOVERY"
 tags: [murphyscan, layer, availability, recovery]
-source_reels: [reel-05, reel-06, reel-16, reel-20, reel-31, reel-36, reel-39, reel-45, reel-46, reel-60, reel-61, reel-68, reel-85, reel-86, reel-89, reel-98, reel-99, reel-101]
+source_reels: [reel-05, reel-06, reel-16, reel-20, reel-31, reel-36, reel-39, reel-45, reel-46, reel-60, reel-61, reel-68, reel-85, reel-86, reel-89, reel-98, reel-99, reel-101, reel-114, reel-116, reel-118, reel-119, reel-122, reel-125]
 ---
 # 13 Availability and Recovery
 
@@ -37,6 +37,12 @@ The recovery layer verifies that the app can survive bad deploys, provider outag
 - [[reel-98]] - restore drills define whether backups are real.
 - [[reel-99]] - secrets in git history require response beyond file cleanup.
 - [[reel-101]] - controlled rollout protects availability during launch.
+- [[reel-114]] - revenue failure can happen while dashboards stay green.
+- [[reel-116]] - synthetic transactions and dead-letter queues preserve failed outcomes for recovery.
+- [[reel-118]] - outside-in health checks, correlated traces, and SLOs reduce detection and diagnosis time.
+- [[reel-119]] - webhook outcome failures need retry or review paths after apparent success.
+- [[reel-122]] - user data needs backup schedule, retention, and failure-domain separation.
+- [[reel-125]] - point-in-time recovery and restore drills turn backups into real recovery.
 
 ## What MurphyScan Should Verify
 - Backups exist and restore has been tested.
@@ -45,6 +51,8 @@ The recovery layer verifies that the app can survive bad deploys, provider outag
 - Secret leaks have a rotation path.
 - External API outages and duplicate user retries degrade gracefully.
 - Monitoring can tell the owner about regional or external-facing outages before customers do.
+- Business-critical outcomes can be recovered or replayed when a success response hid a failed side effect.
+- Backup frequency, location, and restore proof match the app's acceptable data-loss window.
 
 ## Repetition Notes
 Availability is the final aggregation layer. It pulls from deployment, observability, secrets, backend jobs, and database recovery.

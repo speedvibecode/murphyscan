@@ -7,6 +7,33 @@ The versioning intent is simple:
 - increment minor for meaningful MurphyScan rule growth, new source-backed verification coverage, or improved agent behavior
 - increment major only if MurphyScan changes its report shape or operating model in a way that breaks expected use
 
+## 0.3.0 - 2026-07-09
+
+Scheduled ingest and scan-tier release.
+
+Included in `0.3.0`:
+- added `docs/scheduled-ingest-pipeline.md` for the unattended reel-ingest workflow
+- changed the scheduled ingest cadence to Monday/Wednesday/Friday at 7:00 AM to reduce hidden-window risk during posting sprees
+- added `npm run discover:instagram` to discover visible public-profile reels, verify publish dates, and write only fresh missing URLs to `reel-transcripts/next-batch.txt`
+- added a visible-window warning so discovery reports when manual links may be needed beyond Instagram's exposed profile window
+- added `scripts/verify-instagram-reel-dates.mjs` for explicit date audits when checking a candidate batch
+- made `scripts/transcribe-instagram-reels.mjs` safe for scheduled runs by no-oping on empty batches and skipping URLs already listed in `reel-transcripts/manifest.json`, including `/p/` versus `/reel/` shortcode variants
+- added low-signal transcript filtering for music-only, no-subtitle, no-transcript, and low-domain-signal reels
+- added atomic serialized manifest writes and kept provider, quota, network, and script failures retryable instead of safely indexed
+- imported and synthesized verified missing July 1-9 reels `105` through `127` plus `130`
+- accounted for low-signal edge reels `128` and `129` as filtered raw and manifest-only records
+- excluded a stale May 31 pinned reel from automatic intake after publication-date verification
+- documented and used the manual-link fallback when Instagram hid the July 1-5 window from anonymous discovery
+- added `docs/transcription-fallbacks.md` to define provider fallback, filtered-entry, and retry behavior without quota evasion
+- refreshed the vault home and agent knowledge map so corpus size, scheduled automation, and concept-growth rules do not go stale
+- added `Product Activation and Retention` from reel `130` for first-48-hour activation, aha-moment reach, churn signals, and follow-up nudges
+- documented that material successful scheduled runs should validate, commit, and push to `origin/main`
+- expanded scan behavior around API input validation, tenant isolation monitoring, business failure monitoring, checkout jobs, CI cost controls, legal/domain fit, AI-generated-code trust, platform limits, backup/restore proof, AI-assistant prompt injection, rate-limit tiering, database scaling order, and cache staleness policy
+- defined Basic MurphyScan as the default decision-oriented scan tier
+- defined Advanced MurphyScan as the explicit exhaustive token-burner tier for super-deep, adversarial, every-last-nuance reviews
+- updated Codex, Claude Code, and OpenCode MurphyScan surfaces to share the same scheduled-ingest and scan-tier behavior
+- refreshed README, corpus maintenance, transcript-corpus, and agent instructions around the scheduled intake model
+
 ## 0.2.2 - 2026-07-01
 
 Weekly ingest pipeline hardening.

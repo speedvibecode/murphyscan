@@ -2,7 +2,7 @@
 layer: 10
 image_label: "CACHING & CDN"
 tags: [murphyscan, layer, caching, cdn]
-source_reels: [reel-01, reel-25, reel-28, reel-33, reel-38, reel-53, reel-62, reel-63, reel-74, reel-76, reel-93, reel-94]
+source_reels: [reel-01, reel-25, reel-28, reel-33, reel-38, reel-53, reel-62, reel-63, reel-74, reel-76, reel-93, reel-94, reel-127]
 ---
 # 10 Caching and CDN
 
@@ -29,6 +29,7 @@ The caching layer verifies that the app does not repeatedly pay for or wait on i
 - [[reel-76]] - invalidation and stampede prevention matter more than optimistic TTL guesses.
 - [[reel-93]] - stale data policy should vary by data class.
 - [[reel-94]] - cache candidates should be measured by repetition and change rate.
+- [[reel-127]] - caching policy decides how wrong data is allowed to be and for how long.
 
 ## What MurphyScan Should Verify
 - Static assets have cache headers.
@@ -37,6 +38,8 @@ The caching layer verifies that the app does not repeatedly pay for or wait on i
 - Caching never leaks user-specific or tenant-specific data.
 - Cache hit rate and invalidation risk are understood.
 - Media delivery is offloaded to object storage and CDN where the product serves files.
+- Pricing, permissions, inventory, and account status are not served stale without an explicit product decision.
+- Cache invalidation ownership and stampede protection are defined for hot keys.
 
 ## Repetition Notes
 Caching appears in AI cost, database load, and scaling. Use this layer for cache mechanics and safety.

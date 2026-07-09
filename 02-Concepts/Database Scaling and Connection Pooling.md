@@ -2,7 +2,7 @@
 concept: "database-scaling-connection-pooling"
 tags: [murphyscan, concept, database, scaling, pooling]
 layers: ["03 Database and Storage", "10 Caching and CDN", "11 Load Balancing and Scaling"]
-source_reels: [reel-27, reel-33, reel-34, reel-41, reel-62, reel-63, reel-67, reel-69, reel-104]
+source_reels: [reel-27, reel-33, reel-34, reel-41, reel-62, reel-63, reel-67, reel-69, reel-104, reel-115]
 ---
 # Database Scaling and Connection Pooling
 
@@ -21,6 +21,7 @@ source_reels: [reel-27, reel-33, reel-34, reel-41, reel-62, reel-63, reel-67, re
 - [[reel-67]] - use query plans and `pg_stat_statements` before guessing at the bottleneck.
 - [[reel-69]] - serverless database branching and engine fit matter before scale hurts.
 - [[reel-104]] - read-heavy versus write-heavy workloads imply different database paths.
+- [[reel-115]] - check connections, query cost, and read/write shape before buying scale.
 
 ## Why It Matters
 Database failures under load often look like app failures. Pooling, indexes, caching, partitioning, and replicas solve different bottlenecks and should not be confused.
@@ -31,6 +32,8 @@ Database failures under load often look like app failures. Pooling, indexes, cac
 - Do slow queries have query-plan evidence?
 - Is partitioning, read replication, or sharding justified by metrics?
 - Is the database choice aligned to actual read/write workload shape?
+- Has the team ruled out pooling and query optimization before adding replicas or larger plans?
+- Are write bottlenecks routed to queues, batching, or background work instead of read replicas?
 
 ## Agent Notes
 Start with pooling, indexes, and caching before recommending sharding.

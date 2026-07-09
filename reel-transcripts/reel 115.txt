@@ -1,0 +1,17 @@
+Reel 115
+Source: https://www.instagram.com/p/DaQasDJDxqZ/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T09:03:34.355Z
+Completed: 2026-07-09T09:03:53.584Z
+00:00
+→
+01:01
+Your vibe-coded app just hit that wall. Users are complaining. Pages are loading slow. The database is sweating like it's running a marathon. The instinct? Throw more money and resources at it. Bigger servers, more replicas, higher tier plans, right? Well, here's what I actually tell clients before they spend a dollar solving this problem. The scaling decision tree has three branches and you must check them in this order. Branch one, is it a connection problem or a capacity problem, right? Most of the time, it's a connection problem. 90% of the time. Your database, it can handle all the queries you can throw at it, but it cannot handle 200 connections that are fighting for 50 slots a connection pooler fixes this for $0 PG balancer supervisor built-in pooling on most managed platforms so that's a win if you add a read replica before you add a pooler you just doubled your infrastructure cost to solve a problem that costs nothing to
+01:01
+→
+02:04
+fix that's not the win so So you gotta check your connections first. Next is Branch 2. Is it a query problem or a volume problem? PG underscore stat underscore statements tells you which queries consume the most time. Your slowest query might not be the problem. Your most frequent query running 10,000 times a day at 40 milliseconds each? Well, that's 400 seconds of unnecessary database time. One index, one cache, one query optimization. The database, it's not slow, but that query, super expensive. Branch three, is it a read problem or a write problem? 80% of database operations are reads. A read replica handles reads. It does not, though, help with contention. So if your writes are the bottleneck, replicas do nothing but make it worse. You need queue processing, background jobs, write batching. So before you scale horizontally, know which access you're scaling on.
+02:04
+→
+02:31
+The decision tree matters because every wrong branch costs money and solves nothing if you use it wrong. Connection pooling, query optimization, and read-write separation. Go through it in that order. That's where you're going to find the win. And clients who follow this order spend thousands. The ones who skip the replicas, spend tens of thousands. Same result, different bill. Help your clients find the answer.

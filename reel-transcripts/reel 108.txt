@@ -1,0 +1,13 @@
+Reel 108
+Source: https://www.instagram.com/reel/DafuL1lggp3/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T08:33:16.457Z
+Completed: 2026-07-09T08:33:34.804Z
+00:00
+â†’
+01:02
+Your user reported a bug. You asked them to describe it. They just said everything stopped working. So that's not necessarily a great bug report. It's definitely a cry for help. Here are the three things you direct your AI to do right now to fix it. Step one, session replays. Direct your AI to integrate session replays into your application. That way, every user session is fully recorded. So every click, every scroll, every error. When a user reports a bug, you don't have to ask what happened. You watch what happened from their screen in real time. That's a win. Step two, connect replay to error tracking. Direct your AI to link session replays directly to error events. Direct your AI to link session replays directly to error events. So when Sentry catches an exception, the replay is attached automatically. You see the error and the user experience that caused it side by side. No guessing, no reproducing. It's all right there. And step three, flag rage clicks.
+01:05
+â†’
+01:22
+A user who clicks the same button seven times in three seconds is not patient. They're stuck. Direct your AI to detect rage clicks and flag them as UX failures before a support ticket is filed. So stop asking users to describe bugs, start watching what they experienced. That is orchestration and that is the win.

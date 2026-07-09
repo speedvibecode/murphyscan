@@ -14,15 +14,18 @@ Use this file to track new reels before they are fully integrated into the Murph
   Layer/concept notes updated where needed.
 - `validated`
   Rule impact tested against at least one real repo if the change was material.
+- `filtered`
+  Raw source was accounted for, but no cleaned note was created because the transcript was low-signal, music-only, no-subtitle, or no-transcript.
 
 ## Workflow
 
 For each new reel:
-1. add URL to `manifest.json`
+1. confirm the URL is not already represented in `manifest.json`
 2. collect transcript
-3. add cleaned note
-4. link it into the right layer/concept surfaces
-5. mark whether it changed MurphyScan behavior
+3. classify it as usable, filtered, skipped-existing, or retryable failure
+4. add a cleaned note only for usable MurphyScan-relevant material
+5. link worthwhile material into the right layer/concept surfaces
+6. mark whether it changed MurphyScan behavior
 
 ## Queue
 
@@ -41,10 +44,11 @@ Add new items here using this shape:
 
 ## Current note
 
-As of July 1, 2026:
-- reels `65` through `104` have been transcribed into `reel-transcripts/`
-- cleaned notes now exist in `reel-transcripts/cleaned/`
-- the layer and concept surfaces have been updated from this batch
+As of July 9, 2026:
+- reels `65` through `130` have been transcribed into `reel-transcripts/`
+- cleaned notes now exist for `1` through `127` plus `130`
+- reels `128` and `129` are filtered raw and manifest-only records
+- the layer and concept surfaces have been updated through the July 1-9 missing-reel batch
 - the next active intake surface is `reel-transcripts/next-batch.txt`
 
 For the next wave:

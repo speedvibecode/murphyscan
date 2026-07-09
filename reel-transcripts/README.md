@@ -5,6 +5,7 @@ This folder is the source corpus behind MurphyScan.
 It contains:
 - raw transcript files for the collected reel set
 - `manifest.json` mapping reel numbers to source URLs
+- filtered raw records for low-signal or no-transcript reels that should not become cleaned notes
 - `cleaned/` summaries transformed into agent-friendly Markdown notes
 - `INBOX.md` for queued and in-progress corpus additions
 
@@ -43,7 +44,10 @@ The corpus is meant to keep growing.
 
 Use:
 - [docs/source-corpus-maintenance.md](../docs/source-corpus-maintenance.md)
+- [docs/scheduled-ingest-pipeline.md](../docs/scheduled-ingest-pipeline.md)
+- [docs/transcription-fallbacks.md](../docs/transcription-fallbacks.md)
 - [INBOX.md](./INBOX.md)
+- `npm run discover:instagram`
 - `npm run transcribe:next-batch`
 - `npm run archive:next-batch`
 
@@ -51,6 +55,7 @@ The maintenance rule is simple:
 - preserve source traceability
 - update existing synthesis notes by default
 - only create new concept notes when the new reel changes verification behavior
+- keep filtered low-signal reels raw and manifest-only
 
 ## Fixed intake flow
 
@@ -61,6 +66,14 @@ The active batch file is:
 Processed batches are archived in:
 
 - `reel-transcripts/archive/`
+
+Scheduled runs use the same active batch file. The transcript runner skips URLs already present in `manifest.json`, treats empty batches as no-ops, and only assigns new reel numbers to unindexed URLs.
+
+Automatic discovery verifies reel post dates before adding URLs. If Instagram hides a date window from anonymous discovery or the visible profile window appears full, paste those URLs into `next-batch.txt` manually and process the batch through the same flow.
+
+Filtered entries use `STATUS: FILTERED` in the raw file and a `filtered` status in `manifest.json`. They are accounted for source-tracking purposes, but they do not count toward the cleaned source-backed corpus.
+
+Provider, quota, network, and script failures are retryable. Follow `docs/transcription-fallbacks.md` and do not archive a batch until every URL is either usable, filtered, skipped as already indexed, or explicitly left for retry.
 
 ## Attribution
 

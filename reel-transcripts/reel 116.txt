@@ -1,0 +1,13 @@
+Reel 116
+Source: https://www.instagram.com/p/DaRl8xpkdmS/
+Transcribed via: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-09T09:03:34.356Z
+Completed: 2026-07-09T09:03:53.583Z
+00:00
+→
+01:01
+Your payment webhook failed silently for six hours today. No errors thrown, no alerts fired, no dashboards changed. Here are the three things you want to add right now to fix it. Step one, business metric alerting. Your infrastructure metrics say the server is healthy. That's not a win because your business metrics say the revenue has stopped. These are different conversations in different systems. You need to track payments per hour, signups per hour, and checkout completions per hour. When signups are normal but payments drop to zero, your server is fine but your business is bleeding. You need to alert on your business metrics, not just your server metrics and that's a win step 2 synthetic trans actions run your critical path automatically every five minutes sign up add to cart check out pay and confirm when step 4 fails you know before the customers know and that's a win
+01:01
+→
+01:41
+synthetic monitoring catches failures the error tracking misses because the code did not know it failed. Step three, dead letter queues for webhooks. When a webhook processes but the business logic fails, the event disappears into a success response. A dead letter queue catches every event where the response was 200 but the outcome was wrong. So the payment that failed silently sits in the queue waiting for you instead of vanishing. So the lesson is you must monitor the failures your code does not know about because that is where the real money starts leaking out the side door.

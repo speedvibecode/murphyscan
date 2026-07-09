@@ -2,7 +2,7 @@
 concept: "database-design-indexing"
 tags: [murphyscan, concept, database, indexes]
 layers: ["03 Database and Storage"]
-source_reels: [reel-12, reel-26, reel-32, reel-63, reel-67, reel-74, reel-79, reel-98, reel-104]
+source_reels: [reel-12, reel-26, reel-32, reel-63, reel-67, reel-74, reel-79, reel-98, reel-104, reel-122, reel-125]
 ---
 # Database Design and Indexing
 
@@ -19,6 +19,8 @@ source_reels: [reel-12, reel-26, reel-32, reel-63, reel-67, reel-74, reel-79, re
 - [[reel-79]] - ORM choice changes how much query intent stays visible.
 - [[reel-98]] - backup plans only count if restores are exercised.
 - [[reel-104]] - workload shape should influence database choice.
+- [[reel-122]] - backup schedule, retention, and failure-domain separation protect user data.
+- [[reel-125]] - backup frequency, off-site location, and restore drills define real recovery.
 
 ## Why It Matters
 Schema mistakes often stay invisible during demos and become painful once data grows. Good data design prevents slow queries, data leaks, and brittle migrations.
@@ -30,6 +32,8 @@ Schema mistakes often stay invisible during demos and become painful once data g
 - Is the database engine appropriate for the data shape?
 - Are large files kept out of primary transactional tables?
 - Is restoreability tested rather than inferred from backup presence?
+- Does backup frequency match acceptable data loss for payments, accounts, and user content?
+- Do backups survive the same provider, region, or server failure that can kill the primary database?
 
 ## Agent Notes
 Do not recommend exotic storage before checking schema, indexes, and query plans.

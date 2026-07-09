@@ -2,16 +2,22 @@
 
 Use this matrix to decide what to inspect and how to classify findings.
 
+## Mode selection
+
+- **Basic MurphyScan:** default mode. Cover all 13 layers at the level supported by local evidence, lead with Priority 0 and Priority 1 findings, and keep the report decision-oriented.
+- **Advanced MurphyScan:** explicit token-burner mode for advanced, exhaustive, super-deep, adversarial, or every-last-nuance requests. Use every relevant local evidence surface, add active tests where safe, and include dependency, secret-history, client-exposure, API/webhook contract, AI eval, load/scaling, backup/restore, rollback, and trust-boundary review where applicable.
+- **Quick scan:** a narrowed Basic pass that only follows Priority 0 and Priority 1 unless a visible Priority 2 issue is obviously launch-relevant.
+
 ## Priority 0 - Launch blockers
 
 ### Auth and permissions
-- Concepts: `Managed Auth and Session Security.md`, `Authorization and Row-Level Security.md`
-- Inspect: auth provider setup, protected routes, session expiry, logout behavior, role checks, RLS or ownership enforcement
-- Block when: user A can access user B data, sessions never expire, logout is client-only, service-role paths bypass ownership controls, or auth is custom and clearly underprotected
+- Concepts: `Managed Auth and Session Security.md`, `Authorization and Row-Level Security.md`, `Multi-Tenancy and Tenant Isolation.md`
+- Inspect: auth provider setup, protected routes, session expiry, logout behavior, role checks, RLS or ownership enforcement, tenant boundaries across APIs/caches/jobs/exports
+- Block when: user A can access user B data, tenant data leaks across any path, sessions never expire, logout is client-only, service-role paths bypass ownership controls, or auth is custom and clearly underprotected
 
 ### API contracts and billing events
 - Concepts: `API Contracts and Versioning.md`, `Billing and Usage Events.md`
-- Inspect: API schemas, versioning, changelogs, webhook verification, idempotency, billing event handling
+- Inspect: request payload validation, API schemas, versioning, changelogs, webhook verification, idempotency, billing event handling
 - Block when: production-facing APIs change without a stable contract, or payment/webhook flows can create duplicate or unauthenticated side effects
 
 ### Secrets and credential hygiene
@@ -26,8 +32,8 @@ Use this matrix to decide what to inspect and how to classify findings.
 
 ### Observability and recovery
 - Concepts: `Observability and Incident Response.md`
-- Inspect: error tracking, logs, uptime checks, backups, restore path, incident runbook
-- Block when: the owner cannot detect failures, recover data, or restore service safely
+- Inspect: error tracking, logs, uptime checks, business-event failure alerts, session replay or journey evidence, backups, restore path, incident runbook
+- Block when: the owner cannot detect failures, recover data, notice silent business failure, or restore service safely
 
 ## Priority 1 - Cost and abuse controls
 
@@ -45,6 +51,11 @@ Use this matrix to decide what to inspect and how to classify findings.
 - Concepts: `Cloud Cost Discipline.md`
 - Inspect: provider alerts, hard caps, overprovisioned resources, idle always-on services
 - Flag when: one bad loop or moderate traffic can create uncontrolled spend
+
+### CI and automation cost discipline
+- Concepts: `CI Gates and AI Review.md`
+- Inspect: CI runtime controls, cache behavior, parallelization, usage alerts, agent automation loops, review gates for AI-authored code
+- Flag when: CI or agent automation can create uncontrolled spend, or AI-authored code can merge without accountable engineering review
 
 ### AI supply chain trust
 - Concepts: `AI Supply Chain Trust.md`
@@ -85,4 +96,4 @@ Use this matrix to decide what to inspect and how to classify findings.
 
 ### Legal and compliance basics
 - Concepts: `Legal and Compliance Basics.md`
-- Inspect: privacy policy, terms, deletion path, enterprise evidence if relevant
+- Inspect: privacy policy, terms, deletion path, platform rules, insurance fit, industry-specific requirements, enterprise evidence if relevant
