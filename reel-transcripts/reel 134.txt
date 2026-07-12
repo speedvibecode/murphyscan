@@ -1,0 +1,14 @@
+Reel 134
+Source: https://www.instagram.com/reel/Danl3ysjuQ8/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-12T18:21:44.536Z
+Completed: 2026-07-12T18:22:00.287Z
+00:00
+→
+01:01
+Your app is loading scripts from 14 different domains, and you only approved three of them. Your AI pulled in analytics, font libraries, third-party widgets, and tracking pixels. Every one of them runs code in your user's browsers. So here are the three things you're going to direct your AI to do right now to lock it down. Step one, content security policy headers. Direct your AI to add CSP headers that whitelist exactly which domains can load scripts in your application. If a domain is not on the list, the browser blocks it. One malicious script on one compromised CDN can hijack every session on your site. CSP stops it before it executes. That's the win. Step two, audit what your AI installed. Direct your AI to list every external resource your application is loading. Scripts, style sheets, fonts, images, iframes. If you cannot explain
+01:01
+→
+01:35
+why each one is there, it shouldn't be there. Your AI added it for convenience. You need to verify it did not add risk. Step 3. Report before you enforce. CSP has a report-only mode. Direct your AI to enable reporting first. Collect violations for a week. See what breaks before you block it. Then you enforce. 14 domains is not a feature. It's an attack surface your AI built without asking you about it. So now it's time to lock it down.

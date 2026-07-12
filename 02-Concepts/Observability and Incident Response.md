@@ -2,7 +2,7 @@
 concept: "observability-incident-response"
 tags: [murphyscan, concept, observability, incident-response]
 layers: ["12 Error Tracking and Logs", "13 Availability and Recovery"]
-source_reels: [reel-04, reel-29, reel-31, reel-37, reel-85, reel-91, reel-92, reel-98, reel-106, reel-108, reel-109, reel-114, reel-116, reel-118, reel-119, reel-130]
+source_reels: [reel-04, reel-29, reel-31, reel-37, reel-85, reel-91, reel-92, reel-98, reel-106, reel-108, reel-109, reel-114, reel-116, reel-118, reel-119, reel-130, reel-132, reel-139, reel-141]
 ---
 # Observability and Incident Response
 
@@ -27,6 +27,9 @@ source_reels: [reel-04, reel-29, reel-31, reel-37, reel-85, reel-91, reel-92, re
 - [[reel-118]] - outside-in health checks, correlated traces, and SLOs turn dashboards into operations.
 - [[reel-119]] - swallowed webhook failures need business outcome monitoring and dead-letter handling.
 - [[reel-130]] - early activation and churn signals should be observable when retention drives launch success.
+- [[reel-132]] - support playbooks and tiered escalation should be built alongside production features.
+- [[reel-139]] - production AI agents need security, monitoring, fallback, escalation, and recovery beyond a working demo.
+- [[reel-141]] - support-ticket root causes expose user-health failures that infrastructure monitoring misses.
 
 ## Why It Matters
 If the owner cannot see failures, users become the monitoring system. Observability must produce actionable evidence, not just dashboards.
@@ -46,6 +49,9 @@ If the owner cannot see failures, users become the monitoring system. Observabil
 - Are logs, metrics, and traces correlated by request or trace ID?
 - Are SLOs or equivalent health objectives defined before incidents happen?
 - Are activation, aha moment, and early churn signals tracked for products that depend on repeat use?
+- Does every material feature have an owned support playbook covering known failures and escalation?
+- Are repeated support causes converted into UX, observability, or business-logic fixes?
+- For AI agents, are quality, tool failures, cost, and shutdown behavior observable and exercised?
 
 ## Agent Notes
 Ask for evidence that monitoring is wired and alerting, not just installed.

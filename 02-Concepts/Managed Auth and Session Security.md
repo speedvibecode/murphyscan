@@ -2,7 +2,7 @@
 concept: "managed-auth-session-security"
 tags: [murphyscan, concept, auth, sessions]
 layers: ["04 Auth and Permissions", "08 Security and RLS"]
-source_reels: [reel-59, reel-60, reel-64, reel-72, reel-77, reel-84]
+source_reels: [reel-59, reel-60, reel-64, reel-72, reel-77, reel-84, reel-131, reel-136]
 ---
 # Managed Auth and Session Security
 
@@ -17,6 +17,8 @@ source_reels: [reel-59, reel-60, reel-64, reel-72, reel-77, reel-84]
 - [[reel-72]] - match the auth provider to the customer and business trajectory.
 - [[reel-77]] - self-hosted auth increases control and ops burden together.
 - [[reel-84]] - token validation must reject unsafe algorithms and enforce expiry.
+- [[reel-131]] - silent refresh, state-preserving reauthentication, and refresh-token rotation complete the session lifecycle.
+- [[reel-136]] - enterprise SSO requires SAML or OIDC plus tenant-specific identity-provider configuration.
 
 ## Why It Matters
 Authentication failures have large blast radius. Mature providers handle password storage, sessions, recovery, verification, token rotation, and MFA better than most project-specific code.
@@ -28,6 +30,9 @@ Authentication failures have large blast radius. Mature providers handle passwor
 - Does logout invalidate server-side session state?
 - Does the provider choice fit enterprise SSO or self-hosted control requirements the product will actually face?
 - Are JWT algorithms pinned explicitly, and are unsigned or confused-algorithm tokens rejected?
+- Are access tokens refreshed before expiry, and does failed refresh preserve user work through reauthentication?
+- Are rotated refresh tokens single-use with reuse detection?
+- For enterprise targets, are SAML or OIDC configurations isolated per tenant and tested against the intended identity providers?
 
 ## Agent Notes
 Custom auth should be treated as high risk until proven otherwise.

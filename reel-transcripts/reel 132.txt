@@ -1,0 +1,18 @@
+Reel 132
+Source: https://www.instagram.com/reel/DamFvyUj3U0/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-12T18:21:44.533Z
+Completed: 2026-07-12T18:22:08.304Z
+00:00
+→
+01:03
+Your AI assistant built your app and shipped it to production. Customers, they're now paying for it. And at 2 in the morning, a customer can't log in. So tell me, who handles that? Your AI assistant? Probably not, because it's not connected to your production system. So your AI assistant built the product, but nobody told it to build the support system to. And that gap, well, it kills more launch products than bad code ever will. Here's how I think about post-launch support as an AI-directed engineer, and this is how I help my clients. Step one, your agent builds a support playbook during development, not after launch. Every feature your AI builds should generate a support playbook right alongside it. So for your login system, the playbook covers password reset failures, expired tokens, locked accounts. Like a payment flow, for example, the playbook would cover failed charges, missed webhooks, and subscription issues. These aren't afterthoughts. These are the minimum production deliverables for any app.
+01:03
+→
+02:04
+So if your AI is building the feature, your AI documents how to support that feature. Same sprint, same conversation. That's a win. Step two, connect your agent to your production APIs. When a notification fires, your agent receives it in real time. Not tomorrow and not when you check your email, but in real time. I run this model with all my own builds. My agent Bertha is connected to every API in real time. She keeps me fully aware. So a known issue with the documented fix, the agent can resolve it automatically. Something the agent hasn't seen before, she can package the context, escalate it to me with a recommendation. Then I make the call, the agent executes it, and the playbook keeps growing. The compounding effect of a system that gets smarter every week around support, that is a big win for you and your customers. Step three, build the support tiers before you ever need them. Tier one, automated resolutions.
+02:05
+→
+02:49
+Known issues, documented fixes. 60 to 70% of volume never reaches your desk. That is a win. Tier two, assisted triage. Unknown issues, the agent packages context and escalates it to you. You decide, the playbook grows, that's a win. And tier three, incident response. Multiple users are affected. Security or data integrity is involved. The agent triggers the playbook. Who gets notified? What gets locked down? How customers are communicated with. This playbook should exist before your first customer ever signs up. Your agent is not just your builder. It's your first support engineer, likely the most important one. So you need to start treating it like it.

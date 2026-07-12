@@ -1,0 +1,14 @@
+Reel 136
+Source: https://www.instagram.com/reel/DaqKoflEgzB/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-12T18:22:00.296Z
+Completed: 2026-07-12T18:23:18.984Z
+00:00
+→
+01:01
+Your first enterprise customer wants to buy your product. That's a win. Their IT team just sent over a procurement checklist. Line 1, do you support single sign-on via SAML and OIDC? You have Google sign-in and an email password, but I don't think that's SSO. Here are the three things you need to understand right now to fix it. Step 1, SSO is not optional for the enterprise. Their employees log in through one corporate identity provider every day, Okta, Azure AD, Google Workspace. If your app cannot authenticate through their provider, their IT team will not approve the purchase at all. You're out of there. This is not a feature request. It is a gate and a bare minimum to get in the door. Step two, SAML is a protocol your AI needs to learn fast. Direct your AI to implement SAML 2.0 or OIDC integration. The handshake, the assertion, the attribute mapping,
+01:02
+→
+01:37
+the session management. Your AI can build it all, but you have to know to ask for it before the checklist arrives from the client. And step three, plan for multi-tenant SSO. Each customer uses a different identity provider. Customer A uses Okta, customer B uses Azure AD. Direct your AI to build tenant-specific SSO configurations. One integration pattern per tenant credentials. The potential enterprise deals that can change your business start with three letters every single time. S-S-O. That's the win.

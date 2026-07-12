@@ -62,6 +62,7 @@ Scheduled behavior:
 - classify low-signal, music-only, no-subtitle, and no-transcript reels as filtered raw plus manifest entries instead of creating cleaned notes
 - follow `docs/transcription-fallbacks.md` for provider, quota, network, and script failures
 - do not claim Instagram discovery unless `npm run discover:instagram` returned the URLs or the user already put them in `next-batch.txt`
+- if anonymous discovery returns zero visible posts or an implausibly empty result, do not claim the corpus is current; use an available signed-in in-app browser only under the profile/reel-only privacy guardrails in `docs/scheduled-ingest-pipeline.md`, otherwise request manual links
 - if Instagram hides a date window from anonymous discovery, ask for manual links instead of guessing shortcodes
 - leave failed network or transcript-service runs in place for retry instead of archiving an unaccounted batch
 - after a material successful scheduled run, validate, commit, and push to `origin/main`

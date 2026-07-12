@@ -177,7 +177,7 @@ MurphyScan is source-backed rather than invented from a blank checklist.
 
 Current rule base:
 
-- 128 cleaned source-backed reel notes
+- 138 cleaned source-backed reel notes
 - 2 filtered low-signal source records tracked raw and manifest-only
 - 13 layer hubs aligned to a production stack model
 - consolidated concept notes for repeated risk patterns

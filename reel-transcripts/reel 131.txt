@@ -1,0 +1,14 @@
+Reel 131
+Source: https://www.instagram.com/reel/DallI-2D9Q7/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-12T18:21:44.531Z
+Completed: 2026-07-12T18:22:12.271Z
+00:00
+→
+01:04
+Your users get logged out every hour, right in the middle of their important work, and your app keeps dumping them to a login screen. So your AI did add Google Sign-In, but it did not handle the token lifecycle. Here are the three things you're going to direct your AI to do right now to fix it. Step one, silent token refresh. Your access token expires every 60 minutes. Direct your AI to refresh it in the background before it expires. This way, the user never sees a login screen and the refresh happens invisibly. If your AI is only handling the initial login and ignores the refresh, every session has a one-hour ceiling, and that's not a win for your users. ceiling and that's not a win for your users step 2 graceful refresh failure the refresh token it expires the session it's totally over and so you need to direct your ad redirect the login to the users state preserved not a blank page not a loss draft not a cleared cart return them right where they were after
+01:04
+→
+01:30
+reauthentication that That's a win. And step three, token rotations. Direct your AI to rotate refresh tokens on every use. A stolen refresh token that works forever is a permanent backdoor. A rotated token, it works once. Reuse flags a compromise. Login is always easy. So keeping users safely logged in is the AI-directed orchestration that nobody else is teaching but the faction.

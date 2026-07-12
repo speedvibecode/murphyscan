@@ -1,0 +1,20 @@
+Reel 135
+STATUS: FILTERED
+Reason: low_domain_signal_transcript
+Source: https://www.instagram.com/reel/Dap6ZkSChfG/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-12T18:22:00.254Z
+Completed: 2026-07-12T18:22:14.506Z
+00:00
+→
+01:04
+Starting this August, we're going to be launching 35 new courses every single week inside the faction. Every week for 10 weeks. By October, this community will have over 400 AI-specific courses in our catalog. It will also be the largest AI-directed engineering curriculum on the planet. The 100% free tier gives you access to the pit. This is where we all meet up every day. It's where I share exclusive content and interact with all the builders, answer questions, have fun. There's the forge. It's a space where I've shared over 40 of my best consulting frameworks and methodologies that I've been using with every client over the last 20 years. There's a mentoring lounge where new students can ask questions of graduates and tenured students that have already been through the program. As well as tier one for the certification program, all 13 layers of it. You're going to become a builder for free. And last but not least, the industry. It's a space for specific tracks for
+01:04
+→
+02:05
+every industry, be it education, healthcare, government, real estate, finance. It's all there. It's all 100% free. Now, there are advanced engineering certification tracks. Those are in the Builder Access Program. At $77 a month, it unlocks the entire enterprise certification catalog. It's cheap. entire enterprise certification catalog. It's cheap. Tier 2 through Tier 8 AI-directed engineering certifications across all 13 layers, including new mastery programs for SaaS dashboards, multi-tenant architecture, AWS deployments, e-commerce, and API design, and hundreds of specialized courses for orchestrators who want to go deep in the layers that matter the most to their specific product. So every course, every exam, every specialist track, every certification path. We're not building a course here. We are building the operating system for the next generation of AI directed software builders. The first 538 members, they're already inside and grinding away.
+02:05
+→
+02:18
+Graduates testing, working, and studying every day. And by October, there'll be 400 more reasons to join them in the community. The door's wide open. AI for the people. That's what it's here for. Come and get it.

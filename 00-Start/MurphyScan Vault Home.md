@@ -9,7 +9,7 @@ tags: [murphyscan, home, vault]
 This vault turns the cleaned reel corpus into an agent-facing verification map. The source notes remain in `reel-transcripts/cleaned`; the notes here group the repeated ideas into the 13 production layers from the screenshot.
 
 Current corpus status:
-- 128 cleaned source-backed reel notes
+- 138 cleaned source-backed reel notes
 - 2 filtered low-signal source records tracked raw and manifest-only
 - consolidated layer routing across all 13 production layers
 - concept notes updated for auth, database fit, deploy safety, observability, billing, caching, compliance, AI supply-chain trust, and product activation

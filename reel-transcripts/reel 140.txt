@@ -1,0 +1,14 @@
+Reel 140
+Source: https://www.instagram.com/reel/DasnI0OlWM3/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-12T18:22:26.556Z
+Completed: 2026-07-12T18:22:40.777Z
+00:00
+→
+01:06
+Your database changed, your search index still shows the old product name, and your analytics dashboard still shows yesterday's counts. Your notification system never sent the alert, and three systems that depend on your data and none of them have known that anything has changed. Here are the three things you're going to direct your AI to set up right now to fix it. Step one, change data data capture CDC watches your database for every insert update and delete when data changes an event fires automatically in real time no polling no cron jobs checking every five minutes no manual syncing direct your AI to implement CDC so downstream systems hear about changes the moment that they happen. That's a win. Step two, event routing. Not every system needs every change. Your search index needs product updates. It does not need login events. Your analytics needs transactions. It does not need profile changes. So direct your AI to route events by type so each system receives only what it needs.
+01:06
+→
+01:30
+And that's definitely a win. Step three, dead letter handling. An event that fails to deliver does not disappear. It goes into a dead letter queue. Direct your AI to capture every failed event and retry or alert. A missed event is a system thinks nothing has changed when everything actually changed. Your database is a source of truth. CDC makes sure everything else agrees with it.

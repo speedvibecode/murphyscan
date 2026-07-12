@@ -2,7 +2,7 @@
 concept: "database-design-indexing"
 tags: [murphyscan, concept, database, indexes]
 layers: ["03 Database and Storage"]
-source_reels: [reel-12, reel-26, reel-32, reel-63, reel-67, reel-74, reel-79, reel-98, reel-104, reel-122, reel-125]
+source_reels: [reel-12, reel-26, reel-32, reel-63, reel-67, reel-74, reel-79, reel-98, reel-104, reel-122, reel-125, reel-138]
 ---
 # Database Design and Indexing
 
@@ -21,6 +21,7 @@ source_reels: [reel-12, reel-26, reel-32, reel-63, reel-67, reel-74, reel-79, re
 - [[reel-104]] - workload shape should influence database choice.
 - [[reel-122]] - backup schedule, retention, and failure-domain separation protect user data.
 - [[reel-125]] - backup frequency, off-site location, and restore drills define real recovery.
+- [[reel-138]] - migrate when platform ceilings or workaround costs exceed a measured migration plan, not from frustration alone.
 
 ## Why It Matters
 Schema mistakes often stay invisible during demos and become painful once data grows. Good data design prevents slow queries, data leaks, and brittle migrations.
@@ -34,6 +35,8 @@ Schema mistakes often stay invisible during demos and become painful once data g
 - Is restoreability tested rather than inferred from backup presence?
 - Does backup frequency match acceptable data loss for payments, accounts, and user content?
 - Do backups survive the same provider, region, or server failure that can kill the primary database?
+- Can the current platform support roughly ten times current load through reasonable optimization?
+- Does a migration plan include cost evidence, verification milestones, and rollback points?
 
 ## Agent Notes
 Do not recommend exotic storage before checking schema, indexes, and query plans.

@@ -38,6 +38,16 @@ If Instagram blocks anonymous profile discovery, hides older date windows, or do
 
 If `npm run discover:instagram` reports `visibleWindowLimitLikely: true`, the run summary must call out that manual links may be needed when the account posted more than the visible profile window since the last successful run.
 
+An implausibly empty result, including `visible: 0`, is not proof that the corpus is current. If a signed-in in-app browser is available, it may be used to enumerate `mattmurphyai` profile reel links and verify their publication dates under these compulsory privacy guardrails:
+- access only `instagram.com/mattmurphyai/` and reel pages linked from that profile
+- never open messages, inbox, notifications, comments, settings, saved posts, followers, following lists, or unrelated profiles
+- never inspect cookies, local storage, passwords, session data, or browsing history
+- never like, follow, comment, share, post, delete, or send anything
+- collect only reel URLs, publication dates, and public reel content needed for corpus intake
+- stop if navigation exposes private material or leaves the allowed profile/reel scope
+
+If that constrained signed-in fallback is unavailable, leave the corpus freshness unverified and request manual links instead of reporting a no-op success.
+
 ## Scheduled job behavior
 
 On each scheduled run:
