@@ -5,13 +5,12 @@ This is the unattended operating path for keeping the MurphyScan source corpus c
 ## Cadence
 
 Default schedule:
-- three times per week
-- Monday, Wednesday, and Friday
+- daily
 - 7:00 AM local Codex automation time
 
 Use this cadence for the recurring automation unless the owner gives a different day, timezone, or frequency.
 
-This cadence is intentionally tighter than a weekly or twice-weekly sweep because Instagram anonymous profile discovery can expose only a small visible window. If the visible window appears full, treat the run as potentially incomplete and ask the owner for manual links for the hidden date range.
+This daily cadence is intended to keep up with posting sprees because Instagram anonymous profile discovery can expose only a small visible window. If the visible window appears full, treat the run as potentially incomplete and ask the owner for manual links for the hidden date range.
 
 ## Source of truth
 

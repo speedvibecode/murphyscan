@@ -38,7 +38,7 @@ When `reel-transcripts/next-batch.txt` contains URLs and the user indicates that
 
 The same intake file supports a recurring automation:
 
-- cadence: Monday, Wednesday, and Friday at 7:00 AM local Codex automation time
+- cadence: daily at 7:00 AM local Codex automation time
 - active file: `reel-transcripts/next-batch.txt`
 - discovery command: `npm run discover:instagram`
 - duplicate rule: URLs already present in `reel-transcripts/manifest.json` are skipped by shortcode, including `/p/` and `/reel/` variants
@@ -50,7 +50,7 @@ The same intake file supports a recurring automation:
 - push rule: material successful scheduled runs should commit and push to `origin/main`; empty no-op runs should not create empty commits
 - empty rule: an empty batch is a no-op, not a failed run
 
-Default scheduled cadence is Monday, Wednesday, and Friday at 7:00 AM local Codex automation time.
+Default scheduled cadence is daily at 7:00 AM local Codex automation time.
 
 The scheduled job should only claim discovery for URLs returned by `npm run discover:instagram` with verified dates or already present in `next-batch.txt`.
 

@@ -7,6 +7,10 @@ The versioning intent is simple:
 - increment minor for meaningful MurphyScan rule growth, new source-backed verification coverage, or improved agent behavior
 - increment major only if MurphyScan changes its report shape or operating model in a way that breaks expected use
 
+## Unreleased
+
+- changed the unattended reel-ingest cadence from Monday/Wednesday/Friday to daily at 7:00 AM local Codex automation time to keep up with posting sprees
+
 ## 0.3.0 - 2026-07-09
 
 Scheduled ingest and scan-tier release.

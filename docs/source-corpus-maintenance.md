@@ -78,7 +78,7 @@ The intended operator flow is:
 - let the agent run the full intake, cleaning, synthesis, archive, and repo-update flow
 
 The intended scheduled flow is:
-- a recurring Codex automation opens this repo Monday, Wednesday, and Friday at 7:00 AM
+- a recurring Codex automation opens this repo every day at 7:00 AM
 - it runs `npm run discover:instagram`
 - it adds only discovered reels with verified post dates inside the default 14-day freshness window
 - it warns when the visible profile window appears full and manual links may be needed
@@ -121,7 +121,7 @@ Do not add reels just because they exist.
 
 Recommended cadence:
 - quick intake sweep: after any owner-supplied batch
-- unattended scheduled sweep: Monday, Wednesday, and Friday at 7:00 AM
+- unattended scheduled sweep: daily at 7:00 AM
 - synthesis pass: after every 3 to 5 worthwhile new reels
 - public repo polish pass: after meaningful rule changes, not after every minor corpus addition
 

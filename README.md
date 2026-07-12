@@ -237,7 +237,7 @@ Manual operator flow:
 
 Scheduled operator flow:
 
-- runs Monday, Wednesday, and Friday at 7:00 AM local Codex automation time
+- runs daily at 7:00 AM local Codex automation time
 - discovers visible public profile reels with `npm run discover:instagram`
 - adds discovered reels only after publish dates are verified
 - warns when Instagram's visible window may hide recent reels

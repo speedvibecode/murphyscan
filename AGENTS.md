@@ -50,7 +50,7 @@ Do not wait for the user to restate each step if they clearly indicated a new ba
 If a recurring automation runs this repo, use `docs/scheduled-ingest-pipeline.md`.
 
 Default schedule:
-- Monday, Wednesday, and Friday
+- every day
 - 7:00 AM local Codex automation time
 
 Scheduled behavior:
