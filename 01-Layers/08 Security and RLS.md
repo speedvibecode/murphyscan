@@ -2,7 +2,7 @@
 layer: 08
 image_label: "SECURITY & RLS"
 tags: [murphyscan, layer, security, rls]
-source_reels: [reel-02, reel-13, reel-14, reel-15, reel-22, reel-36, reel-37, reel-44, reel-48, reel-55, reel-59, reel-60, reel-61, reel-64, reel-65, reel-70, reel-73, reel-75, reel-78, reel-83, reel-84, reel-89, reel-95, reel-99, reel-100, reel-103, reel-106, reel-107, reel-110, reel-113, reel-123, reel-124]
+source_reels: [reel-02, reel-13, reel-14, reel-15, reel-22, reel-36, reel-37, reel-44, reel-48, reel-55, reel-59, reel-60, reel-61, reel-64, reel-65, reel-70, reel-73, reel-75, reel-78, reel-83, reel-84, reel-89, reel-95, reel-99, reel-100, reel-103, reel-106, reel-107, reel-110, reel-113, reel-123, reel-124, reel-143, reel-144]
 ---
 # 08 Security and RLS
 
@@ -52,6 +52,8 @@ The security layer verifies that the app has baseline security controls, active 
 - [[reel-113]] - AI-generated code must be treated as untrusted until reviewed and tested.
 - [[reel-123]] - security audits should run against AI-generated code, not only human-written changes.
 - [[reel-124]] - AI assistant context is a prompt-injection and tool-permission attack surface.
+- [[reel-143]] - policies, refunds, data terms, and service commitments must match product operations.
+- [[reel-144]] - deletion must cover the full user-data lifecycle, not only the account row.
 
 ## What MurphyScan Should Verify
 - No known secret exposure in code, bundles, or git history.
@@ -64,6 +66,7 @@ The security layer verifies that the app has baseline security controls, active 
 - Tenant boundaries are monitored across caches, jobs, exports, and API paths.
 - Legal, insurance, and platform-risk requirements are checked where the product domain raises them.
 - AI development tools, prompts, PR context, issues, and docs are treated as untrusted inputs when they can influence code or execution.
+- User deletion behavior is mapped across primary, derived, provider, retained, and auditable data surfaces.
 
 ## Repetition Notes
 This is the highest-density layer. Do not split every security item into tiny notes; use the consolidated concept notes to route checks.

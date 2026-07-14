@@ -1,0 +1,18 @@
+Reel 143
+Source: https://www.instagram.com/reel/Davh5IQjRBY/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-14T10:49:27.260Z
+Completed: 2026-07-14T10:49:46.955Z
+00:00
+→
+01:07
+Your product's ready. Your first customers are ready to pay. But before you accept a single payment, you want these six documents in place in your business or you're going to end up exposed. Doc number one, terms of service. You know that one that no one reads? Well, that's the one that defines what your users can and cannot do, what you are liable and not liable for, and what happens when things go wrong. Your AI can draft it, but you need to direct it with your specific use case for your product, all of your data practices, and your liability boundaries. A template you download from the internet protects nobody at all. Doc number two, privacy policy. This tells users what data you collect and how you use it, and how they request deletion from it. If your policy says one thing and your app does another, you have a compliance violation. Not a technicality, but a sizeable fine if you don't get it right. 3. Data Processing Agreement If you process data on behalf of another business, a DPA defines who is responsible
+01:07
+→
+02:08
+for what. GDPR absolutely requires it. Enterprise customers will ask for it every single time. Dock number four is a refund policy. What happens when a customer wants their money back? Payment processors, they require it. Customer trust absolutely depends on it. Dock number five, this one's big, master service agreement. If you are selling your system to a company that's going to use it, the MSA defines how you support it. SLAs, uptime guarantees, response times, and what happens when something breaks. The MSA governs the relationship between your product and their business. It's a big deal. And Doc 6, it's optional, but it's important, cyber liability insurance. When you handle someone else's data and something goes wrong, you will end up personally liable, not your LLC. I've corrected it in plenty of comments. Most policies cost $200 to $600 a year, and $200 to protect what could be a $50,000 problem, that's a big deal.
+02:08
+→
+02:30
+Not everyone needs it on day one, I get it, but the moment you handle customer data at scale, the coverage protects what the documents alone cannot. So those 6 documents, none of them are code, all of them protect the business and the product underneath the code. Your AI can draft every single one of them for you, but only if you know what to ask for. Now you do.

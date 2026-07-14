@@ -1,0 +1,14 @@
+Reel 144
+Source: https://www.instagram.com/reel/DavJP42gfEJ/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-14T10:49:27.263Z
+Completed: 2026-07-14T10:49:46.956Z
+00:00
+→
+01:19
+You have a user that just clicked delete my account. Now what? Your AI built a login system, but it did not build a deletion system. Here are the three things you're going to direct your AI to do right now to fix it. Step one, the cascade map. Direct your AI to map every table relationship that touches the user. Orders, messages, uploads, payment history, session data, and support tickets. When the user is deleted, what happens to each of those records? If you do not know, your AI does not know either. Map it before the first deletion request arrives in your system. That's a win. Step two, soft delete with a retention window. Direct your AI to deactivate the user immediately but retain the data for 30 more days. The user is gone from the application. The data lives just long enough for a compliance review. After 30 days, hard delete automatically. No manual cleanup. And Step 3. The GDPR response. A user in Europe requests a deletion. You have 72 hours, so direct your AI to generate a data report of everything you hold on that user, and then confirm complete removal within the compliance window of 72 hours.
+01:26
+→
+01:34
+that report on demand you have a legal exposure you do not know about delete is not a button it's a business process build it like you have it from day one

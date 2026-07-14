@@ -1,0 +1,14 @@
+Reel 145
+Source: https://www.instagram.com/reel/DatgvgjkmS_/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-14T10:49:27.263Z
+Completed: 2026-07-14T10:49:42.856Z
+00:00
+→
+01:06
+Did you know that MCP just crossed 97 million monthly SDK downloads? That is wild. 19,000 index servers. For example, Pinterest runs 66,000 MCP invocations per month, saving them 7,000 engineering hours. Nobody in the AI education space is talking about this right now but the faction. But it changes everything about how products get built and discovered in the future. Your API returns raw JSON and expects the client to figure it out. An MCP-enabled API returns structured data that any AI assistant can consume and act on. The difference is not complexity. The difference is whether your product is discoverable by the billion new builders who will never read anyone's documentation. They will ask their AI assistant to integrate with your service. If your service speaks MCP, integration takes five minutes. No brainer. If it does not, integration takes a development team and the vibe coder will likely pick the product that does not require that.
+01:07
+→
+01:28
+I wrote the full technical and business breakdown on the mattmurphy.ai blog. Links in the bio if you want to check it out. But at the end of the day, API design is no longer about developers at all. It's about discoverability by machines that your AI assistant is going to aim at your system. So build accordingly. The future has changed.

@@ -2,7 +2,7 @@
 concept: "legal-compliance-basics"
 tags: [murphyscan, concept, privacy, compliance]
 layers: ["08 Security and RLS"]
-source_reels: [reel-17, reel-37, reel-83, reel-95, reel-107, reel-110]
+source_reels: [reel-17, reel-37, reel-83, reel-95, reel-107, reel-110, reel-143, reel-144]
 ---
 # Legal and Compliance Basics
 
@@ -16,6 +16,8 @@ source_reels: [reel-17, reel-37, reel-83, reel-95, reel-107, reel-110]
 - [[reel-95]] - privacy must match actual data collection, consent, and deletion behavior.
 - [[reel-107]] - launch risk includes cyber liability coverage, platform terms, and policy-to-system fit.
 - [[reel-110]] - regulated or domain-specific products need industry requirements in the spec, not generic SaaS assumptions.
+- [[reel-143]] - legal and commercial documents must match real product data and operating behavior.
+- [[reel-144]] - account deletion requires a mapped, automated, auditable data lifecycle.
 
 ## Why It Matters
 Apps that collect user data need basic legal coverage, deletion paths, and evidence if selling to enterprise customers.
@@ -30,6 +32,8 @@ Apps that collect user data need basic legal coverage, deletion paths, and evide
 - Has the owner accepted or mitigated cyber liability exposure for data-handling products?
 - Do platform terms and liability caps leave business risks the owner still needs to handle?
 - Does the product domain add requirements such as student privacy, credentialing, healthcare privacy, financial reporting, or government compliance?
+- Are refund rules, data-processing terms, and enterprise service commitments defined when the business model requires them?
+- Does account deletion cover linked records, derived stores, providers, retention rules, and terminal deletion evidence?
 
 ## Agent Notes
 Do not claim legal compliance from templates alone. Verify the product behavior matches the policy.

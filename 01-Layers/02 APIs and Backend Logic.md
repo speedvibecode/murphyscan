@@ -2,7 +2,7 @@
 layer: 02
 image_label: "APIS & BACKEND LOGIC"
 tags: [murphyscan, layer, backend, api]
-source_reels: [reel-06, reel-11, reel-23, reel-45, reel-49, reel-52, reel-55, reel-68, reel-89, reel-97, reel-105, reel-111, reel-114, reel-116, reel-119]
+source_reels: [reel-06, reel-11, reel-23, reel-45, reel-49, reel-52, reel-55, reel-68, reel-89, reel-97, reel-105, reel-111, reel-114, reel-116, reel-119, reel-145]
 ---
 # 02 APIs and Backend Logic
 
@@ -35,6 +35,7 @@ The backend layer is the enforcement point for business rules, validation, exter
 - [[reel-114]] - payment webhooks must not return success when the business outcome failed.
 - [[reel-116]] - synthetic transactions and dead-letter queues catch successful responses with failed outcomes.
 - [[reel-119]] - swallowed webhook failures need durable retry or review paths.
+- [[reel-145]] - agent-facing integration surfaces need explicit machine-consumable contracts and protocol fit.
 
 ## What MurphyScan Should Verify
 - API calls to providers are centralized and failure-aware.
@@ -48,6 +49,7 @@ The backend layer is the enforcement point for business rules, validation, exter
 - Checkout and other paid operations move slow side effects into queues with retry and alert behavior.
 - Webhook handlers distinguish delivery success from business-side-effect success.
 - Critical API flows expose enough outcome state for synthetic checks and dead-letter processing.
+- Agent-facing products expose typed actions, structured errors, and enforceable auth and rate limits at machine-tool boundaries.
 
 ## Repetition Notes
 This layer overlaps heavily with [[09 Rate Limiting]] and [[08 Security and RLS]]. Keep enforcement mechanics here; keep policy and abuse controls in their dedicated layers.
