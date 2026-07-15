@@ -1,0 +1,16 @@
+Reel 147
+STATUS: FILTERED
+Reason: low_domain_signal_transcript
+Source: https://www.instagram.com/reel/DayGrh5DzUz/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-15T01:35:09.833Z
+Completed: 2026-07-15T01:35:32.643Z
+00:00
+→
+01:07
+starting this week, something big is changing for all of us. After literally hundreds of requests from my audience, you guys, every fixed script I post on Instagram and Facebook now has a companion post inside the FreeFaction community. The full script and the orchestration prompt you would give to your AI to implement it. So watch the reel on Facebook or Instagram, get the concept, understand the problem and the fix, then walk into the pit in the faction community and that exact script and prompt is sitting there waiting for you. Not a generic template, the specific prompt for that specific fix for the video I posted that day. So for example, today's fix was about idle session timeout and smart activity tracking. The prompt inside the community tells your AI exactly how to build meaningful activity detection, the warning modal, and state preservation on re-login. All you do is copy it, paste it into your AI assistant, direct the build, and that is the bridge between watching
+01:07
+→
+01:29
+a reel and shipping a fix. The scripts are free, the prompts are free, the whole community is free, the only thing it costs is you walking through the door to get it. Every piece of content from this point forward has an executable companion inside the faction community. Watch it here, build it there. That's how it's going to roll.

@@ -1467,5 +1467,42 @@
     "startedAt": "2026-07-14T10:49:27.263Z",
     "completedAt": "2026-07-14T10:49:42.856Z",
     "file": "C:\\Users\\totla\\Desktop\\vaults\\murphy\\reel-transcripts\\reel 145.txt"
+  },
+  {
+    "index": 146,
+    "url": "https://www.instagram.com/reel/DayW9qUEVyF/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 2807,
+    "wordCount": 474,
+    "domainWordCount": 23,
+    "startedAt": "2026-07-15T01:35:09.832Z",
+    "completedAt": "2026-07-15T01:35:28.448Z",
+    "file": "C:\\Users\\totla\\Desktop\\vaults\\murphy\\reel-transcripts\\reel 146.txt"
+  },
+  {
+    "index": 147,
+    "url": "https://www.instagram.com/reel/DayGrh5DzUz/",
+    "attempt": 1,
+    "status": "filtered",
+    "chars": 1352,
+    "wordCount": 231,
+    "domainWordCount": 3,
+    "filterReason": "low_domain_signal_transcript",
+    "startedAt": "2026-07-15T01:35:09.833Z",
+    "completedAt": "2026-07-15T01:35:32.643Z",
+    "file": "C:\\Users\\totla\\Desktop\\vaults\\murphy\\reel-transcripts\\reel 147.txt"
+  },
+  {
+    "index": 148,
+    "url": "https://www.instagram.com/reel/Daxv0QLgG8B/",
+    "attempt": 1,
+    "status": "ok",
+    "chars": 1512,
+    "wordCount": 249,
+    "domainWordCount": 18,
+    "startedAt": "2026-07-15T01:35:09.834Z",
+    "completedAt": "2026-07-15T01:35:28.633Z",
+    "file": "C:\\Users\\totla\\Desktop\\vaults\\murphy\\reel-transcripts\\reel 148.txt"
   }
 ]

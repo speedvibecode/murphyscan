@@ -2,7 +2,7 @@
 layer: 04
 image_label: "AUTH & PERMISSIONS"
 tags: [murphyscan, layer, auth, permissions]
-source_reels: [reel-13, reel-14, reel-15, reel-22, reel-26, reel-55, reel-59, reel-60, reel-64, reel-70, reel-71, reel-72, reel-77, reel-84, reel-96, reel-100]
+source_reels: [reel-13, reel-14, reel-15, reel-22, reel-26, reel-55, reel-59, reel-60, reel-64, reel-70, reel-71, reel-72, reel-77, reel-84, reel-96, reel-100, reel-148]
 ---
 # 04 Auth and Permissions
 
@@ -34,6 +34,7 @@ The auth layer verifies who the user is, what they can do, and whether permissio
 - [[reel-84]] - unsafe JWT defaults can invalidate the whole auth story.
 - [[reel-96]] - permissions should scale beyond an `is_admin` boolean.
 - [[reel-100]] - service-role paths can bypass every RLS policy you wrote.
+- [[reel-148]] - idle detection, expiry warnings, and state restoration make session timeouts secure without destroying user work.
 
 ## What MurphyScan Should Verify
 - Managed auth provider or explicit deep review for custom auth.
@@ -43,6 +44,7 @@ The auth layer verifies who the user is, what they can do, and whether permissio
 - RLS or equivalent database policies block cross-user data access.
 - JWT validation pins expected algorithms and rejects unsafe token forms.
 - Service-role or bypass credentials are not used carelessly on user-facing data paths.
+- Idle-session behavior is tested for meaningful activity, warning, expiry, failed refresh, reauthentication, and recoverable state restoration.
 
 ## Repetition Notes
 Auth is repeated across many reels because it is a root failure mode. Treat it as a launch-blocking layer, not a feature checklist.

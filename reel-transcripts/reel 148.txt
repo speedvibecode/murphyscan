@@ -1,0 +1,14 @@
+Reel 148
+Source: https://www.instagram.com/reel/Daxv0QLgG8B/
+Transcribed via: Saveto Instagram Transcript Generator
+Provider URL: https://saveto.ai/instagram-transcript-generator/
+Started: 2026-07-15T01:35:09.834Z
+Completed: 2026-07-15T01:35:28.633Z
+00:00
+→
+01:06
+Your security settings are kicking users out every 15 minutes, even when they're actively working. So your definition of idle might be broken. Here are the three things you're going to direct your AI to fix right now. Step one, define meaningful activity. Mouse movement, not an activity. A tab open in the background, also not an activity. Direct your AI to track actions that prove the user is still working. Form submissions, button clicks, API calls, page navigation. If the user's reading a long document without clicking, that also is not idle. So build an exception for sustained focus. That's a win. Step two, warn them before you kill them. Direct your AI to show a modal 60 seconds before the session expires. Your session expires in 60 seconds, click to stay logged in. The user who stepped away for coffee sees it when they return. The user who left the office for the day doesn't. That's the win. One warning will save you hundreds of frustrated support tickets. Trust me.
+01:07
+→
+01:39
+Step three, preserve state on re-authentication. The session expired, the user logs back in. You need to direct your AI to return them exactly where they were at. Not the homepage, not a blank dashboard, their unsaved form, their half-completed workflow, wherever they were. If re-authentication erases that work, your security just cost you a customer. Secure session, smart timeouts, and preserved state. Those are best practices. So build security that protects you without punishing your users.

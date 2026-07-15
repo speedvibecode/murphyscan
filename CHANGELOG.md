@@ -12,6 +12,7 @@ The versioning intent is simple:
 - changed the unattended reel-ingest cadence from Monday/Wednesday/Friday to daily at 7:00 AM local Codex automation time to keep up with posting sprees
 - recovered 11 signed-in profile reels missed by anonymous discovery, transcribed reels `131` through `141`, filtered promotional reel `135`, and integrated 10 source-backed notes into existing auth, support, deployment, security, database, eventing, AI-agent, observability, and go-to-market concepts
 - discovered and transcribed verified-fresh reels `142` through `145`, adding source-backed checks for operator readiness, policy-to-operation fit, account-deletion lifecycle coverage, and machine-consumable API integration surfaces
+- discovered verified-fresh reels `146` through `148`, filtered promotional reel `147`, and added source-backed checks for enterprise security-procurement evidence and usable session-timeout recovery
 
 ## 0.3.0 - 2026-07-09
 
