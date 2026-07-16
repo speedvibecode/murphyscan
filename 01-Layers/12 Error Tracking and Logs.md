@@ -2,7 +2,7 @@
 layer: 12
 image_label: "ERROR TRACKING & LOGS"
 tags: [murphyscan, layer, logs, observability]
-source_reels: [reel-04, reel-29, reel-31, reel-37, reel-44, reel-54, reel-83, reel-85, reel-91, reel-92, reel-106, reel-108, reel-109, reel-114, reel-116, reel-118, reel-119, reel-130]
+source_reels: [reel-04, reel-29, reel-31, reel-37, reel-44, reel-54, reel-83, reel-85, reel-91, reel-92, reel-106, reel-108, reel-109, reel-114, reel-116, reel-118, reel-119, reel-130, reel-150, reel-151]
 ---
 # 12 Error Tracking and Logs
 
@@ -36,6 +36,8 @@ The observability layer verifies that failures become visible quickly, with enou
 - [[reel-118]] - logs, metrics, and traces need correlation plus outside-in health checks and SLOs.
 - [[reel-119]] - duplicate source evidence reinforces webhook outcome monitoring.
 - [[reel-130]] - activation, aha moment, and 48-hour return signals make launch retention observable.
+- [[reel-150]] - support automation needs visible escalation boundaries and customer-history context.
+- [[reel-151]] - incident evidence should feed a time-bound postmortem and searchable learning library.
 
 ## What MurphyScan Should Verify
 - Frontend and backend errors are captured with stack traces.
@@ -49,6 +51,8 @@ The observability layer verifies that failures become visible quickly, with enou
 - Synthetic transactions prove critical paths end in the expected business state.
 - Logs, metrics, and traces can be joined by request or trace ID during an incident.
 - Product activation and early churn signals are visible when they affect launch success.
+- Automated support resolution and escalation outcomes are measurable, including false resolution and reopen rates.
+- Material incidents produce owned postmortems and prevention actions on a defined deadline.
 
 ## Repetition Notes
 Monitoring is not just tools. It needs alert routing, useful context, and enough retained evidence to debug.

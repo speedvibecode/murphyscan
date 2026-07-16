@@ -44,11 +44,11 @@ Add new items here using this shape:
 
 ## Current note
 
-As of July 15, 2026:
-- reels `65` through `148` have been transcribed into `reel-transcripts/`
-- cleaned notes now exist for `1` through `127`, `130` through `134`, `136` through `146`, and `148`
-- reels `128`, `129`, `135`, and `147` are filtered raw and manifest-only records
-- the layer and concept surfaces have been updated through the July 14 posting burst
+As of July 16, 2026:
+- reels `65` through `151` have been transcribed into `reel-transcripts/`
+- cleaned notes now exist for `1` through `127`, `130` through `134`, `136` through `146`, `148`, `150`, and `151`
+- reels `128`, `129`, `135`, `147`, and `149` are filtered raw and manifest-only records
+- the layer and concept surfaces have been updated through the July 15 posting burst
 - the next active intake surface is `reel-transcripts/next-batch.txt`
 
 For the next wave:

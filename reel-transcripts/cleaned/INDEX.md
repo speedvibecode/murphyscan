@@ -1,7 +1,7 @@
 ---
 title: "Cleaned Reel Summaries"
 source_folder: "reel-transcripts"
-note_count: 140
+note_count: 146
 tags: [murphyscan, index, production-readiness]
 ---
 # Cleaned Reel Summaries
@@ -15,7 +15,7 @@ This folder contains cleaned, source-traceable Markdown summaries for the reel t
 
 ## Theme Map
 - **Security and auth:** [[reel-02]], [[reel-13]], [[reel-14]], [[reel-15]], [[reel-17]], [[reel-22]], [[reel-36]], [[reel-37]], [[reel-44]], [[reel-48]], [[reel-55]], [[reel-59]], [[reel-60]], [[reel-61]], [[reel-64]], [[reel-65]], [[reel-70]], [[reel-71]], [[reel-72]], [[reel-73]], [[reel-75]], [[reel-77]], [[reel-78]], [[reel-84]], [[reel-89]], [[reel-95]], [[reel-96]], [[reel-99]], [[reel-100]], [[reel-103]], [[reel-113]], [[reel-123]], [[reel-124]], [[reel-131]], [[reel-134]], [[reel-136]], [[reel-146]], [[reel-148]]
-- **Deployment and operations:** [[reel-04]], [[reel-05]], [[reel-16]], [[reel-19]], [[reel-20]], [[reel-23]], [[reel-28]], [[reel-29]], [[reel-31]], [[reel-39]], [[reel-42]], [[reel-58]], [[reel-81]], [[reel-83]], [[reel-85]], [[reel-86]], [[reel-87]], [[reel-88]], [[reel-90]], [[reel-91]], [[reel-92]], [[reel-98]], [[reel-101]], [[reel-108]], [[reel-109]], [[reel-112]], [[reel-114]], [[reel-116]], [[reel-118]], [[reel-119]], [[reel-126]], [[reel-130]], [[reel-132]], [[reel-133]], [[reel-141]]
+- **Deployment and operations:** [[reel-04]], [[reel-05]], [[reel-16]], [[reel-19]], [[reel-20]], [[reel-23]], [[reel-28]], [[reel-29]], [[reel-31]], [[reel-39]], [[reel-42]], [[reel-58]], [[reel-81]], [[reel-83]], [[reel-85]], [[reel-86]], [[reel-87]], [[reel-88]], [[reel-90]], [[reel-91]], [[reel-92]], [[reel-98]], [[reel-101]], [[reel-108]], [[reel-109]], [[reel-112]], [[reel-114]], [[reel-116]], [[reel-118]], [[reel-119]], [[reel-126]], [[reel-130]], [[reel-132]], [[reel-133]], [[reel-141]], [[reel-150]], [[reel-151]]
 - **Data and backend architecture:** [[reel-06]], [[reel-11]], [[reel-12]], [[reel-26]], [[reel-32]], [[reel-33]], [[reel-34]], [[reel-35]], [[reel-41]], [[reel-51]], [[reel-57]], [[reel-66]], [[reel-67]], [[reel-69]], [[reel-74]], [[reel-79]], [[reel-80]], [[reel-97]], [[reel-102]], [[reel-104]], [[reel-105]], [[reel-106]], [[reel-111]], [[reel-115]], [[reel-120]], [[reel-122]], [[reel-125]], [[reel-127]], [[reel-138]], [[reel-140]]
 - **AI product controls:** [[reel-01]], [[reel-24]], [[reel-25]], [[reel-38]], [[reel-47]], [[reel-49]], [[reel-50]], [[reel-52]], [[reel-54]], [[reel-56]], [[reel-113]], [[reel-123]], [[reel-124]], [[reel-139]]
 - **QA, productization, and scaling:** [[reel-07]], [[reel-08]], [[reel-09]], [[reel-10]], [[reel-18]], [[reel-21]], [[reel-27]], [[reel-45]], [[reel-46]], [[reel-53]], [[reel-62]], [[reel-63]], [[reel-76]], [[reel-82]], [[reel-93]], [[reel-94]], [[reel-107]], [[reel-110]], [[reel-117]], [[reel-121]], [[reel-130]], [[reel-137]]
@@ -164,3 +164,5 @@ This folder contains cleaned, source-traceable Markdown summaries for the reel t
 | [[reel-141]] | Read Support as a User-Health Dashboard | user-health-observability |
 | [[reel-146]] | Build Security Evidence Before Procurement | enterprise-security-procurement |
 | [[reel-148]] | Secure Sessions Without Destroying User Work | usable-session-timeouts |
+| [[reel-150]] | Automate Known Support, Escalate Judgment Calls | human-support-escalation |
+| [[reel-151]] | Build the Postmortem System Before the Incident | postmortem-discipline |

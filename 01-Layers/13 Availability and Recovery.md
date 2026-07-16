@@ -2,7 +2,7 @@
 layer: 13
 image_label: "AVAILABILITY & RECOVERY"
 tags: [murphyscan, layer, availability, recovery]
-source_reels: [reel-05, reel-06, reel-16, reel-20, reel-31, reel-36, reel-39, reel-45, reel-46, reel-60, reel-61, reel-68, reel-85, reel-86, reel-89, reel-98, reel-99, reel-101, reel-114, reel-116, reel-118, reel-119, reel-122, reel-125]
+source_reels: [reel-05, reel-06, reel-16, reel-20, reel-31, reel-36, reel-39, reel-45, reel-46, reel-60, reel-61, reel-68, reel-85, reel-86, reel-89, reel-98, reel-99, reel-101, reel-114, reel-116, reel-118, reel-119, reel-122, reel-125, reel-151]
 ---
 # 13 Availability and Recovery
 
@@ -43,6 +43,7 @@ The recovery layer verifies that the app can survive bad deploys, provider outag
 - [[reel-119]] - webhook outcome failures need retry or review paths after apparent success.
 - [[reel-122]] - user data needs backup schedule, retention, and failure-domain separation.
 - [[reel-125]] - point-in-time recovery and restore drills turn backups into real recovery.
+- [[reel-151]] - postmortems need deadlines, owned prevention actions, and a reusable incident library.
 
 ## What MurphyScan Should Verify
 - Backups exist and restore has been tested.
@@ -53,6 +54,7 @@ The recovery layer verifies that the app can survive bad deploys, provider outag
 - Monitoring can tell the owner about regional or external-facing outages before customers do.
 - Business-critical outcomes can be recovered or replayed when a success response hid a failed side effect.
 - Backup frequency, location, and restore proof match the app's acceptable data-loss window.
+- Every material incident closes with owned prevention actions and searchable evidence for the next related failure.
 
 ## Repetition Notes
 Availability is the final aggregation layer. It pulls from deployment, observability, secrets, backend jobs, and database recovery.

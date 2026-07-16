@@ -2,7 +2,7 @@
 concept: "observability-incident-response"
 tags: [murphyscan, concept, observability, incident-response]
 layers: ["12 Error Tracking and Logs", "13 Availability and Recovery"]
-source_reels: [reel-04, reel-29, reel-31, reel-37, reel-85, reel-91, reel-92, reel-98, reel-106, reel-108, reel-109, reel-114, reel-116, reel-118, reel-119, reel-130, reel-132, reel-139, reel-141]
+source_reels: [reel-04, reel-29, reel-31, reel-37, reel-85, reel-91, reel-92, reel-98, reel-106, reel-108, reel-109, reel-114, reel-116, reel-118, reel-119, reel-130, reel-132, reel-139, reel-141, reel-150, reel-151]
 ---
 # Observability and Incident Response
 
@@ -30,6 +30,8 @@ source_reels: [reel-04, reel-29, reel-31, reel-37, reel-85, reel-91, reel-92, re
 - [[reel-132]] - support playbooks and tiered escalation should be built alongside production features.
 - [[reel-139]] - production AI agents need security, monitoring, fallback, escalation, and recovery beyond a working demo.
 - [[reel-141]] - support-ticket root causes expose user-health failures that infrastructure monitoring misses.
+- [[reel-150]] - automated support needs explicit human escalation for conflicting evidence, judgment, and customer-history cases.
+- [[reel-151]] - postmortem templates, time-bound reviews, corrective-action ownership, and an incident library turn failures into reusable learning.
 
 ## Why It Matters
 If the owner cannot see failures, users become the monitoring system. Observability must produce actionable evidence, not just dashboards.
@@ -52,6 +54,8 @@ If the owner cannot see failures, users become the monitoring system. Observabil
 - Does every material feature have an owned support playbook covering known failures and escalation?
 - Are repeated support causes converted into UX, observability, or business-logic fixes?
 - For AI agents, are quality, tool failures, cost, and shutdown behavior observable and exercised?
+- Do automated support paths escalate conflicting evidence, policy decisions, billing corrections, and emotionally complex repeat failures to an authorized human with sufficient history?
+- Does every material incident produce a time-bound postmortem with owned prevention actions, and are prior reviews searchable during related incidents?
 
 ## Agent Notes
 Ask for evidence that monitoring is wired and alerting, not just installed.
